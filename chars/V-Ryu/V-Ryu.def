@@ -1,0 +1,49 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name ="V-Ryu"
+displayname ="Ryu"
+versiondate =01/06/2014
+mugenversion =1.0
+author ="vyn"
+pal.defaults =1,2,3,4,5,6
+localcoord = 320,240
+
+[Palette Keymap]
+a = 4
+b = 5
+c = 6
+x = 1
+y = 2
+z = 3
+
+[Files]
+sprite =sprites.sff
+anim =animations.air
+sound =sound.snd
+cmd =commands.cmd
+cns =constants.cns
+stcommon =common1.cns
+
+
+st=idle.st
+pal1=1.act
+pal2=2.act
+pal3=3.act
+pal4=4.act
+pal5=5.act
+pal6=6.act
+st1=normal.st
+st2=special.st
+st3=ex.st
+st4=ultra.st
+st5=v-system.st
+st6=helpers.st
+st7=systemhelpers.st
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

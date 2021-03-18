@@ -70,8 +70,12 @@
  ;
  ;Insert your characters below.
 
-kfm, stages/kfm.def
+kfm.zip, stages/kfm.def
 kfm720, stages/kfm.def
+EvilRyu521, stages/kfm.def
+Evil Ryu.zip, stages/kfm.def
+Ryu, stages/kfm.def
+zipname.zip:V-Ryu.def, stages/kfm.def
 
 ;-----------------------
 [ExtraStages]
