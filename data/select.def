@@ -70,12 +70,11 @@
  ;
  ;Insert your characters below.
 
-kfm.zip, stages/kfm.def
-kfm720, stages/kfm.def
-EvilRyu521, stages/kfm.def
-Evil Ryu.zip, stages/kfm.def
-Ryu, stages/kfm.def
-zipname.zip:V-Ryu.def, stages/kfm.def
+evilryu.zip, stages/kfm.def
+evilken.zip, stages/kfm.def
+DragonClaw ai.zip
+cvsryu.zip
+GokuHR.zip
 
 ;-----------------------
 [ExtraStages]
