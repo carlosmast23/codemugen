@@ -1,8 +1,4 @@
-﻿; 6x9 variable - 9 point font
-; Indexed 1-bank
-; Bank 0 - mono
-
-[FNT v2]
+﻿[FNT v2]
 ; FNT v2 version number.  Don't change this.
 fntversion = 2,00
 ; Name of this font.
@@ -13,8 +9,6 @@ name = "6x9 variable"
 [Def]
 ; This is a bitmap font
 Type = bitmap
-; Bank numbers are mapped to palette numbers (0, bank).
-BankType = palette
 ; Size of font: width, height.  Width is used for spaces.
 Size = 5,8
 ; Spacing between font glyphs: width, height.

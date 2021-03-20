@@ -56,6 +56,11 @@ trigger1 = !alive
 value = 5050
 ctrl = 0
 
+[State 0, 5] ;Are you floating?
+type = ChangeState
+trigger1 = pos y < 0
+value = 50
+
 ;---------------------------------------------------------------------------
 ; Stand to Crouch
 [Statedef 10]
@@ -147,7 +152,6 @@ physics = S
 anim = 40
 ctrl = 0
 sprpriority = 1
-facep2 = 1
 
 [State 40, 1]
 type = VarSet
@@ -1521,9 +1525,7 @@ value = 5110 ;Downed get-hit (lying down)
 type = Explod
 trigger1 = Time = 1
 anim = F(60 + (sysvar(1) > Const720p(20)) + (sysvar(1) > Const720p(56)))
-postype = none
-pos = pos x + camerapos x, 0
-facing = facing
+pos = 0, 0
 sprpriority = ifelse (sysvar(1) <= Const720p(56), -10, 10)
 
 [State 5100, 9]
@@ -1657,9 +1659,7 @@ type = Explod
 trigger1 = Time = 0
 trigger1 = !SysVar(0)
 anim = F(60 + (sysvar(1) > Const720p(20)) + (sysvar(1) > Const720p(56)))
-postype = none
-pos = pos x + camerapos x, 0
-facing = facing
+pos = 0, 0
 sprpriority = ifelse (sysvar(1) <= Const720p(56), -10, 10)
 
 [State 5110, 8]
@@ -1901,9 +1901,7 @@ add = 128,128,128 ;256,256,256
 type = Explod
 trigger1 = Time = 0
 anim = F60
-postype = none
-pos = pos x + camerapos x, (pos y) - floor(vel y)
-facing = facing
+pos = 0, -floor(vel y)
 sprpriority = -10
 
 ;---------------------------------------------------------------------------

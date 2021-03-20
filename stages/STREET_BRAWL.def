@@ -1,0 +1,262 @@
+[Info]
+name 		= "STREET BRAWL"
+mugenversion 	= 1.1
+author 		= "NoZ"
+
+[Camera]
+startx 		= 0
+starty 		= 0
+boundleft 	= -644
+boundright 	= 644
+boundhigh 	= -385
+boundlow 	= 0
+tension 	= 450
+verticalfollow 	= .75
+floortension 	= 200
+overdrawhigh 	= 120
+overdrawlow 	= 120
+cuthigh 	= 0
+cutlow 		= 0
+tensionhigh = 480
+tensionlow = -20
+zoomin = 1
+zoomout = .65
+
+[PlayerInfo]
+p1startx 	= -280
+p1starty 	= 0
+p1facing 	= 1
+p2startx 	= 280
+p2starty 	= 0
+p2facing 	= -1
+p3startx 	= -400
+p3starty 	= 0
+p3facing 	= 1
+p4startx 	= 400
+p4starty 	= 0
+p4facing 	= -1
+leftbound 	= -4000
+rightbound 	= 4000
+
+[Bound]
+screenleft 	= 60
+screenright 	= 60
+
+[StageInfo]
+zoffset 	= 659.0
+autoturn 	= 1
+resetBG 	= 0
+localcoord 	= 1280, 720
+xscale 		= 1
+yscale 		= 1
+
+[Scaling]
+topz     	= 0
+botz     	= 50
+topscale 	= 1
+botscale 	= 1.2
+
+[Shadow]
+color 		= 0,0,0
+yscale 		= .2
+
+[Music]
+bgmusic 	= sound/STREET_BRAWL.mp3
+bgvolume 	= 255
+
+[BGdef]
+spr 		= stages/STREET_BRAWL.sff
+debugbg 	= 0
+
+[BG sky]
+type  = normal
+spriteno = 1,0
+start = 0,-740
+delta = .7,.8
+tile = 1,0
+velocity = .250,0
+
+[BG CITY]
+type = normal
+spriteno = 0, 0
+start = 0,-740
+delta = 1,1
+mask = 1
+
+[BG CITY]
+type = normal
+spriteno = 0,1
+start = 0,-740
+delta = 1,1
+mask = 1
+trans = addalpha
+alpha = 100,256
+
+[BG FOG]
+type = normal
+spriteno = 3,0
+start = 200,470
+delta = 1,1
+trans = addalpha
+alpha = 50,245
+tile = 1,0
+tilespacing = 0
+velocity = 1,0
+mask = 1
+
+[BG PAPER1]
+type  = anim
+actionno = 3
+start = 350,170
+delta = 1,1
+tile = 1,0
+velocity = 5, 0
+tilespacing = 2245
+sin.x = 20, 570
+sin.y = -50, 212
+[Begin action 3]
+4,0,20,1,3
+4,1,20,4,3
+4,2,20,6,3
+4,3,20,10,3
+4,4,20,14,3
+4,5,20,16,3
+4,6,20,19,3
+4,7,20,23,3
+4,8,20,27,3
+4,9,20,31,3
+4,10,20,35,3
+4,11,20,38,3
+4,12,20,39,3
+4,13,20,40,2
+4,14,20,41,2
+4,15,20,40,2
+4,16,20,37,2
+4,17,20,34,2
+4,18,20,31,2
+4,19,20,27,2
+4,20,20,24,2
+4,21,20,19,1
+4,22,20,15,1
+4,23,20,14,1
+4,24,20,13,1
+4,25,20,13,1
+4,26,20,13,1
+4,27,20,12,1
+4,28,20,10,2
+4,29,20,7,2
+4,30,20,3,0,3
+4,31,20,0,0,3
+
+[BG PAPER2]
+type = anim
+actionno = 4
+start = -400,370
+delta = 1,1
+tile = 1,0
+velocity = 6, 0
+tilespacing = 2845
+sin.x = -50, 355
+sin.y = 100, 125
+layerno = 1
+[Begin action 4]
+4,0,20,2,3,,AS120D1
+4,1,20,5,3,,AS120D1
+4,2,20,7,3,,AS120D1
+4,3,20,11,3,,AS120D1
+4,4,20,15,3,,AS120D1
+4,5,20,17,3,,AS120D1
+4,6,20,20,3,,AS120D1
+4,7,20,24,3,,AS120D1
+4,8,20,28,3,,AS120D1
+4,9,20,32,3,,AS120D1
+4,10,20,36,3,,AS120D1
+4,11,20,39,3,,AS120D1
+4,12,20,40,3,,AS120D1
+4,13,20,41,3,,AS120D1
+4,14,20,42,3,,AS120D1
+4,15,20,41,3,,AS120D1
+4,16,20,38,3,,AS120D1
+4,17,20,35,3,,AS120D1
+4,18,20,32,3,,AS120D1
+4,19,20,28,3,,AS120D1
+4,20,20,25,,3,,AS120D1
+4,21,20,20,3,,AS120D1
+4,22,20,16,3,,AS120D1
+4,23,20,15,3,,AS120D1
+4,24,20,14,3,,AS120D1
+4,25,20,14,3,,AS120D1
+4,26,20,14,3,,AS120D1
+4,27,20,13,3,,AS120D1
+4,28,20,11,3,,AS120D1
+4,29,20,8,3,,AS120D1
+4,30,20,5,3,,AS120D1
+4,31,20,1,3,,AS120D1
+4,0,20,2,2,,AS120D1
+4,1,20,5,2,,AS120D1
+4,2,20,7,2,,AS120D1
+4,3,20,11,2,,AS120D1
+4,4,20,15,3,,AS120D1
+4,5,20,17,3,,AS120D1
+4,6,20,20,3,,AS120D1
+4,7,20,24,3,,AS120D1
+4,8,20,28,3,,AS120D1
+4,9,20,32,3,,AS120D1
+4,10,20,36,3,,AS120D1
+4,11,20,39,3,,AS120D1
+4,12,20,40,3,,AS120D1
+4,13,20,41,3,,AS120D1
+4,14,20,42,3,,AS120D1
+4,15,20,41,3,,AS120D1
+4,16,20,38,3,,AS120D1
+4,17,20,35,3,,AS120D1
+4,18,20,32,3,,AS120D1
+4,19,20,28,3,,AS120D1
+4,20,20,25,,3,,AS120D1
+4,21,20,20,3,,AS120D1
+4,22,20,16,3,,AS120D1
+4,23,20,15,3,,AS120D1
+4,24,20,14,3,,AS120D1
+4,25,20,14,3,,AS120D1
+4,26,20,14,3,,AS120D1
+4,27,20,13,3,,AS120D1
+4,28,20,11,3,,AS120D1
+4,29,20,8,3,,AS120D1
+4,30,20,5,3,,AS120D1
+4,31,20,2,3,,AS120D1
+
+[BG PAPER3]
+type  = anim
+actionno = 3
+start = 350,500
+delta = 1,1
+tile = 1,0
+velocity = 3, 0
+tilespacing = 800
+sin.x = -70, 850
+sin.y = -20, 500
+
+[BG PAPER4]
+type = anim
+actionno = 4
+start = -400,400
+delta = 1,1
+tile = 1,0
+velocity = 4, 0
+tilespacing = 600
+sin.x = 10, 500
+sin.y = -100, 852
+layerno = 1
+
+[BG FOG2]
+type = normal
+spriteno = 3,0
+start = 0,550
+delta = 1,1
+trans = addalpha
+alpha = 80,245
+tile = 1,0
+tilespacing = 0
+velocity = 2,0
+layerno = 1
+mask = 1

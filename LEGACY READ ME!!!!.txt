@@ -1,0 +1,35 @@
+Legacy read me
+
+This took a lot of work to make fellas so enjoy and please give feedback
+also this screenpack is open source,but if youre going to use something
+ask for permission first and give credit,this is my gem,so dont be an asshole
+
+Custom things you can do:
+
+*there's 2 roster size's to choose from
+ .Normal (228 slots)
+ .Big roster (839 slots)
+
+*there's 2 versions of the lifebars,one with the 
+ powerbars on top(default) and one with the power
+ bars on the bottom,you can choose it on the data
+ folder
+
+*you can choose from 3 announcers
+ sfxt,ssf4 and kof13
+
+Special Thanks:
+
+ArmorGon,for the vs and fight animations
+
+R@CE and Infinite,for beta testing and for the characters for the betas
+
+My beta testers:
+HUNGRY WOLF,Neocide,Star Fucker(Cybaster),Iced,Maxbeta,BIG BOSS,
+Balthazar,Dissidia,Marpachi,Saikoro,Watta
+
+thank you all for the feedback and help
+
+if you have any questions for the screenpack let me know by pm on
+mugen fighters guild
+
