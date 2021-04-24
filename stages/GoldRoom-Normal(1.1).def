@@ -1,0 +1,726 @@
+
+;--------------------------------------------------------
+[Info]
+name = "The Gold Room - Normal"
+Author = "Alice"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -370
+boundright = 370
+boundhigh = -150
+boundlow = 0
+
+tension = 200
+overdrawhigh = 100
+overdrawlow = 100
+cuthigh = 0
+cutlow = 0
+zoomin = 1
+zoomout = .75
+tensionhigh = 250;450
+tensionlow = 200;150
+
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+p1startx = -140          ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+
+;--- Player 2 ---
+p2startx = 140
+p2starty = 0
+p2facing = -1
+
+;--- Common ---
+ ;Don't change these values.
+leftbound  = -1000 ;Left bound (x-movement)
+rightbound = 1000 ;Right bound
+topbound  =  0     ;Top bound (z-movement)
+botbound  =  0     ;Bottom bound
+
+;--------------------------------------------------------
+[Scaling]
+ ;No need to change these values
+topz     = 0       ;Top z-coordinate for scaling
+botz     = 50      ;Bottom z-coordinate for scaling
+topscale = 1       ;Scale to use at top
+botscale = 1.2     ;Scale to use at bottom
+
+;--------------------------------------------------------
+[Bound]
+ ;Distance from left/right edge of screen that player can move to
+ ;Typically 15
+screenleft = 30   ;Dist from left of screen that player can move to
+screenright = 30   ;Right edge
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 444
+autoturn = 1
+resetBG = 0
+localcoord = 640,480
+
+
+;--------------------------------------------------------
+[Shadow]
+intensity = 60
+color = 0,0,0
+yscale = .2
+reflect = 0
+
+;--------------------------------------------------------
+[Music]
+bgmusic = 
+bgmvolume =
+
+;Main background definition
+[BGdef]
+spr = stages/goldroom(1.1).sff
+debugbg = 0
+
+;---------------------BLACK
+
+[BG 0]
+type  = normal
+spriteno = 45, 12
+layerno = 0                
+start = 0, 0
+delta = 1, 1
+tile = 1,1
+tilespacing = 0,0
+trans = none
+mask  = 0
+
+
+;---------------------------------------------------------------End Meta/Normal Start
+;-----------------------room
+[BG 0]
+type  = normal
+spriteno = 38, 0
+layerno = 0                
+start = 0, -320
+delta = 1, 1
+trans = none
+mask  = 0
+ID = 3
+
+;-----------------------Shadows
+
+[BG 0];BRDL
+type  = normal
+spriteno = 42, 0
+layerno = 0                
+start = -105, 315
+delta = 1, 1
+trans = none
+mask  = 1
+ID = 3
+
+[BG 0];dress
+type  = normal
+spriteno = 42, 1
+layerno = 0                
+start = 85, 278
+delta = 1, 1
+trans = sub
+mask  = 1
+ID = 3
+
+[BG 0];dress
+type  = normal
+actionno = 201 ;spriteno = 42, 1
+layerno = 0                
+start = 85, 278
+delta = 1, 1
+;trans = sub
+;mask  = 1
+ID = 3
+
+[Begin Action 201]
+42,1, 0,0, 3,, AS50D256
+-1,-0, 0,0, 3
+
+[BG 0];furniture left
+type = anim
+actionno = 69
+start = -452,320
+delta = 1, 1
+MASK=1
+ID = 3
+
+[Begin Action 69]
+42,7, 0,0, 3,, AS0D256
+-1,0, 0,0, 3
+
+[BG 0];furniture left
+type = anim
+actionno = 70
+start = -452,320
+delta = 1, 1
+MASK=1
+ID = 3
+
+[Begin Action 70]
+42,2, 0,0, 3,, AS5D256 ;AS15D256
+-1,0, 0,0, 3
+
+[BG 0];furniture right
+type  = normal
+spriteno = 42, 6
+layerno = 0                
+start = 342, 350
+delta = 1, 1
+trans = sub
+mask  = 1
+ID = 3
+
+[BG 0];furniture right
+type = anim
+actionno = 71
+start = 342,350
+delta = 1, 1
+MASK=1
+ID = 3
+
+[Begin Action 71]
+42,3, 0,0, 3,, AS15D256
+-1,0, 0,0, 3
+
+[BG 0];chim
+type  = normal
+spriteno = 42, 4
+layerno = 0                
+start = -575, 120
+delta = 1, 1
+trans = sub
+mask  = 1
+ID = 3
+
+[BG 0];chim
+type = anim
+actionno = 72
+start = -575,120
+delta = 1, 1
+MASK=1
+ID = 3
+
+[Begin Action 72]
+42,5, 0,0, 3,, AS7D256
+-1,0, 0,0, 3
+
+
+[BG 0];bed
+type  = normal
+spriteno = 42, 9
+layerno = 0                
+start = 440, -30
+delta = 1, 1
+trans = sub
+mask  = 1
+ID = 3
+
+[BG 0];bed
+type = anim
+actionno = 73
+start = 440,-30
+delta = 1, 1
+MASK=1
+ID = 3
+
+[Begin Action 73]
+42,8, 0,0, 3,, AS10D256
+-1,0, 0,0, 3
+
+[BG 0];plant
+type  = normal
+spriteno = 42, 10
+layerno = 0                
+start = -795, 185
+delta = 1, 1
+trans = sub
+mask  = 1
+ID = 3
+
+[BG 0];plant
+type  = anim;normal
+actionno=200;spriteno = 42, 10
+layerno = 0                
+start = -795, 185
+delta = 1, 1
+;trans = sub
+;mask  = 1
+ID = 3
+
+[Begin Action 200]
+42,10, 0,0, 3,, AS30D256
+-1,0, 0,0, 2
+
+[BG 0];lamp
+type  = normal
+spriteno = 42, 11
+layerno = 0                
+start = 740, 90
+delta = 1, 1
+trans = sub
+mask  = 1
+ID = 3
+
+[BG 0];lamp
+type  = normal
+spriteno = 42, 11
+layerno = 0                
+start = -746, 90
+delta = 1, 1
+trans = sub
+mask  = 1
+ID = 3
+;-----------------------Furniture
+
+[BG 0]
+type  = normal
+spriteno = 40, 0
+start = 9, -185
+delta = 1, 1
+mask  = 1
+trans = none
+ID = 3
+
+[BG 0];bar
+type = anim
+actionno = 88
+layerno = 0
+start = 20, 262
+delta = 1, 1
+ID = 3
+
+[Begin Action 88]
+43,10, 0,0, 1500
+
+;-----
+[BG 0];chim
+type = anim
+actionno = 74
+start = -560,147
+delta = 1, 1
+MASK=1
+ID = 3
+
+[Begin Action 74]
+43,1, 0,0, 4,, AS10D256
+43,1, 0,0, 4,, AS5D256
+
+;-----
+
+[BG 0];candle/base
+type = normal
+spriteno = 41, 0
+layerno = 0
+start = -590, 177
+delta = 1, 1
+mask = 1
+ID = 3
+
+;---------------------Illumination
+
+[BG 0];Mirror/plant
+type = anim
+actionno = 75
+start = -782,182
+delta = 1, 1
+MASK=1
+ID = 3
+
+[Begin Action 75]
+43,2, 0,0, 4,, AS20D256
+43,2, 0,0, 4,, AS15D256
+
+[BG 0];CHAIR
+type = anim
+actionno = 76
+start = 410,247
+delta = 1, 1
+MASK=1
+ID = 3
+
+[Begin Action 76]
+43,3, 0,0, 4,, AS40D256
+43,3, 0,0, 4,, AS30D256
+
+[BG 0];CHAIR
+type = anim
+actionno = 77
+start = -417,255
+delta = 1, 1
+MASK=1
+ID = 3
+
+[Begin Action 77]
+43,4, 0,0, 4,, AS30D256
+43,4, 0,0, 4,, AS20D256
+
+[BG 0];ANGEL LEFT
+type = anim
+actionno = 78
+start = -175, 138
+delta = 1, 1
+mask=1
+ID = 3
+
+[Begin Action 78]
+43,5, 0,0, 5,, AS76D256
+43,5, 0,0, 5,, AS66D256
+43,5, 0,0, 5,, AS56D256
+43,5, 0,0, 5,, AS46D256
+43,5, 0,0, 5,, AS36D256
+43,5, 0,0, 5,, AS26D256
+43,5, 0,0, 5,, AS16D256
+43,5, 0,0, 4,, AS6D256
+43,5, 0,0, 5,, AS16D256
+43,5, 0,0, 5,, AS26D256
+43,5, 0,0, 5,, AS36D256
+43,5, 0,0, 5,, AS46D256
+43,5, 0,0, 5,, AS56D256
+43,5, 0,0, 5,, AS66D256
+43,5, 0,0, 5,, AS76D256
+43,5, 0,0, 5,, AS86D256
+43,5, 0,0, 5,, AS96D256
+43,5, 0,0, 5,, AS106D256
+43,5, 0,0, 5,, AS96D256
+43,5, 0,0, 5,, AS86D256
+
+[BG 0];ANGEL RIGHT
+type = anim
+actionno = 79
+start = 97, 132
+delta = 1, 1
+mask=1
+ID = 3
+
+[Begin Action 79]
+43,7, 0,0, 5,, AS76D256
+43,7, 0,0, 5,, AS66D256
+43,7, 0,0, 5,, AS56D256
+43,7, 0,0, 5,, AS46D256
+43,7, 0,0, 5,, AS36D256
+43,7, 0,0, 5,, AS26D256
+43,7, 0,0, 5,, AS16D256
+43,7, 0,0, 4,, AS6D256
+43,7, 0,0, 5,, AS16D256
+43,7, 0,0, 5,, AS26D256
+43,7, 0,0, 5,, AS36D256
+43,7, 0,0, 5,, AS46D256
+43,7, 0,0, 5,, AS56D256
+43,7, 0,0, 5,, AS66D256
+43,7, 0,0, 5,, AS76D256
+43,7, 0,0, 5,, AS86D256
+43,7, 0,0, 5,, AS96D256
+43,7, 0,0, 5,, AS106D256
+43,7, 0,0, 5,, AS96D256
+43,7, 0,0, 5,, AS86D256
+
+[BG 0];CURTAIN BED
+type = anim
+actionno = 80
+start = 336,74
+delta = 1, 1
+MASK=1
+ID = 3
+
+[Begin Action 80]
+43,6, 0,0, 4,, AS15D256
+43,6, 0,0, 4,, AS10D256
+
+[BG 0];DRESS
+type = anim
+actionno = 84
+start = 250, 320
+delta = 1, 1
+mask=1
+ID = 3
+
+[Begin Action 84]
+43,8, 0,0, 4,H, AS50D256
+43,8, 0,0, 4,H, AS40D256
+
+[BG 0];DRESS
+type = anim
+actionno = 85
+start = 270, 270
+delta = 1, 1
+mask=1
+ID = 3
+
+[Begin Action 85]
+43,9, 0,0, 4,H, AS60D256
+43,9, 0,0, 4,H, AS50D256
+
+;---------------------SHINY GOLD
+[BG 0];FRONT
+type = anim
+actionno = 23
+layerno = 0
+start = 0, 200
+delta = 1, 1
+ID = 3
+
+[Begin Action 23]
+24,0, 0,0, 3,,AS120D256
+24,1, 0,0, 3,,AS120D256
+24,2, 0,0, 3,,AS120D256
+24,3, 0,0, 3,,AS120D256
+24,4, 0,0, 3,,AS120D256
+24,5, 0,0, 3,,AS120D256
+24,6, 0,0, 3,,AS120D256
+24,7, 0,0, 3,,AS120D256
+24,8, 0,0, 3,,AS120D256
+24,9, 0,0, 3,,AS120D256
+24,10, 0,0, 3,,AS120D256
+24,11, 0,0, 3,,AS120D256
+24,12, 0,0, 3,,AS120D256
+24,13, 0,0, 3,,AS120D256
+24,14, 0,0, 3,,AS120D256
+24,15, 0,0, 3,,AS120D256
+24,16, 0,0, 3,,AS120D256
+24,17, 0,0, 3,,AS120D256
+24,18, 0,0, 3,,AS120D256
+24,19, 0,0, 3,,AS120D256
+24,20, 0,0, 3,,AS120D256
+24,21, 0,0, 3,,AS120D256
+24,22, 0,0, 3,,AS120D256
+24,23, 0,0, 3,,AS120D256
+;24,25, 0,0, 3,,AS120D256
+24,24, 0,0, 3,,AS120D256
+24,26, 0,0, 3,,AS120D256
+24,27, 0,0, 3,,AS120D256
+24,28, 0,0, 3,,AS120D256
+24,29, 0,0, 3,,AS120D256
+24,30, 0,0, 3,,AS120D256
+24,31, 0,0, 3,,AS120D256
+24,32, 0,0, 3,,AS120D256
+24,34, 0,0, 3,,AS120D256
+24,33, 0,0, 3,,AS120D256
+
+;---------------------Lamp/left
+[BG 0]
+type = anim
+actionno = 54
+layerno = 0
+start = -358, -323
+delta = 1, 1
+ID = 3
+
+[Begin Action 54]
+39,0, 0,0, 1500
+
+;---------------------Lamp/right
+
+[BG 0]
+type = anim
+actionno = 58
+layerno = 0
+start = 358, -323
+delta = 1, 1
+ID = 3
+
+[Begin Action 58]
+39,0, 0,0, 1500, H
+
+;--------------------------------Fire of candles
+[BG 0];right/fire
+type = anim
+actionno = 67
+layerno = 0
+start = 408, 150
+delta = 1, 1
+ID = 3
+
+[Begin Action 67]
+26,0, 0,0, 5,,A
+26,1, 0,0, 5,,A
+26,2, 0,0, 5,,A
+26,3, 0,0, 5,,A
+26,4, 0,0, 5,,A
+26,14, 0,0, 5,,A
+26,5, 0,0, 5,,A
+26,6, 0,0, 5,,A
+26,7, 0,0, 5,,A
+26,8, 0,0, 5,,A
+26,9, 0,0, 5,,A
+26,10, 0,0, 5,,A
+26,11, 0,0, 5,,A
+26,12, 0,0, 5,,A
+26,13, 0,0, 5,,A
+
+[BG 0];Left/fire
+type = anim
+actionno = 68
+layerno = 0
+start = -562, 150
+delta = 1, 1
+ID = 3
+
+[Begin Action 68]
+26,0, 0,0, 5,H,A
+26,1, 0,0, 5,H,A
+26,2, 0,0, 5,H,A
+26,3, 0,0, 5,H,A
+26,4, 0,0, 5,H,A
+26,14, 0,0, 5,H,A
+26,5, 0,0, 5,H,A
+26,6, 0,0, 5,H,A
+26,7, 0,0, 5,H,A
+26,8, 0,0, 5,H,A
+26,9, 0,0, 5,H,A
+26,10, 0,0, 5,H,A
+26,11, 0,0, 5,H,A
+26,12, 0,0, 5,H,A
+26,13, 0,0, 5,H,A
+
+;---------LIGHT FROM LAMPS normal
+[BG 0];lamps
+type = anim
+actionno = 205
+start = 665,65
+delta = 1, 1
+mask=1
+ID = 3
+
+[BG 0];lamps
+type = anim
+actionno = 205
+start = 725,55
+delta = 1, 1
+mask=1
+ID = 3
+;---
+[BG 0];lamps
+type = anim
+actionno = 205
+start = -706,65
+delta = 1, 1
+mask=1
+ID = 3
+
+[BG 0];lamps
+type = anim
+actionno = 205
+start = -756,55
+delta = 1, 1
+mask=1
+ID = 3
+
+[Begin Action 205]
+27,2, 0,0, 2,, AS156D256
+27,2, 0,0, 2,, AS136D256
+
+;-----------
+[BG 0];lamps/center
+type = anim
+actionno = 206
+start = 20, -40
+delta = 1, 1
+mask=1
+ID = 3
+
+[BG 0];lamps/center
+type = anim
+actionno = 206
+start = -60, -40
+delta = 1, 1
+mask=1
+ID = 3
+
+[BG 0];lamps/center
+type = anim
+actionno = 206
+start = -140, -40
+delta = 1, 1
+mask=1
+ID = 3
+;------------
+[BG 0];lamps/right
+type = anim
+actionno = 206
+start = 422, -197
+delta = 1, 1
+mask=1
+ID = 3
+
+[BG 0];lamps/right
+type = anim
+actionno = 206
+start = 290, -205
+delta = 1, 1
+mask=1
+ID = 3
+
+[BG 0];lamps/right
+type = anim
+actionno = 206
+start = 160, -197
+delta = 1, 1
+mask=1
+ID = 3
+;------------
+[BG 0];lamps/left
+type = anim
+actionno = 206
+start = -552, -197
+delta = 1, 1
+mask=1
+ID = 3
+
+[BG 0];lamps/left
+type = anim
+actionno = 206
+start = -410, -205
+delta = 1, 1
+mask=1
+ID = 3
+
+[BG 0];lamps/left
+type = anim
+actionno = 206
+start = -280, -197
+delta = 1, 1
+mask=1
+ID = 3
+
+[Begin Action 206]
+27,2, 0,0, 2,, AS36D256
+27,2, 0,0, 2,, AS56D256
+;----------------------------------LIGHT FROM CANDLES
+[BG 0];light
+type = anim
+actionno = 83
+start = 345, 110
+delta = 1, 1
+mask=1
+ID = 3
+
+[BG 0];light
+type = anim
+actionno = 83
+start = -625, 110
+delta = 1, 1
+mask=1
+ID = 3
+
+[Begin Action 83]
+27,2, 0,0, 4,, AS20D256
+27,2, 0,0, 4,, AS15D256
+
+;-----------------------------------BG CONTROLS
+[BGCtrlDef 2]
+looptime = -1
+CtrlID = 3
+
+[BGCtrl 1]
+type = posset
+time = 0
+x = 0
+y = 20
+

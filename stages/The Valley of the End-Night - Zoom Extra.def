@@ -1,0 +1,450 @@
+;                        EDITED STAGE
+;=============================================================
+;  STAGE INFORMATION :
+;
+;  Resolution : 1280 * 720
+;  Mugen Version : Mugen 1.1 only
+;  Versiondate : Diciembre,2014
+;  Reedicion : Daniel's 
+;
+;=============================================================
+
+
+[Info]
+name = "The Valley of the End-Night-zoom"
+displayname = "The Valley of the End-Night-zoom"
+mugenversion = 1.1
+author="Daniel's"
+
+;original author = "Legend Ivanhoe (MrKarate9), Legend Adnil" 
+;ReEdit   = "********-----Remake by Daniel's-------******"  
+
+[Camera]
+startx =0
+starty =0
+boundleft=-330
+boundright=330
+boundhigh=-60
+boundlow =0
+verticalfollow = .70
+floortension = 100
+tension =120
+tensionhigh = 155
+tensionlow = 70
+overdrawhigh = 100
+overdrawlow = 100
+cuthigh = 0
+cutlow = 0
+zoomin = .9
+zoomout =.2
+
+
+
+[PlayerInfo]
+p1startx =-70
+p1starty =0
+p1startz =0
+p1facing =1
+
+p2startx =70
+p2starty =0
+p2startz =0
+p2facing =-1
+
+p3startx =-90
+p3starty =0
+p3startz =0
+p3facing =1
+
+p4startx =90
+p4starty =0
+p4startz =0
+p4facing =-1
+
+leftbound =-8000
+rightbound =8000
+topbound =0
+botbound =0
+
+
+[Scaling]
+topz=0
+botz=50
+topscale=1
+botscale=1.2
+
+
+[Bound]
+screenleft=18
+screenright=18
+
+
+[StageInfo]
+zoffset=  127
+autoturn= 1
+resetBG= 0
+Hires=1
+localcoord= 256,144
+
+[Shadow]
+intensity = 0
+color = 0,0,0
+yscale = .3
+fade.range = 0,0
+
+[Reflection]
+intensity = 90
+
+
+
+[Music]
+bgmusic 	= sound/water dragon.mp3
+bgmvolume = 255
+
+[BGdef]
+spr = The Valley of the End-Night.sff
+debugbg 	= 0
+
+
+
+
+[BG fondo_estrellas]
+type = normal
+spriteno = 2,3
+start = 0,-78
+delta = .5,1.5
+mask = 1
+
+
+
+[BG nubes2]
+type = normal
+spriteno = 3,2
+start = 0,-138;
+delta = .6,1.6
+mask = 1
+tile = 1,0
+velocity = .1, 0
+
+
+[BG luna]
+type = normal
+spriteno = 2, 1
+start = 0,-138;
+delta = .7,1.7
+mask = 1
+
+
+
+
+[BG agua]
+type  = parallax
+actionno =1
+start =0,255
+mask = 1
+delta =1.09,2
+width = 2128,5628
+yscalestart = 150
+scalestart=1.3,1.3
+yscaledelta=.3
+
+
+[BG roca_centro]
+type= normal
+spriteno = 0,3
+start = -80,-130
+delta =1.1,1.79
+mask= 1
+scalestart=1.3,1.3
+
+;
+
+;
+[BG rocas_estatuas]
+type =normal
+spriteno =0,0
+start = -80,-130
+mask =1
+delta =1.1,1.79
+scalestart=1.3,1.3
+
+
+
+
+[BG fog1]
+type =normal
+spriteno =6,1
+start =0, 132
+delta = 1.1,1.79
+mask = 1
+trans = add
+velocity = .3,0
+tile = 1,0
+tilespacing = 0,0
+scalestart = 2,2
+
+
+
+[BG cascada]
+type=anim
+actionno 	= 2
+start = -87,-155
+delta =1.1,1.79
+scalestart=1.27,1.3
+
+;
+[BG cascada_caida]
+type= anim
+actionno = 3
+start = -90,-132
+delta =1.1,1.79
+scalestart=.86,1.1
+
+
+;
+;
+;
+[BG nubes3]
+type = normal
+spriteno = 3,1
+start = 0,-138
+delta= 1.2,1.9
+mask = 1
+tile = 1,0
+velocity = .3, 0
+layerno=1
+;
+
+
+
+
+[BG rocas_L]
+type= normal
+spriteno = 0,1
+start = -160,-140
+delta =1.75,1.92
+mask= 1
+scalestart=1.3,1.3
+
+;
+;
+[BG rocas_R]
+type= normal
+spriteno = 0,2
+start = 410,-140
+delta =1.75,1.92
+mask= 1
+scalestart=1.3,1.3
+
+
+[BG cascadaBig]
+type=anim
+actionno 	= 2
+start = 0,430
+delta =2.9,2.2
+tile=1,0
+tilespacing=185,0
+mask=1
+layerno= 1
+
+[BG niebla gronud]
+type  = normal
+spriteno = 6,0
+start = 0,182
+delta = 2.1,2
+mask = 1
+trans = add
+velocity = 1,0
+tile = 1,0
+tilespacing = 0,0
+scalestart = 2,2.2
+layerno = 1
+;
+[BG Tint Sub]
+type = normal
+spriteno 	= 2, 2
+start = 0,0
+delta= 0, 0
+mask= 1
+trans= sub
+layerno= 1
+tile=1,1
+
+;
+;
+;
+;; agua
+[Begin Action 1]
+1,0, 0,0, 6
+1,1, 0,0, 6
+1,2, 0,0, 6
+1,3, 0,0, 6
+1,4, 0,0, 6
+1,5, 0,0, 6
+1,6, 0,0, 6
+1,7, 0,0, 6
+1,8, 0,0, 6
+1,9, 0,0, 6
+1,10, 0,0, 6
+1,11, 0,0, 6
+1,12, 0,0, 6
+1,13, 0,0, 6
+1,14, 0,0, 6
+1,15, 0,0, 6
+1,16, 0,0, 6
+1,17, 0,0, 6
+1,18, 0,0, 6
+1,19, 0,0, 6
+;
+; cascada
+[Begin Action 2]
+4,0, 0,0, 4, , A
+4,1, 0,0, 4, , A
+4,2, 0,0, 4, , A
+4,3, 0,0, 4, , A
+4,4, 0,0, 4, , A
+4,5, 0,0, 4, , A
+4,6, 0,0, 4, , A
+4,7, 0,0, 4, , A
+4,8, 0,0, 4, , A
+4,9, 0,0, 4, , A
+4,10, 0,0, 4, , A
+4,11, 0,0, 4, , A
+4,12, 0,0, 4, , A
+4,13, 0,0, 4, , A
+4,14, 0,0, 4, , A
+4,15, 0,0, 4, , A
+4,16, 0,0, 4, , A
+4,17, 0,0, 4, , A
+4,18, 0,0, 4, , A
+4,19, 0,0, 4, , A
+4,20, 0,0, 4, , A
+4,21, 0,0, 4, , A
+4,22, 0,0, 4, , A
+4,23, 0,0, 4, , A
+4,24, 0,0, 4, , A
+4,25, 0,0, 4, , A
+4,26, 0,0, 4, , A
+4,27, 0,0, 4, , A
+4,28, 0,0, 4, , A
+4,29, 0,0, 4, , A
+4,30, 0,0, 4, , A
+4,31, 0,0, 4, , A
+4,32, 0,0, 4, , A
+4,33, 0,0, 4, , A
+4,34, 0,0, 4, , A
+4,35, 0,0, 4, , A
+4,36, 0,0, 4, , A
+4,37, 0,0, 4, , A
+4,38, 0,0, 4, , A
+4,39, 0,0, 4, , A
+4,40, 0,0, 4, , A
+4,41, 0,0, 4, , A
+4,42, 0,0, 4, , A
+4,43, 0,0, 4, , A
+4,44, 0,0, 4, , A
+4,45, 0,0, 4, , A
+4,46, 0,0, 4, , A
+4,47, 0,0, 4, , A
+4,48, 0,0, 4, , A
+4,49, 0,0, 4, , A
+4,50, 0,0, 4, , A
+4,51, 0,0, 4, , A
+4,52, 0,0, 4, , A
+4,53, 0,0, 4, , A
+4,54, 0,0, 4, , A
+4,55, 0,0, 4, , A
+4,56, 0,0, 4, , A
+4,57, 0,0, 4, , A
+4,58, 0,0, 4, , A
+4,59, 0,0, 4, , A
+4,60, 0,0, 4, , A
+4,61, 0,0, 4, , A
+4,62, 0,0, 4, , A
+4,63, 0,0, 4, , A
+4,64, 0,0, 4, , A
+4,65, 0,0, 4, , A
+4,66, 0,0, 4, , A
+4,67, 0,0, 4, , A
+4,68, 0,0, 4, , A
+4,69, 0,0, 4, , A
+
+; cascada caida
+[Begin Action 3]
+5,0, 0,0, 2, , A
+5,1, 0,0, 2, , A
+5,2, 0,0, 2, , A
+5,3, 0,0, 2, , A
+5,4, 0,0, 2, , A
+5,5, 0,0, 2, , A
+5,6, 0,0, 2, , A
+5,7, 0,0, 2, , A
+5,8, 0,0, 2, , A
+5,9, 0,0, 2, , A
+5,10, 0,0, 2, , A
+5,11, 0,0, 2, , A
+5,12, 0,0, 2, , A
+5,13, 0,0, 2, , A
+5,14, 0,0, 2, , A
+5,15, 0,0, 2, , A
+5,16, 0,0, 2, , A
+5,17, 0,0, 2, , A
+5,18, 0,0, 2, , A
+5,19, 0,0, 2, , A
+5,20, 0,0, 2, , A
+5,21, 0,0, 2, , A
+5,22, 0,0, 2, , A
+5,23, 0,0, 2, , A
+5,24, 0,0, 2, , A
+5,25, 0,0, 2, , A
+5,26, 0,0, 2, , A
+5,27, 0,0, 2, , A
+5,28, 0,0, 2, , A
+5,29, 0,0, 2, , A
+5,30, 0,0, 2, , A
+5,31, 0,0, 2, , A
+5,32, 0,0, 2, , A
+5,33, 0,0, 2, , A
+5,34, 0,0, 2, , A
+5,35, 0,0, 2, , A
+5,36, 0,0, 2, , A
+5,37, 0,0, 2, , A
+5,38, 0,0, 2, , A
+5,39, 0,0, 2, , A
+5,40, 0,0, 2, , A
+5,41, 0,0, 2, , A
+5,42, 0,0, 2, , A
+5,43, 0,0, 2, , A
+5,44, 0,0, 2, , A
+5,45, 0,0, 2, , A
+5,46, 0,0, 2, , A
+5,47, 0,0, 2, , A
+5,48, 0,0, 2, , A
+5,49, 0,0, 2, , A
+5,50, 0,0, 2, , A
+5,51, 0,0, 2, , A
+5,52, 0,0, 2, , A
+5,53, 0,0, 2, , A
+5,54, 0,0, 2, , A
+5,55, 0,0, 2, , A
+5,56, 0,0, 2, , A
+5,57, 0,0, 2, , A
+5,58, 0,0, 2, , A
+5,59, 0,0, 2, , A
+5,60, 0,0, 2, , A
+5,61, 0,0, 2, , A
+5,62, 0,0, 2, , A
+5,63, 0,0, 2, , A
+5,64, 0,0, 2, , A
+5,65, 0,0, 2, , A
+5,66, 0,0, 2, , A
+5,67, 0,0, 2, , A
+5,68, 0,0, 2, , A
+5,69, 0,0, 2, , A
+5,70, 0,0, 2, , A
+5,71, 0,0, 2, , A
+5,72, 0,0, 2, , A
+5,73, 0,0, 2, , A
+5,74, 0,0, 2, , A
+;
+;

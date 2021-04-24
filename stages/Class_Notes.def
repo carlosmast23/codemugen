@@ -1,0 +1,10608 @@
+[Info]
+name = "Class Notes"           
+author = "Alice"
+
+[Camera]
+boundleft = -550
+boundright = 550
+boundhigh = -300
+boundlow = 0
+verticalfollow = .7
+floortension = 100
+tension = 200
+overdrawhigh = 100
+overdrawlow = -00
+cuthigh = 0
+cutlow = 0
+zoomin = 1
+zoomout = .75;.7
+tensionhigh = 240
+tensionlow = 60
+
+[PlayerInfo]
+;--- Player 1 ---
+ ;Player 1 starting coordinates.
+p1startx = -280         ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+
+;--- Player 2 ---
+p2startx = 280
+p2starty = 0
+p2facing = -1
+
+;--- Player 3 ---
+p3startx = -400
+p3starty = 0
+p3facing = 1
+
+;--- Player 4 ---
+p4startx = 400
+p4starty = 0
+p4facing = -1
+
+;--- Common ---
+leftbound  = -4000 ;Left bound (x-movement)
+rightbound =  4000 ;Right bound
+
+[Bound]
+screenleft = 15   ;Dist from left of screen that player can move to
+screenright = 15   ;Right edge
+
+[StageInfo]
+zoffset = 660
+autoturn = 1
+resetBG = 0
+localcoord = 960,720;640,480
+xscale = 1
+yscale = 1
+
+[Shadow]
+intensity =96
+color = 0,0,0
+yscale = .2
+fade.range = 0,0
+
+[Reflection]
+intensity = 0
+
+[Music]
+bgmusic =
+bgmvolume = 0
+
+[BGdef]
+spr = stages/Class_Notes.sff
+debugbg = 0
+
+;-------------------------start
+;--------------------------black
+[BG 1]
+type  = normal
+spriteno = 21, 0
+start = 0, -50
+delta = 0, 0
+mask = 0
+tile = 1,1
+tilespacing = 0,0
+trans = none
+;-----------------notes
+
+[BG fill]
+type  = normal
+spriteno = 1, 3
+start = 0, 310
+delta =  .2, .2
+mask = 1
+ID=2
+
+[BG 1]
+type  = normal
+spriteno = 1, 3
+start = 0, 410
+delta =  .2, .2
+mask = 1
+ID=2
+
+
+;-----------------fog
+[BG 1]
+type  = normal
+spriteno = 5, 0
+start = 0, 530
+delta =  .2, .2
+mask = 1
+velocity = -.1
+ID=2
+tile = 1,0
+tilespacing =0,0
+
+;-----------------floor
+
+[BG 1]
+type=normal
+spriteno=11,0
+start=0,0
+delta=0.2,0.2
+mask=1
+ID=3
+
+[BG 2]
+type=normal
+spriteno=11,1
+start=0,1
+delta=0.203488372,0.203488372
+mask=1
+ID=3
+
+[BG 3]
+type=normal
+spriteno=11,2
+start=0,2
+delta=0.206976744,0.206976744
+mask=1
+ID=3
+
+[BG 4]
+type=normal
+spriteno=11,3
+start=0,3
+delta=0.210465116,0.210465116
+mask=1
+ID=3
+
+[BG 5]
+type=normal
+spriteno=11,4
+start=0,4
+delta=0.213953488,0.213953488
+mask=1
+ID=3
+
+[BG 6]
+type=normal
+spriteno=11,5
+start=0,5
+delta=0.21744186,0.21744186
+mask=1
+ID=3
+
+[BG 7]
+type=normal
+spriteno=11,6
+start=0,6
+delta=0.220930233,0.220930233
+mask=1
+ID=3
+
+[BG 8]
+type=normal
+spriteno=11,7
+start=0,7
+delta=0.224418605,0.224418605
+mask=1
+ID=3
+
+[BG 9]
+type=normal
+spriteno=11,8
+start=0,8
+delta=0.227906977,0.227906977
+mask=1
+ID=3
+
+[BG 10]
+type=normal
+spriteno=11,9
+start=0,9
+delta=0.231395349,0.231395349
+mask=1
+ID=3
+
+[BG 11]
+type=normal
+spriteno=11,10
+start=0,10
+delta=0.234883721,0.234883721
+mask=1
+ID=3
+
+[BG 12]
+type=normal
+spriteno=11,11
+start=0,11
+delta=0.238372093,0.238372093
+mask=1
+ID=3
+
+[BG 13]
+type=normal
+spriteno=11,12
+start=0,12
+delta=0.241860465,0.241860465
+mask=1
+ID=3
+
+[BG 14]
+type=normal
+spriteno=11,13
+start=0,13
+delta=0.245348837,0.245348837
+mask=1
+ID=3
+
+[BG 15]
+type=normal
+spriteno=11,14
+start=0,14
+delta=0.248837209,0.248837209
+mask=1
+ID=3
+
+[BG 16]
+type=normal
+spriteno=11,15
+start=0,15
+delta=0.252325581,0.252325581
+mask=1
+ID=3
+
+[BG 17]
+type=normal
+spriteno=11,16
+start=0,16
+delta=0.255813953,0.255813953
+mask=1
+ID=3
+
+[BG 18]
+type=normal
+spriteno=11,17
+start=0,17
+delta=0.259302326,0.259302326
+mask=1
+ID=3
+
+[BG 19]
+type=normal
+spriteno=11,18
+start=0,18
+delta=0.262790698,0.262790698
+mask=1
+ID=3
+
+[BG 20]
+type=normal
+spriteno=11,19
+start=0,19
+delta=0.26627907,0.26627907
+mask=1
+ID=3
+
+[BG 21]
+type=normal
+spriteno=11,20
+start=0,20
+delta=0.269767442,0.269767442
+mask=1
+ID=3
+
+[BG 22]
+type=normal
+spriteno=11,21
+start=0,21
+delta=0.273255814,0.273255814
+mask=1
+ID=3
+
+[BG 23]
+type=normal
+spriteno=11,22
+start=0,22
+delta=0.276744186,0.276744186
+mask=1
+ID=3
+
+[BG 24]
+type=normal
+spriteno=11,23
+start=0,23
+delta=0.280232558,0.280232558
+mask=1
+ID=3
+
+[BG 25]
+type=normal
+spriteno=11,24
+start=0,24
+delta=0.28372093,0.28372093
+mask=1
+ID=3
+
+[BG 26]
+type=normal
+spriteno=11,25
+start=0,25
+delta=0.287209302,0.287209302
+mask=1
+ID=3
+
+[BG 27]
+type=normal
+spriteno=11,26
+start=0,26
+delta=0.290697674,0.290697674
+mask=1
+ID=3
+
+[BG 28]
+type=normal
+spriteno=11,27
+start=0,27
+delta=0.294186047,0.294186047
+mask=1
+ID=3
+
+[BG 29]
+type=normal
+spriteno=11,28
+start=0,28
+delta=0.297674419,0.297674419
+mask=1
+ID=3
+
+[BG 30]
+type=normal
+spriteno=11,29
+start=0,29
+delta=0.301162791,0.301162791
+mask=1
+ID=3
+
+[BG 31]
+type=normal
+spriteno=11,30
+start=0,30
+delta=0.304651163,0.304651163
+mask=1
+ID=3
+
+[BG 32]
+type=normal
+spriteno=11,31
+start=0,31
+delta=0.308139535,0.308139535
+mask=1
+ID=3
+
+[BG 33]
+type=normal
+spriteno=11,32
+start=0,32
+delta=0.311627907,0.311627907
+mask=1
+ID=3
+
+[BG 34]
+type=normal
+spriteno=11,33
+start=0,33
+delta=0.315116279,0.315116279
+mask=1
+ID=3
+
+[BG 35]
+type=normal
+spriteno=11,34
+start=0,34
+delta=0.318604651,0.318604651
+mask=1
+ID=3
+
+[BG 36]
+type=normal
+spriteno=11,35
+start=0,35
+delta=0.322093023,0.322093023
+mask=1
+ID=3
+
+[BG 37]
+type=normal
+spriteno=11,36
+start=0,36
+delta=0.325581395,0.325581395
+mask=1
+ID=3
+
+[BG 38]
+type=normal
+spriteno=11,37
+start=0,37
+delta=0.329069767,0.329069767
+mask=1
+ID=3
+
+[BG 39]
+type=normal
+spriteno=11,38
+start=0,38
+delta=0.33255814,0.33255814
+mask=1
+ID=3
+
+[BG 40]
+type=normal
+spriteno=11,39
+start=0,39
+delta=0.336046512,0.336046512
+mask=1
+ID=3
+
+[BG 41]
+type=normal
+spriteno=11,40
+start=0,40
+delta=0.339534884,0.339534884
+mask=1
+ID=3
+
+[BG 42]
+type=normal
+spriteno=11,41
+start=0,41
+delta=0.343023256,0.343023256
+mask=1
+ID=3
+
+[BG 43]
+type=normal
+spriteno=11,42
+start=0,42
+delta=0.346511628,0.346511628
+mask=1
+ID=3
+
+[BG 44]
+type=normal
+spriteno=11,43
+start=0,43
+delta=0.35,0.35
+mask=1
+ID=3
+
+[BG 45]
+type=normal
+spriteno=11,44
+start=0,44
+delta=0.353488372,0.353488372
+mask=1
+ID=3
+
+[BG 46]
+type=normal
+spriteno=11,45
+start=0,45
+delta=0.356976744,0.356976744
+mask=1
+ID=3
+
+[BG 47]
+type=normal
+spriteno=11,46
+start=0,46
+delta=0.360465116,0.360465116
+mask=1
+ID=3
+
+[BG 48]
+type=normal
+spriteno=11,47
+start=0,47
+delta=0.363953488,0.363953488
+mask=1
+ID=3
+
+[BG 49]
+type=normal
+spriteno=11,48
+start=0,48
+delta=0.36744186,0.36744186
+mask=1
+ID=3
+
+[BG 50]
+type=normal
+spriteno=11,49
+start=0,49
+delta=0.370930233,0.370930233
+mask=1
+ID=3
+
+[BG 51]
+type=normal
+spriteno=11,50
+start=0,50
+delta=0.374418605,0.374418605
+mask=1
+ID=3
+
+[BG 52]
+type=normal
+spriteno=11,51
+start=0,51
+delta=0.377906977,0.377906977
+mask=1
+ID=3
+
+[BG 53]
+type=normal
+spriteno=11,52
+start=0,52
+delta=0.381395349,0.381395349
+mask=1
+ID=3
+
+[BG 54]
+type=normal
+spriteno=11,53
+start=0,53
+delta=0.384883721,0.384883721
+mask=1
+ID=3
+
+[BG 55]
+type=normal
+spriteno=11,54
+start=0,54
+delta=0.388372093,0.388372093
+mask=1
+ID=3
+
+[BG 56]
+type=normal
+spriteno=11,55
+start=0,55
+delta=0.391860465,0.391860465
+mask=1
+ID=3
+
+[BG 57]
+type=normal
+spriteno=11,56
+start=0,56
+delta=0.395348837,0.395348837
+mask=1
+ID=3
+
+[BG 58]
+type=normal
+spriteno=11,57
+start=0,57
+delta=0.398837209,0.398837209
+mask=1
+ID=3
+
+[BG 59]
+type=normal
+spriteno=11,58
+start=0,58
+delta=0.402325581,0.402325581
+mask=1
+ID=3
+
+[BG 60]
+type=normal
+spriteno=11,59
+start=0,59
+delta=0.405813953,0.405813953
+mask=1
+ID=3
+
+[BG 61]
+type=normal
+spriteno=11,60
+start=0,60
+delta=0.409302326,0.409302326
+mask=1
+ID=3
+
+[BG 62]
+type=normal
+spriteno=11,61
+start=0,61
+delta=0.412790698,0.412790698
+mask=1
+ID=3
+
+[BG 63]
+type=normal
+spriteno=11,62
+start=0,62
+delta=0.41627907,0.41627907
+mask=1
+ID=3
+
+[BG 64]
+type=normal
+spriteno=11,63
+start=0,63
+delta=0.419767442,0.419767442
+mask=1
+ID=3
+
+[BG 65]
+type=normal
+spriteno=11,64
+start=0,64
+delta=0.423255814,0.423255814
+mask=1
+ID=3
+
+[BG 66]
+type=normal
+spriteno=11,65
+start=0,65
+delta=0.426744186,0.426744186
+mask=1
+ID=3
+
+[BG 67]
+type=normal
+spriteno=11,66
+start=0,66
+delta=0.430232558,0.430232558
+mask=1
+ID=3
+
+[BG 68]
+type=normal
+spriteno=11,67
+start=0,67
+delta=0.43372093,0.43372093
+mask=1
+ID=3
+
+[BG 69]
+type=normal
+spriteno=11,68
+start=0,68
+delta=0.437209302,0.437209302
+mask=1
+ID=3
+
+[BG 70]
+type=normal
+spriteno=11,69
+start=0,69
+delta=0.440697674,0.440697674
+mask=1
+ID=3
+
+[BG 71]
+type=normal
+spriteno=11,70
+start=0,70
+delta=0.444186047,0.444186047
+mask=1
+ID=3
+
+[BG 72]
+type=normal
+spriteno=11,71
+start=0,71
+delta=0.447674419,0.447674419
+mask=1
+ID=3
+
+[BG 73]
+type=normal
+spriteno=11,72
+start=0,72
+delta=0.451162791,0.451162791
+mask=1
+ID=3
+
+[BG 74]
+type=normal
+spriteno=11,73
+start=0,73
+delta=0.454651163,0.454651163
+mask=1
+ID=3
+
+[BG 75]
+type=normal
+spriteno=11,74
+start=0,74
+delta=0.458139535,0.458139535
+mask=1
+ID=3
+
+[BG 76]
+type=normal
+spriteno=11,75
+start=0,75
+delta=0.461627907,0.461627907
+mask=1
+ID=3
+
+[BG 77]
+type=normal
+spriteno=11,76
+start=0,76
+delta=0.465116279,0.465116279
+mask=1
+ID=3
+
+[BG 78]
+type=normal
+spriteno=11,77
+start=0,77
+delta=0.468604651,0.468604651
+mask=1
+ID=3
+
+[BG 79]
+type=normal
+spriteno=11,78
+start=0,78
+delta=0.472093023,0.472093023
+mask=1
+ID=3
+
+[BG 80]
+type=normal
+spriteno=11,79
+start=0,79
+delta=0.475581395,0.475581395
+mask=1
+ID=3
+
+[BG 81]
+type=normal
+spriteno=11,80
+start=0,80
+delta=0.479069767,0.479069767
+mask=1
+ID=3
+
+[BG 82]
+type=normal
+spriteno=11,81
+start=0,81
+delta=0.48255814,0.48255814
+mask=1
+ID=3
+
+[BG 83]
+type=normal
+spriteno=11,82
+start=0,82
+delta=0.486046512,0.486046512
+mask=1
+ID=3
+
+[BG 84]
+type=normal
+spriteno=11,83
+start=0,83
+delta=0.489534884,0.489534884
+mask=1
+ID=3
+
+[BG 85]
+type=normal
+spriteno=11,84
+start=0,84
+delta=0.493023256,0.493023256
+mask=1
+ID=3
+
+[BG 86]
+type=normal
+spriteno=11,85
+start=0,85
+delta=0.496511628,0.496511628
+mask=1
+ID=3
+
+[BG 87]
+type=normal
+spriteno=11,86
+start=0,86
+delta=0.5,0.5
+mask=1
+ID=3
+
+[BG 88]
+type=normal
+spriteno=11,87
+start=0,87
+delta=0.503488372,0.503488372
+mask=1
+ID=3
+
+[BG 89]
+type=normal
+spriteno=11,88
+start=0,88
+delta=0.506976744,0.506976744
+mask=1
+ID=3
+
+[BG 90]
+type=normal
+spriteno=11,89
+start=0,89
+delta=0.510465116,0.510465116
+mask=1
+ID=3
+
+[BG 91]
+type=normal
+spriteno=11,90
+start=0,90
+delta=0.513953488,0.513953488
+mask=1
+ID=3
+
+[BG 92]
+type=normal
+spriteno=11,91
+start=0,91
+delta=0.51744186,0.51744186
+mask=1
+ID=3
+
+[BG 93]
+type=normal
+spriteno=11,92
+start=0,92
+delta=0.520930233,0.520930233
+mask=1
+ID=3
+
+[BG 94]
+type=normal
+spriteno=11,93
+start=0,93
+delta=0.524418605,0.524418605
+mask=1
+ID=3
+
+[BG 95]
+type=normal
+spriteno=11,94
+start=0,94
+delta=0.527906977,0.527906977
+mask=1
+ID=3
+
+[BG 96]
+type=normal
+spriteno=11,95
+start=0,95
+delta=0.531395349,0.531395349
+mask=1
+ID=3
+
+[BG 97]
+type=normal
+spriteno=11,96
+start=0,96
+delta=0.534883721,0.534883721
+mask=1
+ID=3
+
+[BG 98]
+type=normal
+spriteno=11,97
+start=0,97
+delta=0.538372093,0.538372093
+mask=1
+ID=3
+
+[BG 99]
+type=normal
+spriteno=11,98
+start=0,98
+delta=0.541860465,0.541860465
+mask=1
+ID=3
+
+[BG 100]
+type=normal
+spriteno=11,99
+start=0,99
+delta=0.545348837,0.545348837
+mask=1
+ID=3
+
+[BG 101]
+type=normal
+spriteno=11,100
+start=0,100
+delta=0.548837209,0.548837209
+mask=1
+ID=3
+
+[BG 102]
+type=normal
+spriteno=11,101
+start=0,101
+delta=0.552325581,0.552325581
+mask=1
+ID=3
+
+[BG 103]
+type=normal
+spriteno=11,102
+start=0,102
+delta=0.555813953,0.555813953
+mask=1
+ID=3
+
+[BG 104]
+type=normal
+spriteno=11,103
+start=0,103
+delta=0.559302326,0.559302326
+mask=1
+ID=3
+
+[BG 105]
+type=normal
+spriteno=11,104
+start=0,104
+delta=0.562790698,0.562790698
+mask=1
+ID=3
+
+[BG 106]
+type=normal
+spriteno=11,105
+start=0,105
+delta=0.56627907,0.56627907
+mask=1
+ID=3
+
+[BG 107]
+type=normal
+spriteno=11,106
+start=0,106
+delta=0.569767442,0.569767442
+mask=1
+ID=3
+
+[BG 108]
+type=normal
+spriteno=11,107
+start=0,107
+delta=0.573255814,0.573255814
+mask=1
+ID=3
+
+[BG 109]
+type=normal
+spriteno=11,108
+start=0,108
+delta=0.576744186,0.576744186
+mask=1
+ID=3
+
+[BG 110]
+type=normal
+spriteno=11,109
+start=0,109
+delta=0.580232558,0.580232558
+mask=1
+ID=3
+
+[BG 111]
+type=normal
+spriteno=11,110
+start=0,110
+delta=0.58372093,0.58372093
+mask=1
+ID=3
+
+[BG 112]
+type=normal
+spriteno=11,111
+start=0,111
+delta=0.587209302,0.587209302
+mask=1
+ID=3
+
+[BG 113]
+type=normal
+spriteno=11,112
+start=0,112
+delta=0.590697674,0.590697674
+mask=1
+ID=3
+
+[BG 114]
+type=normal
+spriteno=11,113
+start=0,113
+delta=0.594186047,0.594186047
+mask=1
+ID=3
+
+[BG 115]
+type=normal
+spriteno=11,114
+start=0,114
+delta=0.597674419,0.597674419
+mask=1
+ID=3
+
+[BG 116]
+type=normal
+spriteno=11,115
+start=0,115
+delta=0.601162791,0.601162791
+mask=1
+ID=3
+
+[BG 117]
+type=normal
+spriteno=11,116
+start=0,116
+delta=0.604651163,0.604651163
+mask=1
+ID=3
+
+[BG 118]
+type=normal
+spriteno=11,117
+start=0,117
+delta=0.608139535,0.608139535
+mask=1
+ID=3
+
+[BG 119]
+type=normal
+spriteno=11,118
+start=0,118
+delta=0.611627907,0.611627907
+mask=1
+ID=3
+
+[BG 120]
+type=normal
+spriteno=11,119
+start=0,119
+delta=0.615116279,0.615116279
+mask=1
+ID=3
+
+[BG 121]
+type=normal
+spriteno=11,120
+start=0,120
+delta=0.618604651,0.618604651
+mask=1
+ID=3
+
+[BG 122]
+type=normal
+spriteno=11,121
+start=0,121
+delta=0.622093023,0.622093023
+mask=1
+ID=3
+
+[BG 123]
+type=normal
+spriteno=11,122
+start=0,122
+delta=0.625581395,0.625581395
+mask=1
+ID=3
+
+[BG 124]
+type=normal
+spriteno=11,123
+start=0,123
+delta=0.629069767,0.629069767
+mask=1
+ID=3
+
+[BG 125]
+type=normal
+spriteno=11,124
+start=0,124
+delta=0.63255814,0.63255814
+mask=1
+ID=3
+
+[BG 126]
+type=normal
+spriteno=11,125
+start=0,125
+delta=0.636046512,0.636046512
+mask=1
+ID=3
+
+[BG 127]
+type=normal
+spriteno=11,126
+start=0,126
+delta=0.639534884,0.639534884
+mask=1
+ID=3
+
+[BG 128]
+type=normal
+spriteno=11,127
+start=0,127
+delta=0.643023256,0.643023256
+mask=1
+ID=3
+
+[BG 129]
+type=normal
+spriteno=11,128
+start=0,128
+delta=0.646511628,0.646511628
+mask=1
+ID=3
+
+[BG 130]
+type=normal
+spriteno=11,129
+start=0,129
+delta=0.65,0.65
+mask=1
+ID=3
+
+[BG 131]
+type=normal
+spriteno=11,130
+start=0,130
+delta=0.653488372,0.653488372
+mask=1
+ID=3
+
+[BG 132]
+type=normal
+spriteno=11,131
+start=0,131
+delta=0.656976744,0.656976744
+mask=1
+ID=3
+
+[BG 133]
+type=normal
+spriteno=11,132
+start=0,132
+delta=0.660465116,0.660465116
+mask=1
+ID=3
+
+[BG 134]
+type=normal
+spriteno=11,133
+start=0,133
+delta=0.663953488,0.663953488
+mask=1
+ID=3
+
+[BG 135]
+type=normal
+spriteno=11,134
+start=0,134
+delta=0.66744186,0.66744186
+mask=1
+ID=3
+
+[BG 136]
+type=normal
+spriteno=11,135
+start=0,135
+delta=0.670930233,0.670930233
+mask=1
+ID=3
+
+[BG 137]
+type=normal
+spriteno=11,136
+start=0,136
+delta=0.674418605,0.674418605
+mask=1
+ID=3
+
+[BG 138]
+type=normal
+spriteno=11,137
+start=0,137
+delta=0.677906977,0.677906977
+mask=1
+ID=3
+
+[BG 139]
+type=normal
+spriteno=11,138
+start=0,138
+delta=0.681395349,0.681395349
+mask=1
+ID=3
+
+[BG 140]
+type=normal
+spriteno=11,139
+start=0,139
+delta=0.684883721,0.684883721
+mask=1
+ID=3
+
+[BG 141]
+type=normal
+spriteno=11,140
+start=0,140
+delta=0.688372093,0.688372093
+mask=1
+ID=3
+
+[BG 142]
+type=normal
+spriteno=11,141
+start=0,141
+delta=0.691860465,0.691860465
+mask=1
+ID=3
+
+[BG 143]
+type=normal
+spriteno=11,142
+start=0,142
+delta=0.695348837,0.695348837
+mask=1
+ID=3
+
+[BG 144]
+type=normal
+spriteno=11,143
+start=0,143
+delta=0.698837209,0.698837209
+mask=1
+ID=3
+
+[BG 145]
+type=normal
+spriteno=11,144
+start=0,144
+delta=0.702325581,0.702325581
+mask=1
+ID=3
+
+[BG 146]
+type=normal
+spriteno=11,145
+start=0,145
+delta=0.705813953,0.705813953
+mask=1
+ID=3
+
+[BG 147]
+type=normal
+spriteno=11,146
+start=0,146
+delta=0.709302326,0.709302326
+mask=1
+ID=3
+
+[BG 148]
+type=normal
+spriteno=11,147
+start=0,147
+delta=0.712790698,0.712790698
+mask=1
+ID=3
+
+[BG 149]
+type=normal
+spriteno=11,148
+start=0,148
+delta=0.71627907,0.71627907
+mask=1
+ID=3
+
+[BG 150]
+type=normal
+spriteno=11,149
+start=0,149
+delta=0.719767442,0.719767442
+mask=1
+ID=3
+
+[BG 151]
+type=normal
+spriteno=11,150
+start=0,150
+delta=0.723255814,0.723255814
+mask=1
+ID=3
+
+[BG 152]
+type=normal
+spriteno=11,151
+start=0,151
+delta=0.726744186,0.726744186
+mask=1
+ID=3
+
+[BG 153]
+type=normal
+spriteno=11,152
+start=0,152
+delta=0.730232558,0.730232558
+mask=1
+ID=3
+
+[BG 154]
+type=normal
+spriteno=11,153
+start=0,153
+delta=0.73372093,0.73372093
+mask=1
+ID=3
+
+[BG 155]
+type=normal
+spriteno=11,154
+start=0,154
+delta=0.737209302,0.737209302
+mask=1
+ID=3
+
+[BG 156]
+type=normal
+spriteno=11,155
+start=0,155
+delta=0.740697674,0.740697674
+mask=1
+ID=3
+
+[BG 157]
+type=normal
+spriteno=11,156
+start=0,156
+delta=0.744186047,0.744186047
+mask=1
+ID=3
+
+[BG 158]
+type=normal
+spriteno=11,157
+start=0,157
+delta=0.747674419,0.747674419
+mask=1
+ID=3
+
+[BG 159]
+type=normal
+spriteno=11,158
+start=0,158
+delta=0.751162791,0.751162791
+mask=1
+ID=3
+
+[BG 160]
+type=normal
+spriteno=11,159
+start=0,159
+delta=0.754651163,0.754651163
+mask=1
+ID=3
+
+[BG 161]
+type=normal
+spriteno=11,160
+start=0,160
+delta=0.758139535,0.758139535
+mask=1
+ID=3
+
+[BG 162]
+type=normal
+spriteno=11,161
+start=0,161
+delta=0.761627907,0.761627907
+mask=1
+ID=3
+
+[BG 163]
+type=normal
+spriteno=11,162
+start=0,162
+delta=0.765116279,0.765116279
+mask=1
+ID=3
+
+[BG 164]
+type=normal
+spriteno=11,163
+start=0,163
+delta=0.768604651,0.768604651
+mask=1
+ID=3
+
+[BG 165]
+type=normal
+spriteno=11,164
+start=0,164
+delta=0.772093023,0.772093023
+mask=1
+ID=3
+
+[BG 166]
+type=normal
+spriteno=11,165
+start=0,165
+delta=0.775581395,0.775581395
+mask=1
+ID=3
+
+[BG 167]
+type=normal
+spriteno=11,166
+start=0,166
+delta=0.779069767,0.779069767
+mask=1
+ID=3
+
+[BG 168]
+type=normal
+spriteno=11,167
+start=0,167
+delta=0.78255814,0.78255814
+mask=1
+ID=3
+
+[BG 169]
+type=normal
+spriteno=11,168
+start=0,168
+delta=0.786046512,0.786046512
+mask=1
+ID=3
+
+[BG 170]
+type=normal
+spriteno=11,169
+start=0,169
+delta=0.789534884,0.789534884
+mask=1
+ID=3
+
+[BG 171]
+type=normal
+spriteno=11,170
+start=0,170
+delta=0.793023256,0.793023256
+mask=1
+ID=3
+
+[BG 172]
+type=normal
+spriteno=11,171
+start=0,171
+delta=0.796511628,0.796511628
+mask=1
+ID=3
+
+[BG 173]
+type=normal
+spriteno=11,172
+start=0,172
+delta=0.8,0.8
+mask=1
+ID=3
+
+[BG 174]
+type=normal
+spriteno=11,173
+start=0,173
+delta=0.803488372,0.803488372
+mask=1
+ID=3
+
+[BG 175]
+type=normal
+spriteno=11,174
+start=0,174
+delta=0.806976744,0.806976744
+mask=1
+ID=3
+
+[BG 176]
+type=normal
+spriteno=11,175
+start=0,175
+delta=0.810465116,0.810465116
+mask=1
+ID=3
+
+[BG 177]
+type=normal
+spriteno=11,176
+start=0,176
+delta=0.813953488,0.813953488
+mask=1
+ID=3
+
+[BG 178]
+type=normal
+spriteno=11,177
+start=0,177
+delta=0.81744186,0.81744186
+mask=1
+ID=3
+
+[BG 179]
+type=normal
+spriteno=11,178
+start=0,178
+delta=0.820930233,0.820930233
+mask=1
+ID=3
+
+[BG 180]
+type=normal
+spriteno=11,179
+start=0,179
+delta=0.824418605,0.824418605
+mask=1
+ID=3
+
+[BG 181]
+type=normal
+spriteno=11,180
+start=0,180
+delta=0.827906977,0.827906977
+mask=1
+ID=3
+
+[BG 182]
+type=normal
+spriteno=11,181
+start=0,181
+delta=0.831395349,0.831395349
+mask=1
+ID=3
+
+[BG 183]
+type=normal
+spriteno=11,182
+start=0,182
+delta=0.834883721,0.834883721
+mask=1
+ID=3
+
+[BG 184]
+type=normal
+spriteno=11,183
+start=0,183
+delta=0.838372093,0.838372093
+mask=1
+ID=3
+
+[BG 185]
+type=normal
+spriteno=11,184
+start=0,184
+delta=0.841860465,0.841860465
+mask=1
+ID=3
+
+[BG 186]
+type=normal
+spriteno=11,185
+start=0,185
+delta=0.845348837,0.845348837
+mask=1
+ID=3
+
+[BG 187]
+type=normal
+spriteno=11,186
+start=0,186
+delta=0.848837209,0.848837209
+mask=1
+ID=3
+
+[BG 188]
+type=normal
+spriteno=11,187
+start=0,187
+delta=0.852325581,0.852325581
+mask=1
+ID=3
+
+[BG 189]
+type=normal
+spriteno=11,188
+start=0,188
+delta=0.855813953,0.855813953
+mask=1
+ID=3
+
+[BG 190]
+type=normal
+spriteno=11,189
+start=0,189
+delta=0.859302326,0.859302326
+mask=1
+ID=3
+
+[BG 191]
+type=normal
+spriteno=11,190
+start=0,190
+delta=0.862790698,0.862790698
+mask=1
+ID=3
+
+[BG 192]
+type=normal
+spriteno=11,191
+start=0,191
+delta=0.86627907,0.86627907
+mask=1
+ID=3
+
+[BG 193]
+type=normal
+spriteno=11,192
+start=0,192
+delta=0.869767442,0.869767442
+mask=1
+ID=3
+
+[BG 194]
+type=normal
+spriteno=11,193
+start=0,193
+delta=0.873255814,0.873255814
+mask=1
+ID=3
+
+[BG 195]
+type=normal
+spriteno=11,194
+start=0,194
+delta=0.876744186,0.876744186
+mask=1
+ID=3
+
+[BG 196]
+type=normal
+spriteno=11,195
+start=0,195
+delta=0.880232558,0.880232558
+mask=1
+ID=3
+
+[BG 197]
+type=normal
+spriteno=11,196
+start=0,196
+delta=0.88372093,0.88372093
+mask=1
+ID=3
+
+[BG 198]
+type=normal
+spriteno=11,197
+start=0,197
+delta=0.887209302,0.887209302
+mask=1
+ID=3
+
+[BG 199]
+type=normal
+spriteno=11,198
+start=0,198
+delta=0.890697674,0.890697674
+mask=1
+ID=3
+
+[BG 200]
+type=normal
+spriteno=11,199
+start=0,199
+delta=0.894186047,0.894186047
+mask=1
+ID=3
+
+[BG 201]
+type=normal
+spriteno=11,200
+start=0,200
+delta=0.897674419,0.897674419
+mask=1
+ID=3
+
+[BG 202]
+type=normal
+spriteno=11,201
+start=0,201
+delta=0.901162791,0.901162791
+mask=1
+ID=3
+
+[BG 203]
+type=normal
+spriteno=11,202
+start=0,202
+delta=0.904651163,0.904651163
+mask=1
+ID=3
+
+[BG 204]
+type=normal
+spriteno=11,203
+start=0,203
+delta=0.908139535,0.908139535
+mask=1
+ID=3
+
+[BG 205]
+type=normal
+spriteno=11,204
+start=0,204
+delta=0.911627907,0.911627907
+mask=1
+ID=3
+
+[BG 206]
+type=normal
+spriteno=11,205
+start=0,205
+delta=0.915116279,0.915116279
+mask=1
+ID=3
+
+[BG 207]
+type=normal
+spriteno=11,206
+start=0,206
+delta=0.918604651,0.918604651
+mask=1
+ID=3
+
+[BG 208]
+type=normal
+spriteno=11,207
+start=0,207
+delta=0.922093023,0.922093023
+mask=1
+ID=3
+
+[BG 209]
+type=normal
+spriteno=11,208
+start=0,208
+delta=0.925581395,0.925581395
+mask=1
+ID=3
+
+[BG 210]
+type=normal
+spriteno=11,209
+start=0,209
+delta=0.929069767,0.929069767
+mask=1
+ID=3
+
+[BG 211]
+type=normal
+spriteno=11,210
+start=0,210
+delta=0.93255814,0.93255814
+mask=1
+ID=3
+
+[BG 212]
+type=normal
+spriteno=11,211
+start=0,211
+delta=0.936046512,0.936046512
+mask=1
+ID=3
+
+[BG 213]
+type=normal
+spriteno=11,212
+start=0,212
+delta=0.939534884,0.939534884
+mask=1
+ID=3
+
+[BG 214]
+type=normal
+spriteno=11,213
+start=0,213
+delta=0.943023256,0.943023256
+mask=1
+ID=3
+
+[BG 215]
+type=normal
+spriteno=11,214
+start=0,214
+delta=0.946511628,0.946511628
+mask=1
+ID=3
+
+[BG 216]
+type=normal
+spriteno=11,215
+start=0,215
+delta=0.95,0.95
+mask=1
+ID=3
+
+[BG 217]
+type=normal
+spriteno=11,216
+start=0,216
+delta=0.953488372,0.953488372
+mask=1
+ID=3
+
+[BG 218]
+type=normal
+spriteno=11,217
+start=0,217
+delta=0.956976744,0.956976744
+mask=1
+ID=3
+
+[BG 219]
+type=normal
+spriteno=11,218
+start=0,218
+delta=0.960465116,0.960465116
+mask=1
+ID=3
+
+[BG 220]
+type=normal
+spriteno=11,219
+start=0,219
+delta=0.963953488,0.963953488
+mask=1
+ID=3
+
+[BG 221]
+type=normal
+spriteno=11,220
+start=0,220
+delta=0.96744186,0.96744186
+mask=1
+ID=3
+
+[BG 222]
+type=normal
+spriteno=11,221
+start=0,221
+delta=0.970930233,0.970930233
+mask=1
+ID=3
+
+[BG 223]
+type=normal
+spriteno=11,222
+start=0,222
+delta=0.974418605,0.974418605
+mask=1
+ID=3
+
+[BG 224]
+type=normal
+spriteno=11,223
+start=0,223
+delta=0.977906977,0.977906977
+mask=1
+ID=3
+
+[BG 225]
+type=normal
+spriteno=11,224
+start=0,224
+delta=0.981395349,0.981395349
+mask=1
+ID=3
+
+[BG 226]
+type=normal
+spriteno=11,225
+start=0,225
+delta=0.984883721,0.984883721
+mask=1
+ID=3
+
+[BG 227]
+type=normal
+spriteno=11,226
+start=0,226
+delta=0.988372093,0.988372093
+mask=1
+ID=3
+
+[BG 228]
+type=normal
+spriteno=11,227
+start=0,227
+delta=0.991860465,0.991860465
+mask=1
+ID=3
+
+[BG 229]
+type=normal
+spriteno=11,228
+start=0,228
+delta=0.995348837,0.995348837
+mask=1
+ID=3
+
+[BG 230]
+type=normal
+spriteno=11,229
+start=0,229
+delta=0.998837209,0.998837209
+mask=1
+ID=3
+
+[BG 231]
+type=normal
+spriteno=11,230
+start=0,230
+delta=1.002325581,1.002325581
+mask=1
+ID=3
+
+[BG 232]
+type=normal
+spriteno=11,231
+start=0,231
+delta=1.005813953,1.005813953
+mask=1
+ID=3
+
+[BG 233]
+type=normal
+spriteno=11,232
+start=0,232
+delta=1.009302326,1.009302326
+mask=1
+ID=3
+
+[BG 234]
+type=normal
+spriteno=11,233
+start=0,233
+delta=1.012790698,1.012790698
+mask=1
+ID=3
+
+[BG 235]
+type=normal
+spriteno=11,234
+start=0,234
+delta=1.01627907,1.01627907
+mask=1
+ID=3
+
+[BG 236]
+type=normal
+spriteno=11,235
+start=0,235
+delta=1.019767442,1.019767442
+mask=1
+ID=3
+
+[BG 237]
+type=normal
+spriteno=11,236
+start=0,236
+delta=1.023255814,1.023255814
+mask=1
+ID=3
+
+[BG 238]
+type=normal
+spriteno=11,237
+start=0,237
+delta=1.026744186,1.026744186
+mask=1
+ID=3
+
+[BG 239]
+type=normal
+spriteno=11,238
+start=0,238
+delta=1.030232558,1.030232558
+mask=1
+ID=3
+
+[BG 240]
+type=normal
+spriteno=11,239
+start=0,239
+delta=1.03372093,1.03372093
+mask=1
+ID=3
+
+[BG 241]
+type=normal
+spriteno=11,240
+start=0,240
+delta=1.037209302,1.037209302
+mask=1
+ID=3
+
+[BG 242]
+type=normal
+spriteno=11,241
+start=0,241
+delta=1.040697674,1.040697674
+mask=1
+ID=3
+
+[BG 243]
+type=normal
+spriteno=11,242
+start=0,242
+delta=1.044186047,1.044186047
+mask=1
+ID=3
+
+[BG 244]
+type=normal
+spriteno=11,243
+start=0,243
+delta=1.047674419,1.047674419
+mask=1
+ID=3
+
+[BG 245]
+type=normal
+spriteno=11,244
+start=0,244
+delta=1.051162791,1.051162791
+mask=1
+ID=3
+
+[BG 246]
+type=normal
+spriteno=11,245
+start=0,245
+delta=1.054651163,1.054651163
+mask=1
+ID=3
+
+[BG 247]
+type=normal
+spriteno=11,246
+start=0,246
+delta=1.058139535,1.058139535
+mask=1
+ID=3
+
+[BG 248]
+type=normal
+spriteno=11,247
+start=0,247
+delta=1.061627907,1.061627907
+mask=1
+ID=3
+
+[BG 249]
+type=normal
+spriteno=11,248
+start=0,248
+delta=1.065116279,1.065116279
+mask=1
+ID=3
+
+[BG 250]
+type=normal
+spriteno=11,249
+start=0,249
+delta=1.068604651,1.068604651
+mask=1
+ID=3
+
+[BG 251]
+type=normal
+spriteno=11,250
+start=0,250
+delta=1.072093023,1.072093023
+mask=1
+ID=3
+
+[BG 252]
+type=normal
+spriteno=11,251
+start=0,251
+delta=1.075581395,1.075581395
+mask=1
+ID=3
+
+[BG 253]
+type=normal
+spriteno=11,252
+start=0,252
+delta=1.079069767,1.079069767
+mask=1
+ID=3
+
+[BG 254]
+type=normal
+spriteno=11,253
+start=0,253
+delta=1.08255814,1.08255814
+mask=1
+ID=3
+
+[BG 255]
+type=normal
+spriteno=11,254
+start=0,254
+delta=1.086046512,1.086046512
+mask=1
+ID=3
+
+[BG 256]
+type=normal
+spriteno=11,255
+start=0,255
+delta=1.089534884,1.089534884
+mask=1
+ID=3
+
+[BG 257]
+type=normal
+spriteno=11,256
+start=0,256
+delta=1.093023256,1.093023256
+mask=1
+ID=3
+
+[BG 258]
+type=normal
+spriteno=11,257
+start=0,257
+delta=1.096511628,1.096511628
+mask=1
+ID=3
+
+[BG 259]
+type=normal
+spriteno=11,258
+start=0,258
+delta=1.1,1.1
+mask=1
+ID=3
+
+[BG 260]
+type=normal
+spriteno=11,259
+start=0,259
+delta=1.103488372,1.103488372
+mask=1
+ID=3
+
+[BG 261]
+type=normal
+spriteno=11,260
+start=0,260
+delta=1.106976744,1.106976744
+mask=1
+ID=3
+
+[BG 262]
+type=normal
+spriteno=11,261
+start=0,261
+delta=1.110465116,1.110465116
+mask=1
+ID=3
+
+[BG 263]
+type=normal
+spriteno=11,262
+start=0,262
+delta=1.113953488,1.113953488
+mask=1
+ID=3
+
+[BG 264]
+type=normal
+spriteno=11,263
+start=0,263
+delta=1.11744186,1.11744186
+mask=1
+ID=3
+
+[BG 265]
+type=normal
+spriteno=11,264
+start=0,264
+delta=1.120930233,1.120930233
+mask=1
+ID=3
+
+[BG 266]
+type=normal
+spriteno=11,265
+start=0,265
+delta=1.124418605,1.124418605
+mask=1
+ID=3
+
+[BG 267]
+type=normal
+spriteno=11,266
+start=0,266
+delta=1.127906977,1.127906977
+mask=1
+ID=3
+
+[BG 268]
+type=normal
+spriteno=11,267
+start=0,267
+delta=1.131395349,1.131395349
+mask=1
+ID=3
+
+[BG 269]
+type=normal
+spriteno=11,268
+start=0,268
+delta=1.134883721,1.134883721
+mask=1
+ID=3
+
+[BG 270]
+type=normal
+spriteno=11,269
+start=0,269
+delta=1.138372093,1.138372093
+mask=1
+ID=3
+
+[BG 271]
+type=normal
+spriteno=11,270
+start=0,270
+delta=1.141860465,1.141860465
+mask=1
+ID=3
+
+[BG 272]
+type=normal
+spriteno=11,271
+start=0,271
+delta=1.145348837,1.145348837
+mask=1
+ID=3
+
+[BG 273]
+type=normal
+spriteno=11,272
+start=0,272
+delta=1.148837209,1.148837209
+mask=1
+ID=3
+
+[BG 274]
+type=normal
+spriteno=11,273
+start=0,273
+delta=1.152325581,1.152325581
+mask=1
+ID=3
+
+[BG 275]
+type=normal
+spriteno=11,274
+start=0,274
+delta=1.155813953,1.155813953
+mask=1
+ID=3
+
+[BG 276]
+type=normal
+spriteno=11,275
+start=0,275
+delta=1.159302326,1.159302326
+mask=1
+ID=3
+
+[BG 277]
+type=normal
+spriteno=11,276
+start=0,276
+delta=1.162790698,1.162790698
+mask=1
+ID=3
+
+[BG 278]
+type=normal
+spriteno=11,277
+start=0,277
+delta=1.16627907,1.16627907
+mask=1
+ID=3
+
+[BG 279]
+type=normal
+spriteno=11,278
+start=0,278
+delta=1.169767442,1.169767442
+mask=1
+ID=3
+
+[BG 280]
+type=normal
+spriteno=11,279
+start=0,279
+delta=1.173255814,1.173255814
+mask=1
+ID=3
+
+[BG 281]
+type=normal
+spriteno=11,280
+start=0,280
+delta=1.176744186,1.176744186
+mask=1
+ID=3
+
+[BG 282]
+type=normal
+spriteno=11,281
+start=0,281
+delta=1.180232558,1.180232558
+mask=1
+ID=3
+
+[BG 283]
+type=normal
+spriteno=11,282
+start=0,282
+delta=1.18372093,1.18372093
+mask=1
+ID=3
+
+[BG 284]
+type=normal
+spriteno=11,283
+start=0,283
+delta=1.187209302,1.187209302
+mask=1
+ID=3
+
+[BG 285]
+type=normal
+spriteno=11,284
+start=0,284
+delta=1.190697674,1.190697674
+mask=1
+ID=3
+
+[BG 286]
+type=normal
+spriteno=11,285
+start=0,285
+delta=1.194186047,1.194186047
+mask=1
+ID=3
+
+[BG 287]
+type=normal
+spriteno=11,286
+start=0,286
+delta=1.197674419,1.197674419
+mask=1
+ID=3
+
+[BG 288]
+type=normal
+spriteno=11,287
+start=0,287
+delta=1.201162791,1.201162791
+mask=1
+ID=3
+
+[BG 289]
+type=normal
+spriteno=11,288
+start=0,288
+delta=1.204651163,1.204651163
+mask=1
+ID=3
+
+[BG 290]
+type=normal
+spriteno=11,289
+start=0,289
+delta=1.208139535,1.208139535
+mask=1
+ID=3
+
+[BG 291]
+type=normal
+spriteno=11,290
+start=0,290
+delta=1.211627907,1.211627907
+mask=1
+ID=3
+
+[BG 292]
+type=normal
+spriteno=11,291
+start=0,291
+delta=1.215116279,1.215116279
+mask=1
+ID=3
+
+[BG 293]
+type=normal
+spriteno=11,292
+start=0,292
+delta=1.218604651,1.218604651
+mask=1
+ID=3
+
+[BG 294]
+type=normal
+spriteno=11,293
+start=0,293
+delta=1.222093023,1.222093023
+mask=1
+ID=3
+
+[BG 295]
+type=normal
+spriteno=11,294
+start=0,294
+delta=1.225581395,1.225581395
+mask=1
+ID=3
+
+[BG 296]
+type=normal
+spriteno=11,295
+start=0,295
+delta=1.229069767,1.229069767
+mask=1
+ID=3
+
+[BG 297]
+type=normal
+spriteno=11,296
+start=0,296
+delta=1.23255814,1.23255814
+mask=1
+ID=3
+
+[BG 298]
+type=normal
+spriteno=11,297
+start=0,297
+delta=1.236046512,1.236046512
+mask=1
+ID=3
+
+[BG 299]
+type=normal
+spriteno=11,298
+start=0,298
+delta=1.239534884,1.239534884
+mask=1
+ID=3
+
+[BG 300]
+type=normal
+spriteno=11,299
+start=0,299
+delta=1.243023256,1.243023256
+mask=1
+ID=3
+
+[BG 301]
+type=normal
+spriteno=11,300
+start=0,300
+delta=1.246511628,1.246511628
+mask=1
+ID=3
+
+[BG 302]
+type=normal
+spriteno=11,301
+start=0,301
+delta=1.25,1.25
+mask=1
+ID=3
+
+[BG 303]
+type=normal
+spriteno=11,302
+start=0,302
+delta=1.253488372,1.253488372
+mask=1
+ID=3
+
+[BG 304]
+type=normal
+spriteno=11,303
+start=0,303
+delta=1.256976744,1.256976744
+mask=1
+ID=3
+
+[BG 305]
+type=normal
+spriteno=11,304
+start=0,304
+delta=1.260465116,1.260465116
+mask=1
+ID=3
+
+[BG 306]
+type=normal
+spriteno=11,305
+start=0,305
+delta=1.263953488,1.263953488
+mask=1
+ID=3
+
+[BG 307]
+type=normal
+spriteno=11,306
+start=0,306
+delta=1.26744186,1.26744186
+mask=1
+ID=3
+
+[BG 308]
+type=normal
+spriteno=11,307
+start=0,307
+delta=1.270930233,1.270930233
+mask=1
+ID=3
+
+[BG 309]
+type=normal
+spriteno=11,308
+start=0,308
+delta=1.274418605,1.274418605
+mask=1
+ID=3
+
+[BG 310]
+type=normal
+spriteno=11,309
+start=0,309
+delta=1.277906977,1.277906977
+mask=1
+ID=3
+
+[BG 311]
+type=normal
+spriteno=11,310
+start=0,310
+delta=1.281395349,1.281395349
+mask=1
+ID=3
+
+[BG 312]
+type=normal
+spriteno=11,311
+start=0,311
+delta=1.284883721,1.284883721
+mask=1
+ID=3
+
+[BG 313]
+type=normal
+spriteno=11,312
+start=0,312
+delta=1.288372093,1.288372093
+mask=1
+ID=3
+
+[BG 314]
+type=normal
+spriteno=11,313
+start=0,313
+delta=1.291860465,1.291860465
+mask=1
+ID=3
+
+[BG 315]
+type=normal
+spriteno=11,314
+start=0,314
+delta=1.295348837,1.295348837
+mask=1
+ID=3
+
+[BG 316]
+type=normal
+spriteno=11,315
+start=0,315
+delta=1.298837209,1.298837209
+mask=1
+ID=3
+
+[BG 317]
+type=normal
+spriteno=11,316
+start=0,316
+delta=1.302325581,1.302325581
+mask=1
+ID=3
+
+[BG 318]
+type=normal
+spriteno=11,317
+start=0,317
+delta=1.305813953,1.305813953
+mask=1
+ID=3
+
+[BG 319]
+type=normal
+spriteno=11,318
+start=0,318
+delta=1.309302326,1.309302326
+mask=1
+ID=3
+
+[BG 320]
+type=normal
+spriteno=11,319
+start=0,319
+delta=1.312790698,1.312790698
+mask=1
+ID=3
+
+[BG 321]
+type=normal
+spriteno=11,320
+start=0,320
+delta=1.31627907,1.31627907
+mask=1
+ID=3
+
+[BG 322]
+type=normal
+spriteno=11,321
+start=0,321
+delta=1.319767442,1.319767442
+mask=1
+ID=3
+
+[BG 323]
+type=normal
+spriteno=11,322
+start=0,322
+delta=1.323255814,1.323255814
+mask=1
+ID=3
+
+[BG 324]
+type=normal
+spriteno=11,323
+start=0,323
+delta=1.326744186,1.326744186
+mask=1
+ID=3
+
+[BG 325]
+type=normal
+spriteno=11,324
+start=0,324
+delta=1.330232558,1.330232558
+mask=1
+ID=3
+
+[BG 326]
+type=normal
+spriteno=11,325
+start=0,325
+delta=1.33372093,1.33372093
+mask=1
+ID=3
+
+[BG 327]
+type=normal
+spriteno=11,326
+start=0,326
+delta=1.337209302,1.337209302
+mask=1
+ID=3
+
+[BG 328]
+type=normal
+spriteno=11,327
+start=0,327
+delta=1.340697674,1.340697674
+mask=1
+ID=3
+
+[BG 329]
+type=normal
+spriteno=11,328
+start=0,328
+delta=1.344186047,1.344186047
+mask=1
+ID=3
+
+[BG 330]
+type=normal
+spriteno=11,329
+start=0,329
+delta=1.347674419,1.347674419
+mask=1
+ID=3
+
+[BG 331]
+type=normal
+spriteno=11,330
+start=0,330
+delta=1.351162791,1.351162791
+mask=1
+ID=3
+
+[BG 332]
+type=normal
+spriteno=11,331
+start=0,331
+delta=1.354651163,1.354651163
+mask=1
+ID=3
+
+[BG 333]
+type=normal
+spriteno=11,332
+start=0,332
+delta=1.358139535,1.358139535
+mask=1
+ID=3
+
+[BG 334]
+type=normal
+spriteno=11,333
+start=0,333
+delta=1.361627907,1.361627907
+mask=1
+ID=3
+
+[BG 335]
+type=normal
+spriteno=11,334
+start=0,334
+delta=1.365116279,1.365116279
+mask=1
+ID=3
+
+[BG 336]
+type=normal
+spriteno=11,335
+start=0,335
+delta=1.368604651,1.368604651
+mask=1
+ID=3
+
+[BG 337]
+type=normal
+spriteno=11,336
+start=0,336
+delta=1.372093023,1.372093023
+mask=1
+ID=3
+
+[BG 338]
+type=normal
+spriteno=11,337
+start=0,337
+delta=1.375581395,1.375581395
+mask=1
+ID=3
+
+[BG 339]
+type=normal
+spriteno=11,338
+start=0,338
+delta=1.379069767,1.379069767
+mask=1
+ID=3
+
+[BG 340]
+type=normal
+spriteno=11,339
+start=0,339
+delta=1.38255814,1.38255814
+mask=1
+ID=3
+
+[BG 341]
+type=normal
+spriteno=11,340
+start=0,340
+delta=1.386046512,1.386046512
+mask=1
+ID=3
+
+[BG 342]
+type=normal
+spriteno=11,341
+start=0,341
+delta=1.389534884,1.389534884
+mask=1
+ID=3
+
+[BG 343]
+type=normal
+spriteno=11,342
+start=0,342
+delta=1.393023256,1.393023256
+mask=1
+ID=3
+
+[BG 344]
+type=normal
+spriteno=11,343
+start=0,343
+delta=1.396511628,1.396511628
+mask=1
+ID=3
+
+[BG 345]
+type=normal
+spriteno=11,344
+start=0,344
+delta=1.4,1.4
+mask=1
+ID=3
+
+[BG 346]
+type=normal
+spriteno=11,345
+start=0,345
+delta=1.403488372,1.403488372
+mask=1
+ID=3
+
+[BG 347]
+type=normal
+spriteno=11,346
+start=0,346
+delta=1.406976744,1.406976744
+mask=1
+ID=3
+
+[BG 348]
+type=normal
+spriteno=11,347
+start=0,347
+delta=1.410465116,1.410465116
+mask=1
+ID=3
+
+[BG 349]
+type=normal
+spriteno=11,348
+start=0,348
+delta=1.413953488,1.413953488
+mask=1
+ID=3
+
+[BG 350]
+type=normal
+spriteno=11,349
+start=0,349
+delta=1.41744186,1.41744186
+mask=1
+ID=3
+
+[BG 351]
+type=normal
+spriteno=11,350
+start=0,350
+delta=1.420930233,1.420930233
+mask=1
+ID=3
+
+[BG 352]
+type=normal
+spriteno=11,351
+start=0,351
+delta=1.424418605,1.424418605
+mask=1
+ID=3
+
+[BG 353]
+type=normal
+spriteno=11,352
+start=0,352
+delta=1.427906977,1.427906977
+mask=1
+ID=3
+
+[BG 354]
+type=normal
+spriteno=11,353
+start=0,353
+delta=1.431395349,1.431395349
+mask=1
+ID=3
+
+[BG 355]
+type=normal
+spriteno=11,354
+start=0,354
+delta=1.434883721,1.434883721
+mask=1
+ID=3
+
+[BG 356]
+type=normal
+spriteno=11,355
+start=0,355
+delta=1.438372093,1.438372093
+mask=1
+ID=3
+
+[BG 357]
+type=normal
+spriteno=11,356
+start=0,356
+delta=1.441860465,1.441860465
+mask=1
+ID=3
+
+[BG 358]
+type=normal
+spriteno=11,357
+start=0,357
+delta=1.445348837,1.445348837
+mask=1
+ID=3
+
+[BG 359]
+type=normal
+spriteno=11,358
+start=0,358
+delta=1.448837209,1.448837209
+mask=1
+ID=3
+
+[BG 360]
+type=normal
+spriteno=11,359
+start=0,359
+delta=1.452325581,1.452325581
+mask=1
+ID=3
+
+[BG 361]
+type=normal
+spriteno=11,360
+start=0,360
+delta=1.455813953,1.455813953
+mask=1
+ID=3
+
+[BG 362]
+type=normal
+spriteno=11,361
+start=0,361
+delta=1.459302326,1.459302326
+mask=1
+ID=3
+
+[BG 363]
+type=normal
+spriteno=11,362
+start=0,362
+delta=1.462790698,1.462790698
+mask=1
+ID=3
+
+[BG 364]
+type=normal
+spriteno=11,363
+start=0,363
+delta=1.46627907,1.46627907
+mask=1
+ID=3
+
+[BG 365]
+type=normal
+spriteno=11,364
+start=0,364
+delta=1.469767442,1.469767442
+mask=1
+ID=3
+
+[BG 366]
+type=normal
+spriteno=11,365
+start=0,365
+delta=1.473255814,1.473255814
+mask=1
+ID=3
+
+[BG 367]
+type=normal
+spriteno=11,366
+start=0,366
+delta=1.476744186,1.476744186
+mask=1
+ID=3
+
+[BG 368]
+type=normal
+spriteno=11,367
+start=0,367
+delta=1.480232558,1.480232558
+mask=1
+ID=3
+
+[BG 369]
+type=normal
+spriteno=11,368
+start=0,368
+delta=1.48372093,1.48372093
+mask=1
+ID=3
+
+[BG 370]
+type=normal
+spriteno=11,369
+start=0,369
+delta=1.487209302,1.487209302
+mask=1
+ID=3
+
+[BG 371]
+type=normal
+spriteno=11,370
+start=0,370
+delta=1.490697674,1.490697674
+mask=1
+ID=3
+
+[BG 372]
+type=normal
+spriteno=11,371
+start=0,371
+delta=1.494186047,1.494186047
+mask=1
+ID=3
+
+[BG 373]
+type=normal
+spriteno=11,372
+start=0,372
+delta=1.497674419,1.497674419
+mask=1
+ID=3
+
+[BG 374]
+type=normal
+spriteno=11,373
+start=0,373
+delta=1.501162791,1.501162791
+mask=1
+ID=3
+
+[BG 375]
+type=normal
+spriteno=11,374
+start=0,374
+delta=1.504651163,1.504651163
+mask=1
+ID=3
+
+[BG 376]
+type=normal
+spriteno=11,375
+start=0,375
+delta=1.508139535,1.508139535
+mask=1
+ID=3
+
+[BG 377]
+type=normal
+spriteno=11,376
+start=0,376
+delta=1.511627907,1.511627907
+mask=1
+ID=3
+
+[BG 378]
+type=normal
+spriteno=11,377
+start=0,377
+delta=1.515116279,1.515116279
+mask=1
+ID=3
+
+[BG 379]
+type=normal
+spriteno=11,378
+start=0,378
+delta=1.518604651,1.518604651
+mask=1
+ID=3
+
+[BG 380]
+type=normal
+spriteno=11,379
+start=0,379
+delta=1.522093023,1.522093023
+mask=1
+ID=3
+
+[BG 381]
+type=normal
+spriteno=11,380
+start=0,380
+delta=1.525581395,1.525581395
+mask=1
+ID=3
+
+[BG 382]
+type=normal
+spriteno=11,381
+start=0,381
+delta=1.529069767,1.529069767
+mask=1
+ID=3
+
+[BG 383]
+type=normal
+spriteno=11,382
+start=0,382
+delta=1.53255814,1.53255814
+mask=1
+ID=3
+
+[BG 384]
+type=normal
+spriteno=11,383
+start=0,383
+delta=1.536046512,1.536046512
+mask=1
+ID=3
+
+[BG 385]
+type=normal
+spriteno=11,384
+start=0,384
+delta=1.539534884,1.539534884
+mask=1
+ID=3
+
+[BG 386]
+type=normal
+spriteno=11,385
+start=0,385
+delta=1.543023256,1.543023256
+mask=1
+ID=3
+
+[BG 387]
+type=normal
+spriteno=11,386
+start=0,386
+delta=1.546511628,1.546511628
+mask=1
+ID=3
+
+[BG 388]
+type=normal
+spriteno=11,387
+start=0,387
+delta=1.55,1.55
+mask=1
+ID=3
+
+[BG 389]
+type=normal
+spriteno=11,388
+start=0,388
+delta=1.553488372,1.553488372
+mask=1
+ID=3
+
+[BG 390]
+type=normal
+spriteno=11,389
+start=0,389
+delta=1.556976744,1.556976744
+mask=1
+ID=3
+
+[BG 391]
+type=normal
+spriteno=11,390
+start=0,390
+delta=1.560465116,1.560465116
+mask=1
+ID=3
+
+[BG 392]
+type=normal
+spriteno=11,391
+start=0,391
+delta=1.563953488,1.563953488
+mask=1
+ID=3
+
+[BG 393]
+type=normal
+spriteno=11,392
+start=0,392
+delta=1.56744186,1.56744186
+mask=1
+ID=3
+
+[BG 394]
+type=normal
+spriteno=11,393
+start=0,393
+delta=1.570930233,1.570930233
+mask=1
+ID=3
+
+[BG 395]
+type=normal
+spriteno=11,394
+start=0,394
+delta=1.574418605,1.574418605
+mask=1
+ID=3
+
+[BG 396]
+type=normal
+spriteno=11,395
+start=0,395
+delta=1.577906977,1.577906977
+mask=1
+ID=3
+
+[BG 397]
+type=normal
+spriteno=11,396
+start=0,396
+delta=1.581395349,1.581395349
+mask=1
+ID=3
+
+[BG 398]
+type=normal
+spriteno=11,397
+start=0,397
+delta=1.584883721,1.584883721
+mask=1
+ID=3
+
+[BG 399]
+type=normal
+spriteno=11,398
+start=0,398
+delta=1.588372093,1.588372093
+mask=1
+ID=3
+
+[BG 400]
+type=normal
+spriteno=11,399
+start=0,399
+delta=1.591860465,1.591860465
+mask=1
+ID=3
+
+[BG 401]
+type=normal
+spriteno=11,400
+start=0,400
+delta=1.595348837,1.595348837
+mask=1
+ID=3
+
+[BG 402]
+type=normal
+spriteno=11,401
+start=0,401
+delta=1.598837209,1.598837209
+mask=1
+ID=3
+
+[BG 403]
+type=normal
+spriteno=11,402
+start=0,402
+delta=1.602325581,1.602325581
+mask=1
+ID=3
+
+[BG 404]
+type=normal
+spriteno=11,403
+start=0,403
+delta=1.605813953,1.605813953
+mask=1
+ID=3
+
+[BG 405]
+type=normal
+spriteno=11,404
+start=0,404
+delta=1.609302326,1.609302326
+mask=1
+ID=3
+
+[BG 406]
+type=normal
+spriteno=11,405
+start=0,405
+delta=1.612790698,1.612790698
+mask=1
+ID=3
+
+[BG 407]
+type=normal
+spriteno=11,406
+start=0,406
+delta=1.61627907,1.61627907
+mask=1
+ID=3
+
+[BG 408]
+type=normal
+spriteno=11,407
+start=0,407
+delta=1.619767442,1.619767442
+mask=1
+ID=3
+
+[BG 409]
+type=normal
+spriteno=11,408
+start=0,408
+delta=1.623255814,1.623255814
+mask=1
+ID=3
+
+[BG 410]
+type=normal
+spriteno=11,409
+start=0,409
+delta=1.626744186,1.626744186
+mask=1
+ID=3
+
+[BG 411]
+type=normal
+spriteno=11,410
+start=0,410
+delta=1.630232558,1.630232558
+mask=1
+ID=3
+
+[BG 412]
+type=normal
+spriteno=11,411
+start=0,411
+delta=1.63372093,1.63372093
+mask=1
+ID=3
+
+[BG 413]
+type=normal
+spriteno=11,412
+start=0,412
+delta=1.637209302,1.637209302
+mask=1
+ID=3
+
+[BG 414]
+type=normal
+spriteno=11,413
+start=0,413
+delta=1.640697674,1.640697674
+mask=1
+ID=3
+
+[BG 415]
+type=normal
+spriteno=11,414
+start=0,414
+delta=1.644186047,1.644186047
+mask=1
+ID=3
+
+[BG 416]
+type=normal
+spriteno=11,415
+start=0,415
+delta=1.647674419,1.647674419
+mask=1
+ID=3
+
+[BG 417]
+type=normal
+spriteno=11,416
+start=0,416
+delta=1.651162791,1.651162791
+mask=1
+ID=3
+
+[BG 418]
+type=normal
+spriteno=11,417
+start=0,417
+delta=1.654651163,1.654651163
+mask=1
+ID=3
+
+[BG 419]
+type=normal
+spriteno=11,418
+start=0,418
+delta=1.658139535,1.658139535
+mask=1
+ID=3
+
+[BG 420]
+type=normal
+spriteno=11,419
+start=0,419
+delta=1.661627907,1.661627907
+mask=1
+ID=3
+
+[BG 421]
+type=normal
+spriteno=11,420
+start=0,420
+delta=1.665116279,1.665116279
+mask=1
+ID=3
+
+[BG 422]
+type=normal
+spriteno=11,421
+start=0,421
+delta=1.668604651,1.668604651
+mask=1
+ID=3
+
+[BG 423]
+type=normal
+spriteno=11,422
+start=0,422
+delta=1.672093023,1.672093023
+mask=1
+ID=3
+
+[BG 424]
+type=normal
+spriteno=11,423
+start=0,423
+delta=1.675581395,1.675581395
+mask=1
+ID=3
+
+[BG 425]
+type=normal
+spriteno=11,424
+start=0,424
+delta=1.679069767,1.679069767
+mask=1
+ID=3
+
+[BG 426]
+type=normal
+spriteno=11,425
+start=0,425
+delta=1.68255814,1.68255814
+mask=1
+ID=3
+
+[BG 427]
+type=normal
+spriteno=11,426
+start=0,426
+delta=1.686046512,1.686046512
+mask=1
+ID=3
+
+[BG 428]
+type=normal
+spriteno=11,427
+start=0,427
+delta=1.689534884,1.689534884
+mask=1
+ID=3
+
+[BG 429]
+type=normal
+spriteno=11,428
+start=0,428
+delta=1.693023256,1.693023256
+mask=1
+ID=3
+
+[BG 430]
+type=normal
+spriteno=11,429
+start=0,429
+delta=1.696511628,1.696511628
+mask=1
+ID=3
+
+[BG 431]
+type=normal
+spriteno=11,430
+start=0,430
+delta=1.7,1.7
+mask=1
+ID=3
+
+[BG 432]
+type=normal
+spriteno=11,431
+start=0,431
+delta=1.703488372,1.703488372
+mask=1
+ID=3
+
+[BG 433]
+type=normal
+spriteno=11,432
+start=0,432
+delta=1.706976744,1.706976744
+mask=1
+ID=3
+
+[BG 434]
+type=normal
+spriteno=11,433
+start=0,433
+delta=1.710465116,1.710465116
+mask=1
+ID=3
+
+[BG 435]
+type=normal
+spriteno=11,434
+start=0,434
+delta=1.713953488,1.713953488
+mask=1
+ID=3
+
+[BG 436]
+type=normal
+spriteno=11,435
+start=0,435
+delta=1.71744186,1.71744186
+mask=1
+ID=3
+
+[BG 437]
+type=normal
+spriteno=11,436
+start=0,436
+delta=1.720930233,1.720930233
+mask=1
+ID=3
+
+[BG 438]
+type=normal
+spriteno=11,437
+start=0,437
+delta=1.724418605,1.724418605
+mask=1
+ID=3
+
+[BG 439]
+type=normal
+spriteno=11,438
+start=0,438
+delta=1.727906977,1.727906977
+mask=1
+ID=3
+
+[BG 440]
+type=normal
+spriteno=11,439
+start=0,439
+delta=1.731395349,1.731395349
+mask=1
+ID=3
+
+[BG 441]
+type=normal
+spriteno=11,440
+start=0,440
+delta=1.734883721,1.734883721
+mask=1
+ID=3
+
+[BG 442]
+type=normal
+spriteno=11,441
+start=0,441
+delta=1.738372093,1.738372093
+mask=1
+ID=3
+
+[BG 443]
+type=normal
+spriteno=11,442
+start=0,442
+delta=1.741860465,1.741860465
+mask=1
+ID=3
+
+[BG 444]
+type=normal
+spriteno=11,443
+start=0,443
+delta=1.745348837,1.745348837
+mask=1
+ID=3
+
+[BG 445]
+type=normal
+spriteno=11,444
+start=0,444
+delta=1.748837209,1.748837209
+mask=1
+ID=3
+
+[BG 446]
+type=normal
+spriteno=11,445
+start=0,445
+delta=1.752325581,1.752325581
+mask=1
+ID=3
+
+[BG 447]
+type=normal
+spriteno=11,446
+start=0,446
+delta=1.755813953,1.755813953
+mask=1
+ID=3
+
+[BG 448]
+type=normal
+spriteno=11,447
+start=0,447
+delta=1.759302326,1.759302326
+mask=1
+ID=3
+
+[BG 449]
+type=normal
+spriteno=11,448
+start=0,448
+delta=1.762790698,1.762790698
+mask=1
+ID=3
+
+[BG 450]
+type=normal
+spriteno=11,449
+start=0,449
+delta=1.76627907,1.76627907
+mask=1
+ID=3
+
+[BG 451]
+type=normal
+spriteno=11,450
+start=0,450
+delta=1.769767442,1.769767442
+mask=1
+ID=3
+
+[BG 452]
+type=normal
+spriteno=11,451
+start=0,451
+delta=1.773255814,1.773255814
+mask=1
+ID=3
+
+[BG 453]
+type=normal
+spriteno=11,452
+start=0,452
+delta=1.776744186,1.776744186
+mask=1
+ID=3
+
+[BG 454]
+type=normal
+spriteno=11,453
+start=0,453
+delta=1.780232558,1.780232558
+mask=1
+ID=3
+
+[BG 455]
+type=normal
+spriteno=11,454
+start=0,454
+delta=1.78372093,1.78372093
+mask=1
+ID=3
+
+[BG 456]
+type=normal
+spriteno=11,455
+start=0,455
+delta=1.787209302,1.787209302
+mask=1
+ID=3
+
+[BG 457]
+type=normal
+spriteno=11,456
+start=0,456
+delta=1.790697674,1.790697674
+mask=1
+ID=3
+
+[BG 458]
+type=normal
+spriteno=11,457
+start=0,457
+delta=1.794186047,1.794186047
+mask=1
+ID=3
+
+[BG 459]
+type=normal
+spriteno=11,458
+start=0,458
+delta=1.797674419,1.797674419
+mask=1
+ID=3
+
+[BG 460]
+type=normal
+spriteno=11,459
+start=0,459
+delta=1.801162791,1.801162791
+mask=1
+ID=3
+
+[BG 461]
+type=normal
+spriteno=11,460
+start=0,460
+delta=1.804651163,1.804651163
+mask=1
+ID=3
+
+[BG 462]
+type=normal
+spriteno=11,461
+start=0,461
+delta=1.808139535,1.808139535
+mask=1
+ID=3
+
+[BG 463]
+type=normal
+spriteno=11,462
+start=0,462
+delta=1.811627907,1.811627907
+mask=1
+ID=3
+
+[BG 464]
+type=normal
+spriteno=11,463
+start=0,463
+delta=1.815116279,1.815116279
+mask=1
+ID=3
+
+[BG 465]
+type=normal
+spriteno=11,464
+start=0,464
+delta=1.818604651,1.818604651
+mask=1
+ID=3
+
+[BG 466]
+type=normal
+spriteno=11,465
+start=0,465
+delta=1.822093023,1.822093023
+mask=1
+ID=3
+
+[BG 467]
+type=normal
+spriteno=11,466
+start=0,466
+delta=1.825581395,1.825581395
+mask=1
+ID=3
+
+[BG 468]
+type=normal
+spriteno=11,467
+start=0,467
+delta=1.829069767,1.829069767
+mask=1
+ID=3
+
+[BG 469]
+type=normal
+spriteno=11,468
+start=0,468
+delta=1.83255814,1.83255814
+mask=1
+ID=3
+
+[BG 470]
+type=normal
+spriteno=11,469
+start=0,469
+delta=1.836046512,1.836046512
+mask=1
+ID=3
+
+[BG 471]
+type=normal
+spriteno=11,470
+start=0,470
+delta=1.839534884,1.839534884
+mask=1
+ID=3
+
+[BG 472]
+type=normal
+spriteno=11,471
+start=0,471
+delta=1.843023256,1.843023256
+mask=1
+ID=3
+
+[BG 473]
+type=normal
+spriteno=11,472
+start=0,472
+delta=1.846511628,1.846511628
+mask=1
+ID=3
+
+[BG 474]
+type=normal
+spriteno=11,473
+start=0,473
+delta=1.85,1.85
+mask=1
+ID=3
+
+[BG 475]
+type=normal
+spriteno=11,474
+start=0,474
+delta=1.853488372,1.853488372
+mask=1
+ID=3
+
+[BG 476]
+type=normal
+spriteno=11,475
+start=0,475
+delta=1.856976744,1.856976744
+mask=1
+ID=3
+
+[BG 477]
+type=normal
+spriteno=11,476
+start=0,476
+delta=1.860465116,1.860465116
+mask=1
+ID=3
+
+[BG 478]
+type=normal
+spriteno=11,477
+start=0,477
+delta=1.863953488,1.863953488
+mask=1
+ID=3
+
+[BG 479]
+type=normal
+spriteno=11,478
+start=0,478
+delta=1.86744186,1.86744186
+mask=1
+ID=3
+
+[BG 480]
+type=normal
+spriteno=11,479
+start=0,479
+delta=1.870930233,1.870930233
+mask=1
+ID=3
+
+[BG 481]
+type=normal
+spriteno=11,480
+start=0,480
+delta=1.874418605,1.874418605
+mask=1
+ID=3
+
+[BG 482]
+type=normal
+spriteno=11,481
+start=0,481
+delta=1.877906977,1.877906977
+mask=1
+ID=3
+
+[BG 483]
+type=normal
+spriteno=11,482
+start=0,482
+delta=1.881395349,1.881395349
+mask=1
+ID=3
+
+[BG 484]
+type=normal
+spriteno=11,483
+start=0,483
+delta=1.884883721,1.884883721
+mask=1
+ID=3
+
+[BG 485]
+type=normal
+spriteno=11,484
+start=0,484
+delta=1.888372093,1.888372093
+mask=1
+ID=3
+
+[BG 486]
+type=normal
+spriteno=11,485
+start=0,485
+delta=1.891860465,1.891860465
+mask=1
+ID=3
+
+[BG 487]
+type=normal
+spriteno=11,486
+start=0,486
+delta=1.895348837,1.895348837
+mask=1
+ID=3
+
+[BG 488]
+type=normal
+spriteno=11,487
+start=0,487
+delta=1.898837209,1.898837209
+mask=1
+ID=3
+
+[BG 489]
+type=normal
+spriteno=11,488
+start=0,488
+delta=1.902325581,1.902325581
+mask=1
+ID=3
+
+[BG 490]
+type=normal
+spriteno=11,489
+start=0,489
+delta=1.905813953,1.905813953
+mask=1
+ID=3
+
+[BG 491]
+type=normal
+spriteno=11,490
+start=0,490
+delta=1.909302326,1.909302326
+mask=1
+ID=3
+
+[BG 492]
+type=normal
+spriteno=11,491
+start=0,491
+delta=1.912790698,1.912790698
+mask=1
+ID=3
+
+[BG 493]
+type=normal
+spriteno=11,492
+start=0,492
+delta=1.91627907,1.91627907
+mask=1
+ID=3
+
+[BG 494]
+type=normal
+spriteno=11,493
+start=0,493
+delta=1.919767442,1.919767442
+mask=1
+ID=3
+
+[BG 495]
+type=normal
+spriteno=11,494
+start=0,494
+delta=1.923255814,1.923255814
+mask=1
+ID=3
+
+[BG 496]
+type=normal
+spriteno=11,495
+start=0,495
+delta=1.926744186,1.926744186
+mask=1
+ID=3
+
+[BG 497]
+type=normal
+spriteno=11,496
+start=0,496
+delta=1.930232558,1.930232558
+mask=1
+ID=3
+
+[BG 498]
+type=normal
+spriteno=11,497
+start=0,497
+delta=1.93372093,1.93372093
+mask=1
+ID=3
+
+[BG 499]
+type=normal
+spriteno=11,498
+start=0,498
+delta=1.937209302,1.937209302
+mask=1
+ID=3
+
+[BG 500]
+type=normal
+spriteno=11,499
+start=0,499
+delta=1.940697674,1.940697674
+mask=1
+ID=3
+
+[BG 501]
+type=normal
+spriteno=11,500
+start=0,500
+delta=1.944186047,1.944186047
+mask=1
+ID=3
+
+[BG 502]
+type=normal
+spriteno=11,501
+start=0,501
+delta=1.947674419,1.947674419
+mask=1
+ID=3
+
+[BG 503]
+type=normal
+spriteno=11,502
+start=0,502
+delta=1.951162791,1.951162791
+mask=1
+ID=3
+
+[BG 504]
+type=normal
+spriteno=11,503
+start=0,503
+delta=1.954651163,1.954651163
+mask=1
+ID=3
+
+[BG 505]
+type=normal
+spriteno=11,504
+start=0,504
+delta=1.958139535,1.958139535
+mask=1
+ID=3
+
+[BG 506]
+type=normal
+spriteno=11,505
+start=0,505
+delta=1.961627907,1.961627907
+mask=1
+ID=3
+
+[BG 507]
+type=normal
+spriteno=11,506
+start=0,506
+delta=1.965116279,1.965116279
+mask=1
+ID=3
+
+[BG 508]
+type=normal
+spriteno=11,507
+start=0,507
+delta=1.968604651,1.968604651
+mask=1
+ID=3
+
+[BG 509]
+type=normal
+spriteno=11,508
+start=0,508
+delta=1.972093023,1.972093023
+mask=1
+ID=3
+
+[BG 510]
+type=normal
+spriteno=11,509
+start=0,509
+delta=1.975581395,1.975581395
+mask=1
+ID=3
+
+[BG 511]
+type=normal
+spriteno=11,510
+start=0,510
+delta=1.979069767,1.979069767
+mask=1
+ID=3
+
+[BG 512]
+type=normal
+spriteno=11,511
+start=0,511
+delta=1.98255814,1.98255814
+mask=1
+ID=3
+
+[BG 513]
+type=normal
+spriteno=11,512
+start=0,512
+delta=1.986046512,1.986046512
+mask=1
+ID=3
+
+[BG 514]
+type=normal
+spriteno=11,513
+start=0,513
+delta=1.989534884,1.989534884
+mask=1
+ID=3
+
+[BG 515]
+type=normal
+spriteno=11,514
+start=0,514
+delta=1.993023256,1.993023256
+mask=1
+ID=3
+
+[BG 516]
+type=normal
+spriteno=11,515
+start=0,515
+delta=1.996511628,1.996511628
+mask=1
+ID=3
+
+
+;----------------stuff
+
+
+;-------------------table shadow
+
+[BG 1]
+type=normal
+spriteno=16,0
+start=0,0
+delta=0.71,0.71
+mask=1
+ID=7
+
+[BG 2]
+type=normal
+spriteno=16,1
+start=0,1
+delta=0.717142857,0.717142857
+mask=1
+ID=7
+
+[BG 3]
+type=normal
+spriteno=16,2
+start=0,2
+delta=0.724285714,0.724285714
+mask=1
+ID=7
+
+[BG 4]
+type=normal
+spriteno=16,3
+start=0,3
+delta=0.731428571,0.731428571
+mask=1
+ID=7
+
+[BG 5]
+type=normal
+spriteno=16,4
+start=0,4
+delta=0.738571429,0.738571429
+mask=1
+ID=7
+
+[BG 6]
+type=normal
+spriteno=16,5
+start=0,5
+delta=0.745714286,0.745714286
+mask=1
+ID=7
+
+[BG 7]
+type=normal
+spriteno=16,6
+start=0,6
+delta=0.752857143,0.752857143
+mask=1
+ID=7
+
+[BG 8]
+type=normal
+spriteno=16,7
+start=0,7
+delta=0.76,0.76
+mask=1
+ID=7
+
+[BG 9]
+type=normal
+spriteno=16,8
+start=0,8
+delta=0.767142857,0.767142857
+mask=1
+ID=7
+
+[BG 10]
+type=normal
+spriteno=16,9
+start=0,9
+delta=0.774285714,0.774285714
+mask=1
+ID=7
+
+[BG 11]
+type=normal
+spriteno=16,10
+start=0,10
+delta=0.781428571,0.781428571
+mask=1
+ID=7
+
+[BG 12]
+type=normal
+spriteno=16,11
+start=0,11
+delta=0.788571429,0.788571429
+mask=1
+ID=7
+
+[BG 13]
+type=normal
+spriteno=16,12
+start=0,12
+delta=0.795714286,0.795714286
+mask=1
+ID=7
+
+[BG 14]
+type=normal
+spriteno=16,13
+start=0,13
+delta=0.802857143,0.802857143
+mask=1
+ID=7
+
+[BG 15]
+type=normal
+spriteno=16,14
+start=0,14
+delta=0.81,0.81
+mask=1
+ID=7
+
+[BG 16]
+type=normal
+spriteno=16,15
+start=0,15
+delta=0.817142857,0.817142857
+mask=1
+ID=7
+
+[BG 17]
+type=normal
+spriteno=16,16
+start=0,16
+delta=0.824285714,0.824285714
+mask=1
+ID=7
+
+[BG 18]
+type=normal
+spriteno=16,17
+start=0,17
+delta=0.831428571,0.831428571
+mask=1
+ID=7
+
+[BG 19]
+type=normal
+spriteno=16,18
+start=0,18
+delta=0.838571429,0.838571429
+mask=1
+ID=7
+
+[BG 20]
+type=normal
+spriteno=16,19
+start=0,19
+delta=0.845714286,0.845714286
+mask=1
+ID=7
+
+[BG 21]
+type=normal
+spriteno=16,20
+start=0,20
+delta=0.852857143,0.852857143
+mask=1
+ID=7
+
+;------------------------chair back
+
+[BG 1]
+type=normal
+spriteno=17,0
+start=0,0
+delta=0.85,0.85
+mask=1
+ID=8
+
+[BG 2]
+type=normal
+spriteno=17,1
+start=1,0
+delta=0.848888889,0.848888889
+mask=1
+ID=8
+
+[BG 3]
+type=normal
+spriteno=17,2
+start=2,0
+delta=0.847777778,0.847777778
+mask=1
+ID=8
+
+[BG 4]
+type=normal
+spriteno=17,3
+start=3,0
+delta=0.846666667,0.846666667
+mask=1
+ID=8
+
+[BG 5]
+type=normal
+spriteno=17,4
+start=4,0
+delta=0.845555556,0.845555556
+mask=1
+ID=8
+
+[BG 6]
+type=normal
+spriteno=17,5
+start=5,0
+delta=0.844444444,0.844444444
+mask=1
+ID=8
+
+[BG 7]
+type=normal
+spriteno=17,6
+start=6,0
+delta=0.843333333,0.843333333
+mask=1
+ID=8
+
+[BG 8]
+type=normal
+spriteno=17,7
+start=7,0
+delta=0.842222222,0.842222222
+mask=1
+ID=8
+
+[BG 9]
+type=normal
+spriteno=17,8
+start=8,0
+delta=0.841111111,0.841111111
+mask=1
+ID=8
+
+[BG 10]
+type=normal
+spriteno=17,9
+start=9,0
+delta=0.84,0.84
+mask=1
+ID=8
+
+[BG 11]
+type=normal
+spriteno=17,10
+start=10,0
+delta=0.838888889,0.838888889
+mask=1
+ID=8
+
+[BG 12]
+type=normal
+spriteno=17,11
+start=11,0
+delta=0.837777778,0.837777778
+mask=1
+ID=8
+
+[BG 13]
+type=normal
+spriteno=17,12
+start=12,0
+delta=0.836666667,0.836666667
+mask=1
+ID=8
+
+[BG 14]
+type=normal
+spriteno=17,13
+start=13,0
+delta=0.835555556,0.835555556
+mask=1
+ID=8
+
+[BG 15]
+type=normal
+spriteno=17,14
+start=14,0
+delta=0.834444444,0.834444444
+mask=1
+ID=8
+
+[BG 16]
+type=normal
+spriteno=17,15
+start=15,0
+delta=0.833333333,0.833333333
+mask=1
+ID=8
+
+[BG 17]
+type=normal
+spriteno=17,16
+start=16,0
+delta=0.832222222,0.832222222
+mask=1
+ID=8
+
+[BG 18]
+type=normal
+spriteno=17,17
+start=17,0
+delta=0.831111111,0.831111111
+mask=1
+ID=8
+
+[BG 19]
+type=normal
+spriteno=17,18
+start=18,0
+delta=0.83,0.83
+mask=1
+ID=8
+
+[BG 20]
+type=normal
+spriteno=17,19
+start=19,0
+delta=0.828888889,0.828888889
+mask=1
+ID=8
+
+[BG 21]
+type=normal
+spriteno=17,20
+start=20,0
+delta=0.827777778,0.827777778
+mask=1
+ID=8
+
+[BG 22]
+type=normal
+spriteno=17,21
+start=21,0
+delta=0.826666667,0.826666667
+mask=1
+ID=8
+
+[BG 23]
+type=normal
+spriteno=17,22
+start=22,0
+delta=0.825555556,0.825555556
+mask=1
+ID=8
+
+[BG 24]
+type=normal
+spriteno=17,23
+start=23,0
+delta=0.824444444,0.824444444
+mask=1
+ID=8
+
+[BG 25]
+type=normal
+spriteno=17,24
+start=24,0
+delta=0.823333333,0.823333333
+mask=1
+ID=8
+
+[BG 26]
+type=normal
+spriteno=17,25
+start=25,0
+delta=0.822222222,0.822222222
+mask=1
+ID=8
+
+[BG 27]
+type=normal
+spriteno=17,26
+start=26,0
+delta=0.821111111,0.821111111
+mask=1
+ID=8
+
+[BG 28]
+type=normal
+spriteno=17,27
+start=27,0
+delta=0.82,0.82
+mask=1
+ID=8
+
+[BG 29]
+type=normal
+spriteno=17,28
+start=28,0
+delta=0.818888889,0.818888889
+mask=1
+ID=8
+
+[BG 30]
+type=normal
+spriteno=17,29
+start=29,0
+delta=0.817777778,0.817777778
+mask=1
+ID=8
+
+[BG 31]
+type=normal
+spriteno=17,30
+start=30,0
+delta=0.816666667,0.816666667
+mask=1
+ID=8
+
+[BG 32]
+type=normal
+spriteno=17,31
+start=31,0
+delta=0.815555556,0.815555556
+mask=1
+ID=8
+
+[BG 33]
+type=normal
+spriteno=17,32
+start=32,0
+delta=0.814444444,0.814444444
+mask=1
+ID=8
+
+[BG 34]
+type=normal
+spriteno=17,33
+start=33,0
+delta=0.813333333,0.813333333
+mask=1
+ID=8
+
+[BG 35]
+type=normal
+spriteno=17,34
+start=34,0
+delta=0.812222222,0.812222222
+mask=1
+ID=8
+
+[BG 36]
+type=normal
+spriteno=17,35
+start=35,0
+delta=0.811111111,0.811111111
+mask=1
+ID=8
+
+[BG 37]
+type=normal
+spriteno=17,36
+start=36,0
+delta=0.81,0.81
+mask=1
+ID=8
+
+[BG 38]
+type=normal
+spriteno=17,37
+start=37,0
+delta=0.808888889,0.808888889
+mask=1
+ID=8
+
+[BG 39]
+type=normal
+spriteno=17,38
+start=38,0
+delta=0.807777778,0.807777778
+mask=1
+ID=8
+
+[BG 40]
+type=normal
+spriteno=17,39
+start=39,0
+delta=0.806666667,0.806666667
+mask=1
+ID=8
+
+[BG 41]
+type=normal
+spriteno=17,40
+start=40,0
+delta=0.805555556,0.805555556
+mask=1
+ID=8
+
+[BG 42]
+type=normal
+spriteno=17,41
+start=41,0
+delta=0.804444444,0.804444444
+mask=1
+ID=8
+
+[BG 43]
+type=normal
+spriteno=17,42
+start=42,0
+delta=0.803333333,0.803333333
+mask=1
+ID=8
+
+[BG 44]
+type=normal
+spriteno=17,43
+start=43,0
+delta=0.802222222,0.802222222
+mask=1
+ID=8
+
+[BG 45]
+type=normal
+spriteno=17,44
+start=44,0
+delta=0.801111111,0.801111111
+mask=1
+ID=8
+
+[BG 46]
+type=normal
+spriteno=17,45
+start=45,0
+delta=0.8,0.8
+mask=1
+ID=8
+
+[BG 47]
+type=normal
+spriteno=17,46
+start=46,0
+delta=0.798888889,0.798888889
+mask=1
+ID=8
+
+[BG 48]
+type=normal
+spriteno=17,47
+start=47,0
+delta=0.797777778,0.797777778
+mask=1
+ID=8
+
+[BG 49]
+type=normal
+spriteno=17,48
+start=48,0
+delta=0.796666667,0.796666667
+mask=1
+ID=8
+
+[BG 50]
+type=normal
+spriteno=17,49
+start=49,0
+delta=0.795555556,0.795555556
+mask=1
+ID=8
+
+[BG 51]
+type=normal
+spriteno=17,50
+start=50,0
+delta=0.794444444,0.794444444
+mask=1
+ID=8
+
+[BG 52]
+type=normal
+spriteno=17,51
+start=51,0
+delta=0.793333333,0.793333333
+mask=1
+ID=8
+
+[BG 53]
+type=normal
+spriteno=17,52
+start=52,0
+delta=0.792222222,0.792222222
+mask=1
+ID=8
+
+[BG 54]
+type=normal
+spriteno=17,53
+start=53,0
+delta=0.791111111,0.791111111
+mask=1
+ID=8
+
+[BG 55]
+type=normal
+spriteno=17,54
+start=54,0
+delta=0.79,0.79
+mask=1
+ID=8
+
+[BG 56]
+type=normal
+spriteno=17,55
+start=55,0
+delta=0.788888889,0.788888889
+mask=1
+ID=8
+
+[BG 57]
+type=normal
+spriteno=17,56
+start=56,0
+delta=0.787777778,0.787777778
+mask=1
+ID=8
+
+[BG 58]
+type=normal
+spriteno=17,57
+start=57,0
+delta=0.786666667,0.786666667
+mask=1
+ID=8
+
+[BG 59]
+type=normal
+spriteno=17,58
+start=58,0
+delta=0.785555556,0.785555556
+mask=1
+ID=8
+
+[BG 60]
+type=normal
+spriteno=17,59
+start=59,0
+delta=0.784444444,0.784444444
+mask=1
+ID=8
+
+[BG 61]
+type=normal
+spriteno=17,60
+start=60,0
+delta=0.783333333,0.783333333
+mask=1
+ID=8
+
+[BG 62]
+type=normal
+spriteno=17,61
+start=61,0
+delta=0.782222222,0.782222222
+mask=1
+ID=8
+
+[BG 63]
+type=normal
+spriteno=17,62
+start=62,0
+delta=0.781111111,0.781111111
+mask=1
+ID=8
+
+[BG 64]
+type=normal
+spriteno=17,63
+start=63,0
+delta=0.78,0.78
+mask=1
+ID=8
+
+[BG 65]
+type=normal
+spriteno=17,64
+start=64,0
+delta=0.778888889,0.778888889
+mask=1
+ID=8
+
+[BG 66]
+type=normal
+spriteno=17,65
+start=65,0
+delta=0.777777778,0.777777778
+mask=1
+ID=8
+
+[BG 67]
+type=normal
+spriteno=17,66
+start=66,0
+delta=0.776666667,0.776666667
+mask=1
+ID=8
+
+[BG 68]
+type=normal
+spriteno=17,67
+start=67,0
+delta=0.775555556,0.775555556
+mask=1
+ID=8
+
+[BG 69]
+type=normal
+spriteno=17,68
+start=68,0
+delta=0.774444444,0.774444444
+mask=1
+ID=8
+
+[BG 70]
+type=normal
+spriteno=17,69
+start=69,0
+delta=0.773333333,0.773333333
+mask=1
+ID=8
+
+[BG 71]
+type=normal
+spriteno=17,70
+start=70,0
+delta=0.772222222,0.772222222
+mask=1
+ID=8
+
+[BG 72]
+type=normal
+spriteno=17,71
+start=71,0
+delta=0.771111111,0.771111111
+mask=1
+ID=8
+
+[BG 73]
+type=normal
+spriteno=17,72
+start=72,0
+delta=0.77,0.77
+mask=1
+ID=8
+
+[BG 74]
+type=normal
+spriteno=17,73
+start=73,0
+delta=0.768888889,0.768888889
+mask=1
+ID=8
+
+[BG 75]
+type=normal
+spriteno=17,74
+start=74,0
+delta=0.767777778,0.767777778
+mask=1
+ID=8
+
+[BG 76]
+type=normal
+spriteno=17,75
+start=75,0
+delta=0.766666667,0.766666667
+mask=1
+ID=8
+
+[BG 77]
+type=normal
+spriteno=17,76
+start=76,0
+delta=0.765555556,0.765555556
+mask=1
+ID=8
+
+[BG 78]
+type=normal
+spriteno=17,77
+start=77,0
+delta=0.764444444,0.764444444
+mask=1
+ID=8
+
+[BG 79]
+type=normal
+spriteno=17,78
+start=78,0
+delta=0.763333333,0.763333333
+mask=1
+ID=8
+
+[BG 80]
+type=normal
+spriteno=17,79
+start=79,0
+delta=0.762222222,0.762222222
+mask=1
+ID=8
+
+[BG 81]
+type=normal
+spriteno=17,80
+start=80,0
+delta=0.761111111,0.761111111
+mask=1
+ID=8
+
+[BG 82]
+type=normal
+spriteno=17,81
+start=81,0
+delta=0.76,0.76
+mask=1
+ID=8
+
+[BG 83]
+type=normal
+spriteno=17,82
+start=82,0
+delta=0.758888889,0.758888889
+mask=1
+ID=8
+
+[BG 84]
+type=normal
+spriteno=17,83
+start=83,0
+delta=0.757777778,0.757777778
+mask=1
+ID=8
+
+[BG 85]
+type=normal
+spriteno=17,84
+start=84,0
+delta=0.756666667,0.756666667
+mask=1
+ID=8
+
+[BG 86]
+type=normal
+spriteno=17,85
+start=85,0
+delta=0.755555556,0.755555556
+mask=1
+ID=8
+
+[BG 87]
+type=normal
+spriteno=17,86
+start=86,0
+delta=0.754444444,0.754444444
+mask=1
+ID=8
+
+[BG 88]
+type=normal
+spriteno=17,87
+start=87,0
+delta=0.753333333,0.753333333
+mask=1
+ID=8
+
+[BG 89]
+type=normal
+spriteno=17,88
+start=88,0
+delta=0.752222222,0.752222222
+mask=1
+ID=8
+
+[BG 90]
+type=normal
+spriteno=17,89
+start=89,0
+delta=0.751111111,0.751111111
+mask=1
+ID=8
+
+;------------------chair front
+
+[BG 1]
+type=normal
+spriteno=18,0
+start=0,0
+delta=0.85,0.85
+mask=1
+ID=9
+
+[BG 2]
+type=normal
+spriteno=18,1
+start=1,0
+delta=0.848701299,0.848701299
+mask=1
+ID=9
+
+[BG 3]
+type=normal
+spriteno=18,2
+start=2,0
+delta=0.847402597,0.847402597
+mask=1
+ID=9
+
+[BG 4]
+type=normal
+spriteno=18,3
+start=3,0
+delta=0.846103896,0.846103896
+mask=1
+ID=9
+
+[BG 5]
+type=normal
+spriteno=18,4
+start=4,0
+delta=0.844805195,0.844805195
+mask=1
+ID=9
+
+[BG 6]
+type=normal
+spriteno=18,5
+start=5,0
+delta=0.843506494,0.843506494
+mask=1
+ID=9
+
+[BG 7]
+type=normal
+spriteno=18,6
+start=6,0
+delta=0.842207792,0.842207792
+mask=1
+ID=9
+
+[BG 8]
+type=normal
+spriteno=18,7
+start=7,0
+delta=0.840909091,0.840909091
+mask=1
+ID=9
+
+[BG 9]
+type=normal
+spriteno=18,8
+start=8,0
+delta=0.83961039,0.83961039
+mask=1
+ID=9
+
+[BG 10]
+type=normal
+spriteno=18,9
+start=9,0
+delta=0.838311688,0.838311688
+mask=1
+ID=9
+
+[BG 11]
+type=normal
+spriteno=18,10
+start=10,0
+delta=0.837012987,0.837012987
+mask=1
+ID=9
+
+[BG 12]
+type=normal
+spriteno=18,11
+start=11,0
+delta=0.835714286,0.835714286
+mask=1
+ID=9
+
+[BG 13]
+type=normal
+spriteno=18,12
+start=12,0
+delta=0.834415584,0.834415584
+mask=1
+ID=9
+
+[BG 14]
+type=normal
+spriteno=18,13
+start=13,0
+delta=0.833116883,0.833116883
+mask=1
+ID=9
+
+[BG 15]
+type=normal
+spriteno=18,14
+start=14,0
+delta=0.831818182,0.831818182
+mask=1
+ID=9
+
+[BG 16]
+type=normal
+spriteno=18,15
+start=15,0
+delta=0.830519481,0.830519481
+mask=1
+ID=9
+
+[BG 17]
+type=normal
+spriteno=18,16
+start=16,0
+delta=0.829220779,0.829220779
+mask=1
+ID=9
+
+[BG 18]
+type=normal
+spriteno=18,17
+start=17,0
+delta=0.827922078,0.827922078
+mask=1
+ID=9
+
+[BG 19]
+type=normal
+spriteno=18,18
+start=18,0
+delta=0.826623377,0.826623377
+mask=1
+ID=9
+
+[BG 20]
+type=normal
+spriteno=18,19
+start=19,0
+delta=0.825324675,0.825324675
+mask=1
+ID=9
+
+[BG 21]
+type=normal
+spriteno=18,20
+start=20,0
+delta=0.824025974,0.824025974
+mask=1
+ID=9
+
+[BG 22]
+type=normal
+spriteno=18,21
+start=21,0
+delta=0.822727273,0.822727273
+mask=1
+ID=9
+
+[BG 23]
+type=normal
+spriteno=18,22
+start=22,0
+delta=0.821428571,0.821428571
+mask=1
+ID=9
+
+[BG 24]
+type=normal
+spriteno=18,23
+start=23,0
+delta=0.82012987,0.82012987
+mask=1
+ID=9
+
+[BG 25]
+type=normal
+spriteno=18,24
+start=24,0
+delta=0.818831169,0.818831169
+mask=1
+ID=9
+
+[BG 26]
+type=normal
+spriteno=18,25
+start=25,0
+delta=0.817532468,0.817532468
+mask=1
+ID=9
+
+[BG 27]
+type=normal
+spriteno=18,26
+start=26,0
+delta=0.816233766,0.816233766
+mask=1
+ID=9
+
+[BG 28]
+type=normal
+spriteno=18,27
+start=27,0
+delta=0.814935065,0.814935065
+mask=1
+ID=9
+
+[BG 29]
+type=normal
+spriteno=18,28
+start=28,0
+delta=0.813636364,0.813636364
+mask=1
+ID=9
+
+[BG 30]
+type=normal
+spriteno=18,29
+start=29,0
+delta=0.812337662,0.812337662
+mask=1
+ID=9
+
+[BG 31]
+type=normal
+spriteno=18,30
+start=30,0
+delta=0.811038961,0.811038961
+mask=1
+ID=9
+
+[BG 32]
+type=normal
+spriteno=18,31
+start=31,0
+delta=0.80974026,0.80974026
+mask=1
+ID=9
+
+[BG 33]
+type=normal
+spriteno=18,32
+start=32,0
+delta=0.808441558,0.808441558
+mask=1
+ID=9
+
+[BG 34]
+type=normal
+spriteno=18,33
+start=33,0
+delta=0.807142857,0.807142857
+mask=1
+ID=9
+
+[BG 35]
+type=normal
+spriteno=18,34
+start=34,0
+delta=0.805844156,0.805844156
+mask=1
+ID=9
+
+[BG 36]
+type=normal
+spriteno=18,35
+start=35,0
+delta=0.804545455,0.804545455
+mask=1
+ID=9
+
+[BG 37]
+type=normal
+spriteno=18,36
+start=36,0
+delta=0.803246753,0.803246753
+mask=1
+ID=9
+
+[BG 38]
+type=normal
+spriteno=18,37
+start=37,0
+delta=0.801948052,0.801948052
+mask=1
+ID=9
+
+[BG 39]
+type=normal
+spriteno=18,38
+start=38,0
+delta=0.800649351,0.800649351
+mask=1
+ID=9
+
+[BG 40]
+type=normal
+spriteno=18,39
+start=39,0
+delta=0.799350649,0.799350649
+mask=1
+ID=9
+
+[BG 41]
+type=normal
+spriteno=18,40
+start=40,0
+delta=0.798051948,0.798051948
+mask=1
+ID=9
+
+[BG 42]
+type=normal
+spriteno=18,41
+start=41,0
+delta=0.796753247,0.796753247
+mask=1
+ID=9
+
+[BG 43]
+type=normal
+spriteno=18,42
+start=42,0
+delta=0.795454545,0.795454545
+mask=1
+ID=9
+
+[BG 44]
+type=normal
+spriteno=18,43
+start=43,0
+delta=0.794155844,0.794155844
+mask=1
+ID=9
+
+[BG 45]
+type=normal
+spriteno=18,44
+start=44,0
+delta=0.792857143,0.792857143
+mask=1
+ID=9
+
+[BG 46]
+type=normal
+spriteno=18,45
+start=45,0
+delta=0.791558442,0.791558442
+mask=1
+ID=9
+
+[BG 47]
+type=normal
+spriteno=18,46
+start=46,0
+delta=0.79025974,0.79025974
+mask=1
+ID=9
+
+[BG 48]
+type=normal
+spriteno=18,47
+start=47,0
+delta=0.788961039,0.788961039
+mask=1
+ID=9
+
+[BG 49]
+type=normal
+spriteno=18,48
+start=48,0
+delta=0.787662338,0.787662338
+mask=1
+ID=9
+
+[BG 50]
+type=normal
+spriteno=18,49
+start=49,0
+delta=0.786363636,0.786363636
+mask=1
+ID=9
+
+[BG 51]
+type=normal
+spriteno=18,50
+start=50,0
+delta=0.785064935,0.785064935
+mask=1
+ID=9
+
+[BG 52]
+type=normal
+spriteno=18,51
+start=51,0
+delta=0.783766234,0.783766234
+mask=1
+ID=9
+
+[BG 53]
+type=normal
+spriteno=18,52
+start=52,0
+delta=0.782467532,0.782467532
+mask=1
+ID=9
+
+[BG 54]
+type=normal
+spriteno=18,53
+start=53,0
+delta=0.781168831,0.781168831
+mask=1
+ID=9
+
+[BG 55]
+type=normal
+spriteno=18,54
+start=54,0
+delta=0.77987013,0.77987013
+mask=1
+ID=9
+
+[BG 56]
+type=normal
+spriteno=18,55
+start=55,0
+delta=0.778571429,0.778571429
+mask=1
+ID=9
+
+[BG 57]
+type=normal
+spriteno=18,56
+start=56,0
+delta=0.777272727,0.777272727
+mask=1
+ID=9
+
+[BG 58]
+type=normal
+spriteno=18,57
+start=57,0
+delta=0.775974026,0.775974026
+mask=1
+ID=9
+
+[BG 59]
+type=normal
+spriteno=18,58
+start=58,0
+delta=0.774675325,0.774675325
+mask=1
+ID=9
+
+[BG 60]
+type=normal
+spriteno=18,59
+start=59,0
+delta=0.773376623,0.773376623
+mask=1
+ID=9
+
+[BG 61]
+type=normal
+spriteno=18,60
+start=60,0
+delta=0.772077922,0.772077922
+mask=1
+ID=9
+
+[BG 62]
+type=normal
+spriteno=18,61
+start=61,0
+delta=0.770779221,0.770779221
+mask=1
+ID=9
+
+[BG 63]
+type=normal
+spriteno=18,62
+start=62,0
+delta=0.769480519,0.769480519
+mask=1
+ID=9
+
+[BG 64]
+type=normal
+spriteno=18,63
+start=63,0
+delta=0.768181818,0.768181818
+mask=1
+ID=9
+
+[BG 65]
+type=normal
+spriteno=18,64
+start=64,0
+delta=0.766883117,0.766883117
+mask=1
+ID=9
+
+[BG 66]
+type=normal
+spriteno=18,65
+start=65,0
+delta=0.765584416,0.765584416
+mask=1
+ID=9
+
+[BG 67]
+type=normal
+spriteno=18,66
+start=66,0
+delta=0.764285714,0.764285714
+mask=1
+ID=9
+
+[BG 68]
+type=normal
+spriteno=18,67
+start=67,0
+delta=0.762987013,0.762987013
+mask=1
+ID=9
+
+[BG 69]
+type=normal
+spriteno=18,68
+start=68,0
+delta=0.761688312,0.761688312
+mask=1
+ID=9
+
+[BG 70]
+type=normal
+spriteno=18,69
+start=69,0
+delta=0.76038961,0.76038961
+mask=1
+ID=9
+
+[BG 71]
+type=normal
+spriteno=18,70
+start=70,0
+delta=0.759090909,0.759090909
+mask=1
+ID=9
+
+[BG 72]
+type=normal
+spriteno=18,71
+start=71,0
+delta=0.757792208,0.757792208
+mask=1
+ID=9
+
+[BG 73]
+type=normal
+spriteno=18,72
+start=72,0
+delta=0.756493506,0.756493506
+mask=1
+ID=9
+
+[BG 74]
+type=normal
+spriteno=18,73
+start=73,0
+delta=0.755194805,0.755194805
+mask=1
+ID=9
+
+[BG 75]
+type=normal
+spriteno=18,74
+start=74,0
+delta=0.753896104,0.753896104
+mask=1
+ID=9
+
+[BG 76]
+type=normal
+spriteno=18,75
+start=75,0
+delta=0.752597403,0.752597403
+mask=1
+ID=9
+
+[BG 77]
+type=normal
+spriteno=18,76
+start=76,0
+delta=0.751298701,0.751298701
+mask=1
+ID=9
+
+;------------------------chair middle
+
+[BG 1]
+type=normal
+spriteno=19,0
+start=0,0
+delta=0.75,0.75
+mask=1
+ID=10
+
+[BG 2]
+type=normal
+spriteno=19,1
+start=0,1
+delta=0.754,0.754
+mask=1
+ID=10
+
+[BG 3]
+type=normal
+spriteno=19,2
+start=0,2
+delta=0.758,0.758
+mask=1
+ID=10
+
+[BG 4]
+type=normal
+spriteno=19,3
+start=0,3
+delta=0.762,0.762
+mask=1
+ID=10
+
+[BG 5]
+type=normal
+spriteno=19,4
+start=0,4
+delta=0.766,0.766
+mask=1
+ID=10
+
+[BG 6]
+type=normal
+spriteno=19,5
+start=0,5
+delta=0.77,0.77
+mask=1
+ID=10
+
+[BG 7]
+type=normal
+spriteno=19,6
+start=0,6
+delta=0.774,0.774
+mask=1
+ID=10
+
+[BG 8]
+type=normal
+spriteno=19,7
+start=0,7
+delta=0.778,0.778
+mask=1
+ID=10
+
+[BG 9]
+type=normal
+spriteno=19,8
+start=0,8
+delta=0.782,0.782
+mask=1
+ID=10
+
+[BG 10]
+type=normal
+spriteno=19,9
+start=0,9
+delta=0.786,0.786
+mask=1
+ID=10
+
+[BG 11]
+type=normal
+spriteno=19,10
+start=0,10
+delta=0.79,0.79
+mask=1
+ID=10
+
+[BG 12]
+type=normal
+spriteno=19,11
+start=0,11
+delta=0.794,0.794
+mask=1
+ID=10
+
+[BG 13]
+type=normal
+spriteno=19,12
+start=0,12
+delta=0.798,0.798
+mask=1
+ID=10
+
+[BG 14]
+type=normal
+spriteno=19,13
+start=0,13
+delta=0.802,0.802
+mask=1
+ID=10
+
+[BG 15]
+type=normal
+spriteno=19,14
+start=0,14
+delta=0.806,0.806
+mask=1
+ID=10
+
+[BG 16]
+type=normal
+spriteno=19,15
+start=0,15
+delta=0.81,0.81
+mask=1
+ID=10
+
+[BG 17]
+type=normal
+spriteno=19,16
+start=0,16
+delta=0.814,0.814
+mask=1
+ID=10
+
+[BG 18]
+type=normal
+spriteno=19,17
+start=0,17
+delta=0.818,0.818
+mask=1
+ID=10
+
+[BG 19]
+type=normal
+spriteno=19,18
+start=0,18
+delta=0.822,0.822
+mask=1
+ID=10
+
+[BG 20]
+type=normal
+spriteno=19,19
+start=0,19
+delta=0.826,0.826
+mask=1
+ID=10
+
+[BG 21]
+type=normal
+spriteno=19,20
+start=0,20
+delta=0.83,0.83
+mask=1
+ID=10
+
+[BG 22]
+type=normal
+spriteno=19,21
+start=0,21
+delta=0.834,0.834
+mask=1
+ID=10
+
+[BG 23]
+type=normal
+spriteno=19,22
+start=0,22
+delta=0.838,0.838
+mask=1
+ID=10
+
+[BG 24]
+type=normal
+spriteno=19,23
+start=0,23
+delta=0.842,0.842
+mask=1
+ID=10
+
+[BG 25]
+type=normal
+spriteno=19,24
+start=0,24
+delta=0.846,0.846
+mask=1
+ID=10
+
+
+;-------------------------table legs
+
+[BG 1]
+type  = normal
+spriteno = 13, 1
+start = -470, 450
+delta =  .75, .75
+mask = 1
+ID=2
+scalestart = .9,.9
+
+[BG 1]
+type  = normal
+spriteno = 13, 0
+start = -470, 450
+delta = .85, .85
+mask = 1
+ID=2
+scalestart = .9,.9
+
+
+;------------------table front
+
+[BG 1]
+type=normal
+spriteno=14,0
+start=0,0
+delta=0.85,0.85
+mask=1
+ID=5
+
+[BG 2]
+type=normal
+spriteno=14,1
+start=1,0
+delta=0.848795181,0.848795181
+mask=1
+ID=5
+
+[BG 3]
+type=normal
+spriteno=14,2
+start=2,0
+delta=0.847590361,0.847590361
+mask=1
+ID=5
+
+[BG 4]
+type=normal
+spriteno=14,3
+start=3,0
+delta=0.846385542,0.846385542
+mask=1
+ID=5
+
+[BG 5]
+type=normal
+spriteno=14,4
+start=4,0
+delta=0.845180723,0.845180723
+mask=1
+ID=5
+
+[BG 6]
+type=normal
+spriteno=14,5
+start=5,0
+delta=0.843975904,0.843975904
+mask=1
+ID=5
+
+[BG 7]
+type=normal
+spriteno=14,6
+start=6,0
+delta=0.842771084,0.842771084
+mask=1
+ID=5
+
+[BG 8]
+type=normal
+spriteno=14,7
+start=7,0
+delta=0.841566265,0.841566265
+mask=1
+ID=5
+
+[BG 9]
+type=normal
+spriteno=14,8
+start=8,0
+delta=0.840361446,0.840361446
+mask=1
+ID=5
+
+[BG 10]
+type=normal
+spriteno=14,9
+start=9,0
+delta=0.839156627,0.839156627
+mask=1
+ID=5
+
+[BG 11]
+type=normal
+spriteno=14,10
+start=10,0
+delta=0.837951807,0.837951807
+mask=1
+ID=5
+
+[BG 12]
+type=normal
+spriteno=14,11
+start=11,0
+delta=0.836746988,0.836746988
+mask=1
+ID=5
+
+[BG 13]
+type=normal
+spriteno=14,12
+start=12,0
+delta=0.835542169,0.835542169
+mask=1
+ID=5
+
+[BG 14]
+type=normal
+spriteno=14,13
+start=13,0
+delta=0.834337349,0.834337349
+mask=1
+ID=5
+
+[BG 15]
+type=normal
+spriteno=14,14
+start=14,0
+delta=0.83313253,0.83313253
+mask=1
+ID=5
+
+[BG 16]
+type=normal
+spriteno=14,15
+start=15,0
+delta=0.831927711,0.831927711
+mask=1
+ID=5
+
+[BG 17]
+type=normal
+spriteno=14,16
+start=16,0
+delta=0.830722892,0.830722892
+mask=1
+ID=5
+
+[BG 18]
+type=normal
+spriteno=14,17
+start=17,0
+delta=0.829518072,0.829518072
+mask=1
+ID=5
+
+[BG 19]
+type=normal
+spriteno=14,18
+start=18,0
+delta=0.828313253,0.828313253
+mask=1
+ID=5
+
+[BG 20]
+type=normal
+spriteno=14,19
+start=19,0
+delta=0.827108434,0.827108434
+mask=1
+ID=5
+
+[BG 21]
+type=normal
+spriteno=14,20
+start=20,0
+delta=0.825903614,0.825903614
+mask=1
+ID=5
+
+[BG 22]
+type=normal
+spriteno=14,21
+start=21,0
+delta=0.824698795,0.824698795
+mask=1
+ID=5
+
+[BG 23]
+type=normal
+spriteno=14,22
+start=22,0
+delta=0.823493976,0.823493976
+mask=1
+ID=5
+
+[BG 24]
+type=normal
+spriteno=14,23
+start=23,0
+delta=0.822289157,0.822289157
+mask=1
+ID=5
+
+[BG 25]
+type=normal
+spriteno=14,24
+start=24,0
+delta=0.821084337,0.821084337
+mask=1
+ID=5
+
+[BG 26]
+type=normal
+spriteno=14,25
+start=25,0
+delta=0.819879518,0.819879518
+mask=1
+ID=5
+
+[BG 27]
+type=normal
+spriteno=14,26
+start=26,0
+delta=0.818674699,0.818674699
+mask=1
+ID=5
+
+[BG 28]
+type=normal
+spriteno=14,27
+start=27,0
+delta=0.81746988,0.81746988
+mask=1
+ID=5
+
+[BG 29]
+type=normal
+spriteno=14,28
+start=28,0
+delta=0.81626506,0.81626506
+mask=1
+ID=5
+
+[BG 30]
+type=normal
+spriteno=14,29
+start=29,0
+delta=0.815060241,0.815060241
+mask=1
+ID=5
+
+[BG 31]
+type=normal
+spriteno=14,30
+start=30,0
+delta=0.813855422,0.813855422
+mask=1
+ID=5
+
+[BG 32]
+type=normal
+spriteno=14,31
+start=31,0
+delta=0.812650602,0.812650602
+mask=1
+ID=5
+
+[BG 33]
+type=normal
+spriteno=14,32
+start=32,0
+delta=0.811445783,0.811445783
+mask=1
+ID=5
+
+[BG 34]
+type=normal
+spriteno=14,33
+start=33,0
+delta=0.810240964,0.810240964
+mask=1
+ID=5
+
+[BG 35]
+type=normal
+spriteno=14,34
+start=34,0
+delta=0.809036145,0.809036145
+mask=1
+ID=5
+
+[BG 36]
+type=normal
+spriteno=14,35
+start=35,0
+delta=0.807831325,0.807831325
+mask=1
+ID=5
+
+[BG 37]
+type=normal
+spriteno=14,36
+start=36,0
+delta=0.806626506,0.806626506
+mask=1
+ID=5
+
+[BG 38]
+type=normal
+spriteno=14,37
+start=37,0
+delta=0.805421687,0.805421687
+mask=1
+ID=5
+
+[BG 39]
+type=normal
+spriteno=14,38
+start=38,0
+delta=0.804216867,0.804216867
+mask=1
+ID=5
+
+[BG 40]
+type=normal
+spriteno=14,39
+start=39,0
+delta=0.803012048,0.803012048
+mask=1
+ID=5
+
+[BG 41]
+type=normal
+spriteno=14,40
+start=40,0
+delta=0.801807229,0.801807229
+mask=1
+ID=5
+
+[BG 42]
+type=normal
+spriteno=14,41
+start=41,0
+delta=0.80060241,0.80060241
+mask=1
+ID=5
+
+[BG 43]
+type=normal
+spriteno=14,42
+start=42,0
+delta=0.79939759,0.79939759
+mask=1
+ID=5
+
+[BG 44]
+type=normal
+spriteno=14,43
+start=43,0
+delta=0.798192771,0.798192771
+mask=1
+ID=5
+
+[BG 45]
+type=normal
+spriteno=14,44
+start=44,0
+delta=0.796987952,0.796987952
+mask=1
+ID=5
+
+[BG 46]
+type=normal
+spriteno=14,45
+start=45,0
+delta=0.795783133,0.795783133
+mask=1
+ID=5
+
+[BG 47]
+type=normal
+spriteno=14,46
+start=46,0
+delta=0.794578313,0.794578313
+mask=1
+ID=5
+
+[BG 48]
+type=normal
+spriteno=14,47
+start=47,0
+delta=0.793373494,0.793373494
+mask=1
+ID=5
+
+[BG 49]
+type=normal
+spriteno=14,48
+start=48,0
+delta=0.792168675,0.792168675
+mask=1
+ID=5
+
+[BG 50]
+type=normal
+spriteno=14,49
+start=49,0
+delta=0.790963855,0.790963855
+mask=1
+ID=5
+
+[BG 51]
+type=normal
+spriteno=14,50
+start=50,0
+delta=0.789759036,0.789759036
+mask=1
+ID=5
+
+[BG 52]
+type=normal
+spriteno=14,51
+start=51,0
+delta=0.788554217,0.788554217
+mask=1
+ID=5
+
+[BG 53]
+type=normal
+spriteno=14,52
+start=52,0
+delta=0.787349398,0.787349398
+mask=1
+ID=5
+
+[BG 54]
+type=normal
+spriteno=14,53
+start=53,0
+delta=0.786144578,0.786144578
+mask=1
+ID=5
+
+[BG 55]
+type=normal
+spriteno=14,54
+start=54,0
+delta=0.784939759,0.784939759
+mask=1
+ID=5
+
+[BG 56]
+type=normal
+spriteno=14,55
+start=55,0
+delta=0.78373494,0.78373494
+mask=1
+ID=5
+
+[BG 57]
+type=normal
+spriteno=14,56
+start=56,0
+delta=0.78253012,0.78253012
+mask=1
+ID=5
+
+[BG 58]
+type=normal
+spriteno=14,57
+start=57,0
+delta=0.781325301,0.781325301
+mask=1
+ID=5
+
+[BG 59]
+type=normal
+spriteno=14,58
+start=58,0
+delta=0.780120482,0.780120482
+mask=1
+ID=5
+
+[BG 60]
+type=normal
+spriteno=14,59
+start=59,0
+delta=0.778915663,0.778915663
+mask=1
+ID=5
+
+[BG 61]
+type=normal
+spriteno=14,60
+start=60,0
+delta=0.777710843,0.777710843
+mask=1
+ID=5
+
+[BG 62]
+type=normal
+spriteno=14,61
+start=61,0
+delta=0.776506024,0.776506024
+mask=1
+ID=5
+
+[BG 63]
+type=normal
+spriteno=14,62
+start=62,0
+delta=0.775301205,0.775301205
+mask=1
+ID=5
+
+[BG 64]
+type=normal
+spriteno=14,63
+start=63,0
+delta=0.774096386,0.774096386
+mask=1
+ID=5
+
+[BG 65]
+type=normal
+spriteno=14,64
+start=64,0
+delta=0.772891566,0.772891566
+mask=1
+ID=5
+
+[BG 66]
+type=normal
+spriteno=14,65
+start=65,0
+delta=0.771686747,0.771686747
+mask=1
+ID=5
+
+[BG 67]
+type=normal
+spriteno=14,66
+start=66,0
+delta=0.770481928,0.770481928
+mask=1
+ID=5
+
+[BG 68]
+type=normal
+spriteno=14,67
+start=67,0
+delta=0.769277108,0.769277108
+mask=1
+ID=5
+
+[BG 69]
+type=normal
+spriteno=14,68
+start=68,0
+delta=0.768072289,0.768072289
+mask=1
+ID=5
+
+[BG 70]
+type=normal
+spriteno=14,69
+start=69,0
+delta=0.76686747,0.76686747
+mask=1
+ID=5
+
+[BG 71]
+type=normal
+spriteno=14,70
+start=70,0
+delta=0.765662651,0.765662651
+mask=1
+ID=5
+
+[BG 72]
+type=normal
+spriteno=14,71
+start=71,0
+delta=0.764457831,0.764457831
+mask=1
+ID=5
+
+[BG 73]
+type=normal
+spriteno=14,72
+start=72,0
+delta=0.763253012,0.763253012
+mask=1
+ID=5
+
+[BG 74]
+type=normal
+spriteno=14,73
+start=73,0
+delta=0.762048193,0.762048193
+mask=1
+ID=5
+
+[BG 75]
+type=normal
+spriteno=14,74
+start=74,0
+delta=0.760843373,0.760843373
+mask=1
+ID=5
+
+[BG 76]
+type=normal
+spriteno=14,75
+start=75,0
+delta=0.759638554,0.759638554
+mask=1
+ID=5
+
+[BG 77]
+type=normal
+spriteno=14,76
+start=76,0
+delta=0.758433735,0.758433735
+mask=1
+ID=5
+
+[BG 78]
+type=normal
+spriteno=14,77
+start=77,0
+delta=0.757228916,0.757228916
+mask=1
+ID=5
+
+[BG 79]
+type=normal
+spriteno=14,78
+start=78,0
+delta=0.756024096,0.756024096
+mask=1
+ID=5
+
+[BG 80]
+type=normal
+spriteno=14,79
+start=79,0
+delta=0.754819277,0.754819277
+mask=1
+ID=5
+
+[BG 81]
+type=normal
+spriteno=14,80
+start=80,0
+delta=0.753614458,0.753614458
+mask=1
+ID=5
+
+[BG 82]
+type=normal
+spriteno=14,81
+start=81,0
+delta=0.752409639,0.752409639
+mask=1
+ID=5
+
+[BG 83]
+type=normal
+spriteno=14,82
+start=82,0
+delta=0.751204819,0.751204819
+mask=1
+ID=5
+
+;------------------tabletop
+
+[BG 1]
+type=normal
+spriteno=15,0
+start=0,0
+delta=0.7166,0.7166
+mask=1
+ID=6
+
+[BG 2]
+type=normal
+spriteno=15,1
+start=0,1
+delta=0.723266666,0.723266667
+mask=1
+ID=6
+
+[BG 3]
+type=normal
+spriteno=15,2
+start=0,2
+delta=0.729933332,0.729933333
+mask=1
+ID=6
+
+[BG 4]
+type=normal
+spriteno=15,3
+start=0,3
+delta=0.736599998,0.7366
+mask=1
+ID=6
+
+[BG 5]
+type=normal
+spriteno=15,4
+start=0,4
+delta=0.743266664,0.743266666
+mask=1
+ID=6
+
+[BG 6]
+type=normal
+spriteno=15,5
+start=0,5
+delta=0.74993333,0.749933333
+mask=1
+ID=6
+
+[BG 7]
+type=normal
+spriteno=15,6
+start=0,6
+delta=0.756599996,0.7566
+mask=1
+ID=6
+
+[BG 8]
+type=normal
+spriteno=15,7
+start=0,7
+delta=0.763266662,0.763266666
+mask=1
+ID=6
+
+[BG 9]
+type=normal
+spriteno=15,8
+start=0,8
+delta=0.769933328,0.769933333
+mask=1
+ID=6
+
+[BG 10]
+type=normal
+spriteno=15,9
+start=0,9
+delta=0.776599994,0.776599999
+mask=1
+ID=6
+
+[BG 11]
+type=normal
+spriteno=15,10
+start=0,10
+delta=0.78326666,0.783266666
+mask=1
+ID=6
+
+[BG 12]
+type=normal
+spriteno=15,11
+start=0,11
+delta=0.789933326,0.789933333
+mask=1
+ID=6
+
+[BG 13]
+type=normal
+spriteno=15,12
+start=0,12
+delta=0.796599992,0.796599999
+mask=1
+ID=6
+
+[BG 14]
+type=normal
+spriteno=15,13
+start=0,13
+delta=0.803266658,0.803266666
+mask=1
+ID=6
+
+[BG 15]
+type=normal
+spriteno=15,14
+start=0,14
+delta=0.809933324,0.809933332
+mask=1
+ID=6
+
+[BG 16]
+type=normal
+spriteno=15,15
+start=0,15
+delta=0.81659999,0.816599999
+mask=1
+ID=6
+
+[BG 17]
+type=normal
+spriteno=15,16
+start=0,16
+delta=0.823266656,0.823266666
+mask=1
+ID=6
+
+[BG 18]
+type=normal
+spriteno=15,17
+start=0,17
+delta=0.829933322,0.829933332
+mask=1
+ID=6
+
+[BG 19]
+type=normal
+spriteno=15,18
+start=0,18
+delta=0.836599988,0.836599999
+mask=1
+ID=6
+
+[BG 20]
+type=normal
+spriteno=15,19
+start=0,19
+delta=0.843266654,0.843266665
+mask=1
+ID=6
+
+
+;------------------blackboard
+[BG 1]
+type=normal
+spriteno=12,0
+start=0,0
+delta=0.639835449,0.639835449
+mask=1
+ID=4
+
+[BG 2]
+type=normal
+spriteno=12,1
+start=1,0
+delta=0.640154229,0.640154229
+mask=1
+ID=4
+
+[BG 3]
+type=normal
+spriteno=12,2
+start=2,0
+delta=0.64047301,0.64047301
+mask=1
+ID=4
+
+[BG 4]
+type=normal
+spriteno=12,3
+start=3,0
+delta=0.640791791,0.640791791
+mask=1
+ID=4
+
+[BG 5]
+type=normal
+spriteno=12,4
+start=4,0
+delta=0.641110572,0.641110572
+mask=1
+ID=4
+
+[BG 6]
+type=normal
+spriteno=12,5
+start=5,0
+delta=0.641429352,0.641429352
+mask=1
+ID=4
+
+[BG 7]
+type=normal
+spriteno=12,6
+start=6,0
+delta=0.641748133,0.641748133
+mask=1
+ID=4
+
+[BG 8]
+type=normal
+spriteno=12,7
+start=7,0
+delta=0.642066914,0.642066914
+mask=1
+ID=4
+
+[BG 9]
+type=normal
+spriteno=12,8
+start=8,0
+delta=0.642385695,0.642385695
+mask=1
+ID=4
+
+[BG 10]
+type=normal
+spriteno=12,9
+start=9,0
+delta=0.642704475,0.642704475
+mask=1
+ID=4
+
+[BG 11]
+type=normal
+spriteno=12,10
+start=10,0
+delta=0.643023256,0.643023256
+mask=1
+ID=4
+
+[BG 12]
+type=normal
+spriteno=12,11
+start=11,0
+delta=0.643342037,0.643342037
+mask=1
+ID=4
+
+[BG 13]
+type=normal
+spriteno=12,12
+start=12,0
+delta=0.643660817,0.643660817
+mask=1
+ID=4
+
+[BG 14]
+type=normal
+spriteno=12,13
+start=13,0
+delta=0.643979598,0.643979598
+mask=1
+ID=4
+
+[BG 15]
+type=normal
+spriteno=12,14
+start=14,0
+delta=0.644298379,0.644298379
+mask=1
+ID=4
+
+[BG 16]
+type=normal
+spriteno=12,15
+start=15,0
+delta=0.64461716,0.64461716
+mask=1
+ID=4
+
+[BG 17]
+type=normal
+spriteno=12,16
+start=16,0
+delta=0.64493594,0.64493594
+mask=1
+ID=4
+
+[BG 18]
+type=normal
+spriteno=12,17
+start=17,0
+delta=0.645254721,0.645254721
+mask=1
+ID=4
+
+[BG 19]
+type=normal
+spriteno=12,18
+start=18,0
+delta=0.645573502,0.645573502
+mask=1
+ID=4
+
+[BG 20]
+type=normal
+spriteno=12,19
+start=19,0
+delta=0.645892283,0.645892283
+mask=1
+ID=4
+
+[BG 21]
+type=normal
+spriteno=12,20
+start=20,0
+delta=0.646211063,0.646211063
+mask=1
+ID=4
+
+[BG 22]
+type=normal
+spriteno=12,21
+start=21,0
+delta=0.646529844,0.646529844
+mask=1
+ID=4
+
+[BG 23]
+type=normal
+spriteno=12,22
+start=22,0
+delta=0.646848625,0.646848625
+mask=1
+ID=4
+
+[BG 24]
+type=normal
+spriteno=12,23
+start=23,0
+delta=0.647167406,0.647167406
+mask=1
+ID=4
+
+[BG 25]
+type=normal
+spriteno=12,24
+start=24,0
+delta=0.647486186,0.647486186
+mask=1
+ID=4
+
+[BG 26]
+type=normal
+spriteno=12,25
+start=25,0
+delta=0.647804967,0.647804967
+mask=1
+ID=4
+
+[BG 27]
+type=normal
+spriteno=12,26
+start=26,0
+delta=0.648123748,0.648123748
+mask=1
+ID=4
+
+[BG 28]
+type=normal
+spriteno=12,27
+start=27,0
+delta=0.648442529,0.648442529
+mask=1
+ID=4
+
+[BG 29]
+type=normal
+spriteno=12,28
+start=28,0
+delta=0.648761309,0.648761309
+mask=1
+ID=4
+
+[BG 30]
+type=normal
+spriteno=12,29
+start=29,0
+delta=0.64908009,0.64908009
+mask=1
+ID=4
+
+[BG 31]
+type=normal
+spriteno=12,30
+start=30,0
+delta=0.649398871,0.649398871
+mask=1
+ID=4
+
+[BG 32]
+type=normal
+spriteno=12,31
+start=31,0
+delta=0.649717652,0.649717652
+mask=1
+ID=4
+
+[BG 33]
+type=normal
+spriteno=12,32
+start=32,0
+delta=0.650036432,0.650036432
+mask=1
+ID=4
+
+[BG 34]
+type=normal
+spriteno=12,33
+start=33,0
+delta=0.650355213,0.650355213
+mask=1
+ID=4
+
+[BG 35]
+type=normal
+spriteno=12,34
+start=34,0
+delta=0.650673994,0.650673994
+mask=1
+ID=4
+
+[BG 36]
+type=normal
+spriteno=12,35
+start=35,0
+delta=0.650992774,0.650992774
+mask=1
+ID=4
+
+[BG 37]
+type=normal
+spriteno=12,36
+start=36,0
+delta=0.651311555,0.651311555
+mask=1
+ID=4
+
+[BG 38]
+type=normal
+spriteno=12,37
+start=37,0
+delta=0.651630336,0.651630336
+mask=1
+ID=4
+
+[BG 39]
+type=normal
+spriteno=12,38
+start=38,0
+delta=0.651949117,0.651949117
+mask=1
+ID=4
+
+[BG 40]
+type=normal
+spriteno=12,39
+start=39,0
+delta=0.652267897,0.652267897
+mask=1
+ID=4
+
+[BG 41]
+type=normal
+spriteno=12,40
+start=40,0
+delta=0.652586678,0.652586678
+mask=1
+ID=4
+
+[BG 42]
+type=normal
+spriteno=12,41
+start=41,0
+delta=0.652905459,0.652905459
+mask=1
+ID=4
+
+[BG 43]
+type=normal
+spriteno=12,42
+start=42,0
+delta=0.65322424,0.65322424
+mask=1
+ID=4
+
+[BG 44]
+type=normal
+spriteno=12,43
+start=43,0
+delta=0.65354302,0.65354302
+mask=1
+ID=4
+
+[BG 45]
+type=normal
+spriteno=12,44
+start=44,0
+delta=0.653861801,0.653861801
+mask=1
+ID=4
+
+[BG 46]
+type=normal
+spriteno=12,45
+start=45,0
+delta=0.654180582,0.654180582
+mask=1
+ID=4
+
+[BG 47]
+type=normal
+spriteno=12,46
+start=46,0
+delta=0.654499363,0.654499363
+mask=1
+ID=4
+
+[BG 48]
+type=normal
+spriteno=12,47
+start=47,0
+delta=0.654818143,0.654818143
+mask=1
+ID=4
+
+[BG 49]
+type=normal
+spriteno=12,48
+start=48,0
+delta=0.655136924,0.655136924
+mask=1
+ID=4
+
+[BG 50]
+type=normal
+spriteno=12,49
+start=49,0
+delta=0.655455705,0.655455705
+mask=1
+ID=4
+
+[BG 51]
+type=normal
+spriteno=12,50
+start=50,0
+delta=0.655774486,0.655774486
+mask=1
+ID=4
+
+[BG 52]
+type=normal
+spriteno=12,51
+start=51,0
+delta=0.656093266,0.656093266
+mask=1
+ID=4
+
+[BG 53]
+type=normal
+spriteno=12,52
+start=52,0
+delta=0.656412047,0.656412047
+mask=1
+ID=4
+
+[BG 54]
+type=normal
+spriteno=12,53
+start=53,0
+delta=0.656730828,0.656730828
+mask=1
+ID=4
+
+[BG 55]
+type=normal
+spriteno=12,54
+start=54,0
+delta=0.657049609,0.657049609
+mask=1
+ID=4
+
+[BG 56]
+type=normal
+spriteno=12,55
+start=55,0
+delta=0.657368389,0.657368389
+mask=1
+ID=4
+
+[BG 57]
+type=normal
+spriteno=12,56
+start=56,0
+delta=0.65768717,0.65768717
+mask=1
+ID=4
+
+[BG 58]
+type=normal
+spriteno=12,57
+start=57,0
+delta=0.658005951,0.658005951
+mask=1
+ID=4
+
+[BG 59]
+type=normal
+spriteno=12,58
+start=58,0
+delta=0.658324731,0.658324731
+mask=1
+ID=4
+
+[BG 60]
+type=normal
+spriteno=12,59
+start=59,0
+delta=0.658643512,0.658643512
+mask=1
+ID=4
+
+[BG 61]
+type=normal
+spriteno=12,60
+start=60,0
+delta=0.658962293,0.658962293
+mask=1
+ID=4
+
+[BG 62]
+type=normal
+spriteno=12,61
+start=61,0
+delta=0.659281074,0.659281074
+mask=1
+ID=4
+
+[BG 63]
+type=normal
+spriteno=12,62
+start=62,0
+delta=0.659599854,0.659599854
+mask=1
+ID=4
+
+[BG 64]
+type=normal
+spriteno=12,63
+start=63,0
+delta=0.659918635,0.659918635
+mask=1
+ID=4
+
+[BG 65]
+type=normal
+spriteno=12,64
+start=64,0
+delta=0.660237416,0.660237416
+mask=1
+ID=4
+
+[BG 66]
+type=normal
+spriteno=12,65
+start=65,0
+delta=0.660556197,0.660556197
+mask=1
+ID=4
+
+[BG 67]
+type=normal
+spriteno=12,66
+start=66,0
+delta=0.660874977,0.660874977
+mask=1
+ID=4
+
+[BG 68]
+type=normal
+spriteno=12,67
+start=67,0
+delta=0.661193758,0.661193758
+mask=1
+ID=4
+
+[BG 69]
+type=normal
+spriteno=12,68
+start=68,0
+delta=0.661512539,0.661512539
+mask=1
+ID=4
+
+[BG 70]
+type=normal
+spriteno=12,69
+start=69,0
+delta=0.66183132,0.66183132
+mask=1
+ID=4
+
+[BG 71]
+type=normal
+spriteno=12,70
+start=70,0
+delta=0.6621501,0.6621501
+mask=1
+ID=4
+
+[BG 72]
+type=normal
+spriteno=12,71
+start=71,0
+delta=0.662468881,0.662468881
+mask=1
+ID=4
+
+[BG 73]
+type=normal
+spriteno=12,72
+start=72,0
+delta=0.662787662,0.662787662
+mask=1
+ID=4
+
+[BG 74]
+type=normal
+spriteno=12,73
+start=73,0
+delta=0.663106443,0.663106443
+mask=1
+ID=4
+
+[BG 75]
+type=normal
+spriteno=12,74
+start=74,0
+delta=0.663425223,0.663425223
+mask=1
+ID=4
+
+[BG 76]
+type=normal
+spriteno=12,75
+start=75,0
+delta=0.663744004,0.663744004
+mask=1
+ID=4
+
+[BG 77]
+type=normal
+spriteno=12,76
+start=76,0
+delta=0.664062785,0.664062785
+mask=1
+ID=4
+
+[BG 78]
+type=normal
+spriteno=12,77
+start=77,0
+delta=0.664381566,0.664381566
+mask=1
+ID=4
+
+[BG 79]
+type=normal
+spriteno=12,78
+start=78,0
+delta=0.664700346,0.664700346
+mask=1
+ID=4
+
+[BG 80]
+type=normal
+spriteno=12,79
+start=79,0
+delta=0.665019127,0.665019127
+mask=1
+ID=4
+
+[BG 81]
+type=normal
+spriteno=12,80
+start=80,0
+delta=0.665337908,0.665337908
+mask=1
+ID=4
+
+[BG 82]
+type=normal
+spriteno=12,81
+start=81,0
+delta=0.665656688,0.665656688
+mask=1
+ID=4
+
+[BG 83]
+type=normal
+spriteno=12,82
+start=82,0
+delta=0.665975469,0.665975469
+mask=1
+ID=4
+
+[BG 84]
+type=normal
+spriteno=12,83
+start=83,0
+delta=0.66629425,0.66629425
+mask=1
+ID=4
+
+[BG 85]
+type=normal
+spriteno=12,84
+start=84,0
+delta=0.666613031,0.666613031
+mask=1
+ID=4
+
+[BG 86]
+type=normal
+spriteno=12,85
+start=85,0
+delta=0.666931811,0.666931811
+mask=1
+ID=4
+
+[BG 87]
+type=normal
+spriteno=12,86
+start=86,0
+delta=0.667250592,0.667250592
+mask=1
+ID=4
+
+[BG 88]
+type=normal
+spriteno=12,87
+start=87,0
+delta=0.667569373,0.667569373
+mask=1
+ID=4
+
+[BG 89]
+type=normal
+spriteno=12,88
+start=88,0
+delta=0.667888154,0.667888154
+mask=1
+ID=4
+
+[BG 90]
+type=normal
+spriteno=12,89
+start=89,0
+delta=0.668206934,0.668206934
+mask=1
+ID=4
+
+[BG 91]
+type=normal
+spriteno=12,90
+start=90,0
+delta=0.668525715,0.668525715
+mask=1
+ID=4
+
+[BG 92]
+type=normal
+spriteno=12,91
+start=91,0
+delta=0.668844496,0.668844496
+mask=1
+ID=4
+
+[BG 93]
+type=normal
+spriteno=12,92
+start=92,0
+delta=0.669163277,0.669163277
+mask=1
+ID=4
+
+[BG 94]
+type=normal
+spriteno=12,93
+start=93,0
+delta=0.669482057,0.669482057
+mask=1
+ID=4
+
+[BG 95]
+type=normal
+spriteno=12,94
+start=94,0
+delta=0.669800838,0.669800838
+mask=1
+ID=4
+
+[BG 96]
+type=normal
+spriteno=12,95
+start=95,0
+delta=0.670119619,0.670119619
+mask=1
+ID=4
+
+[BG 97]
+type=normal
+spriteno=12,96
+start=96,0
+delta=0.6704384,0.6704384
+mask=1
+ID=4
+
+[BG 98]
+type=normal
+spriteno=12,97
+start=97,0
+delta=0.67075718,0.67075718
+mask=1
+ID=4
+
+[BG 99]
+type=normal
+spriteno=12,98
+start=98,0
+delta=0.671075961,0.671075961
+mask=1
+ID=4
+
+[BG 100]
+type=normal
+spriteno=12,99
+start=99,0
+delta=0.671394742,0.671394742
+mask=1
+ID=4
+
+[BG 101]
+type=normal
+spriteno=12,100
+start=100,0
+delta=0.671713523,0.671713523
+mask=1
+ID=4
+
+[BG 102]
+type=normal
+spriteno=12,101
+start=101,0
+delta=0.672032303,0.672032303
+mask=1
+ID=4
+
+[BG 103]
+type=normal
+spriteno=12,102
+start=102,0
+delta=0.672351084,0.672351084
+mask=1
+ID=4
+
+[BG 104]
+type=normal
+spriteno=12,103
+start=103,0
+delta=0.672669865,0.672669865
+mask=1
+ID=4
+
+[BG 105]
+type=normal
+spriteno=12,104
+start=104,0
+delta=0.672988645,0.672988645
+mask=1
+ID=4
+
+[BG 106]
+type=normal
+spriteno=12,105
+start=105,0
+delta=0.673307426,0.673307426
+mask=1
+ID=4
+
+[BG 107]
+type=normal
+spriteno=12,106
+start=106,0
+delta=0.673626207,0.673626207
+mask=1
+ID=4
+
+[BG 108]
+type=normal
+spriteno=12,107
+start=107,0
+delta=0.673944988,0.673944988
+mask=1
+ID=4
+
+[BG 109]
+type=normal
+spriteno=12,108
+start=108,0
+delta=0.674263768,0.674263768
+mask=1
+ID=4
+
+[BG 110]
+type=normal
+spriteno=12,109
+start=109,0
+delta=0.674582549,0.674582549
+mask=1
+ID=4
+
+[BG 111]
+type=normal
+spriteno=12,110
+start=110,0
+delta=0.67490133,0.67490133
+mask=1
+ID=4
+
+[BG 112]
+type=normal
+spriteno=12,111
+start=111,0
+delta=0.675220111,0.675220111
+mask=1
+ID=4
+
+[BG 113]
+type=normal
+spriteno=12,112
+start=112,0
+delta=0.675538891,0.675538891
+mask=1
+ID=4
+
+[BG 114]
+type=normal
+spriteno=12,113
+start=113,0
+delta=0.675857672,0.675857672
+mask=1
+ID=4
+
+[BG 115]
+type=normal
+spriteno=12,114
+start=114,0
+delta=0.676176453,0.676176453
+mask=1
+ID=4
+
+[BG 116]
+type=normal
+spriteno=12,115
+start=115,0
+delta=0.676495234,0.676495234
+mask=1
+ID=4
+
+[BG 117]
+type=normal
+spriteno=12,116
+start=116,0
+delta=0.676814014,0.676814014
+mask=1
+ID=4
+
+[BG 118]
+type=normal
+spriteno=12,117
+start=117,0
+delta=0.677132795,0.677132795
+mask=1
+ID=4
+
+[BG 119]
+type=normal
+spriteno=12,118
+start=118,0
+delta=0.677451576,0.677451576
+mask=1
+ID=4
+
+[BG 120]
+type=normal
+spriteno=12,119
+start=119,0
+delta=0.677770357,0.677770357
+mask=1
+ID=4
+
+[BG 121]
+type=normal
+spriteno=12,120
+start=120,0
+delta=0.678089137,0.678089137
+mask=1
+ID=4
+
+[BG 122]
+type=normal
+spriteno=12,121
+start=121,0
+delta=0.678407918,0.678407918
+mask=1
+ID=4
+
+[BG 123]
+type=normal
+spriteno=12,122
+start=122,0
+delta=0.678726699,0.678726699
+mask=1
+ID=4
+
+[BG 124]
+type=normal
+spriteno=12,123
+start=123,0
+delta=0.679045479,0.679045479
+mask=1
+ID=4
+
+[BG 125]
+type=normal
+spriteno=12,124
+start=124,0
+delta=0.67936426,0.67936426
+mask=1
+ID=4
+
+[BG 126]
+type=normal
+spriteno=12,125
+start=125,0
+delta=0.679683041,0.679683041
+mask=1
+ID=4
+
+[BG 127]
+type=normal
+spriteno=12,126
+start=126,0
+delta=0.680001822,0.680001822
+mask=1
+ID=4
+
+[BG 128]
+type=normal
+spriteno=12,127
+start=127,0
+delta=0.680320602,0.680320602
+mask=1
+ID=4
+
+[BG 129]
+type=normal
+spriteno=12,128
+start=128,0
+delta=0.680639383,0.680639383
+mask=1
+ID=4
+
+[BG 130]
+type=normal
+spriteno=12,129
+start=129,0
+delta=0.680958164,0.680958164
+mask=1
+ID=4
+
+[BG 131]
+type=normal
+spriteno=12,130
+start=130,0
+delta=0.681276945,0.681276945
+mask=1
+ID=4
+
+[BG 132]
+type=normal
+spriteno=12,131
+start=131,0
+delta=0.681595725,0.681595725
+mask=1
+ID=4
+
+[BG 133]
+type=normal
+spriteno=12,132
+start=132,0
+delta=0.681914506,0.681914506
+mask=1
+ID=4
+
+[BG 134]
+type=normal
+spriteno=12,133
+start=133,0
+delta=0.682233287,0.682233287
+mask=1
+ID=4
+
+[BG 135]
+type=normal
+spriteno=12,134
+start=134,0
+delta=0.682552068,0.682552068
+mask=1
+ID=4
+
+[BG 136]
+type=normal
+spriteno=12,135
+start=135,0
+delta=0.682870848,0.682870848
+mask=1
+ID=4
+
+[BG 137]
+type=normal
+spriteno=12,136
+start=136,0
+delta=0.683189629,0.683189629
+mask=1
+ID=4
+
+[BG 138]
+type=normal
+spriteno=12,137
+start=137,0
+delta=0.68350841,0.68350841
+mask=1
+ID=4
+
+[BG 139]
+type=normal
+spriteno=12,138
+start=138,0
+delta=0.683827191,0.683827191
+mask=1
+ID=4
+
+[BG 140]
+type=normal
+spriteno=12,139
+start=139,0
+delta=0.684145971,0.684145971
+mask=1
+ID=4
+
+[BG 141]
+type=normal
+spriteno=12,140
+start=140,0
+delta=0.684464752,0.684464752
+mask=1
+ID=4
+
+[BG 142]
+type=normal
+spriteno=12,141
+start=141,0
+delta=0.684783533,0.684783533
+mask=1
+ID=4
+
+[BG 143]
+type=normal
+spriteno=12,142
+start=142,0
+delta=0.685102314,0.685102314
+mask=1
+ID=4
+
+[BG 144]
+type=normal
+spriteno=12,143
+start=143,0
+delta=0.685421094,0.685421094
+mask=1
+ID=4
+
+[BG 145]
+type=normal
+spriteno=12,144
+start=144,0
+delta=0.685739875,0.685739875
+mask=1
+ID=4
+
+[BG 146]
+type=normal
+spriteno=12,145
+start=145,0
+delta=0.686058656,0.686058656
+mask=1
+ID=4
+
+[BG 147]
+type=normal
+spriteno=12,146
+start=146,0
+delta=0.686377436,0.686377436
+mask=1
+ID=4
+
+[BG 148]
+type=normal
+spriteno=12,147
+start=147,0
+delta=0.686696217,0.686696217
+mask=1
+ID=4
+
+[BG 149]
+type=normal
+spriteno=12,148
+start=148,0
+delta=0.687014998,0.687014998
+mask=1
+ID=4
+
+[BG 150]
+type=normal
+spriteno=12,149
+start=149,0
+delta=0.687333779,0.687333779
+mask=1
+ID=4
+
+[BG 151]
+type=normal
+spriteno=12,150
+start=150,0
+delta=0.687652559,0.687652559
+mask=1
+ID=4
+
+[BG 152]
+type=normal
+spriteno=12,151
+start=151,0
+delta=0.68797134,0.68797134
+mask=1
+ID=4
+
+[BG 153]
+type=normal
+spriteno=12,152
+start=152,0
+delta=0.688290121,0.688290121
+mask=1
+ID=4
+
+[BG 154]
+type=normal
+spriteno=12,153
+start=153,0
+delta=0.688608902,0.688608902
+mask=1
+ID=4
+
+[BG 155]
+type=normal
+spriteno=12,154
+start=154,0
+delta=0.688927682,0.688927682
+mask=1
+ID=4
+
+[BG 156]
+type=normal
+spriteno=12,155
+start=155,0
+delta=0.689246463,0.689246463
+mask=1
+ID=4
+
+[BG 157]
+type=normal
+spriteno=12,156
+start=156,0
+delta=0.689565244,0.689565244
+mask=1
+ID=4
+
+[BG 158]
+type=normal
+spriteno=12,157
+start=157,0
+delta=0.689884025,0.689884025
+mask=1
+ID=4
+
+[BG 159]
+type=normal
+spriteno=12,158
+start=158,0
+delta=0.690202805,0.690202805
+mask=1
+ID=4
+
+[BG 160]
+type=normal
+spriteno=12,159
+start=159,0
+delta=0.690521586,0.690521586
+mask=1
+ID=4
+
+[BG 161]
+type=normal
+spriteno=12,160
+start=160,0
+delta=0.690840367,0.690840367
+mask=1
+ID=4
+
+[BG 162]
+type=normal
+spriteno=12,161
+start=161,0
+delta=0.691159148,0.691159148
+mask=1
+ID=4
+
+[BG 163]
+type=normal
+spriteno=12,162
+start=162,0
+delta=0.691477928,0.691477928
+mask=1
+ID=4
+
+[BG 164]
+type=normal
+spriteno=12,163
+start=163,0
+delta=0.691796709,0.691796709
+mask=1
+ID=4
+
+[BG 165]
+type=normal
+spriteno=12,164
+start=164,0
+delta=0.69211549,0.69211549
+mask=1
+ID=4
+
+[BG 166]
+type=normal
+spriteno=12,165
+start=165,0
+delta=0.692434271,0.692434271
+mask=1
+ID=4
+
+[BG 167]
+type=normal
+spriteno=12,166
+start=166,0
+delta=0.692753051,0.692753051
+mask=1
+ID=4
+
+[BG 168]
+type=normal
+spriteno=12,167
+start=167,0
+delta=0.693071832,0.693071832
+mask=1
+ID=4
+
+[BG 169]
+type=normal
+spriteno=12,168
+start=168,0
+delta=0.693390613,0.693390613
+mask=1
+ID=4
+
+[BG 170]
+type=normal
+spriteno=12,169
+start=169,0
+delta=0.693709393,0.693709393
+mask=1
+ID=4
+
+[BG 171]
+type=normal
+spriteno=12,170
+start=170,0
+delta=0.694028174,0.694028174
+mask=1
+ID=4
+
+[BG 172]
+type=normal
+spriteno=12,171
+start=171,0
+delta=0.694346955,0.694346955
+mask=1
+ID=4
+
+[BG 173]
+type=normal
+spriteno=12,172
+start=172,0
+delta=0.694665736,0.694665736
+mask=1
+ID=4
+
+[BG 174]
+type=normal
+spriteno=12,173
+start=173,0
+delta=0.694984516,0.694984516
+mask=1
+ID=4
+
+[BG 175]
+type=normal
+spriteno=12,174
+start=174,0
+delta=0.695303297,0.695303297
+mask=1
+ID=4
+
+[BG 176]
+type=normal
+spriteno=12,175
+start=175,0
+delta=0.695622078,0.695622078
+mask=1
+ID=4
+
+[BG 177]
+type=normal
+spriteno=12,176
+start=176,0
+delta=0.695940859,0.695940859
+mask=1
+ID=4
+
+[BG 178]
+type=normal
+spriteno=12,177
+start=177,0
+delta=0.696259639,0.696259639
+mask=1
+ID=4
+
+[BG 179]
+type=normal
+spriteno=12,178
+start=178,0
+delta=0.69657842,0.69657842
+mask=1
+ID=4
+
+[BG 180]
+type=normal
+spriteno=12,179
+start=179,0
+delta=0.696897201,0.696897201
+mask=1
+ID=4
+
+[BG 181]
+type=normal
+spriteno=12,180
+start=180,0
+delta=0.697215982,0.697215982
+mask=1
+ID=4
+
+[BG 182]
+type=normal
+spriteno=12,181
+start=181,0
+delta=0.697534762,0.697534762
+mask=1
+ID=4
+
+[BG 183]
+type=normal
+spriteno=12,182
+start=182,0
+delta=0.697853543,0.697853543
+mask=1
+ID=4
+
+[BG 184]
+type=normal
+spriteno=12,183
+start=183,0
+delta=0.698172324,0.698172324
+mask=1
+ID=4
+
+[BG 185]
+type=normal
+spriteno=12,184
+start=184,0
+delta=0.698491105,0.698491105
+mask=1
+ID=4
+
+[BG 186]
+type=normal
+spriteno=12,185
+start=185,0
+delta=0.698809885,0.698809885
+mask=1
+ID=4
+
+[BG 187]
+type=normal
+spriteno=12,186
+start=186,0
+delta=0.699128666,0.699128666
+mask=1
+ID=4
+
+[BG 188]
+type=normal
+spriteno=12,187
+start=187,0
+delta=0.699447447,0.699447447
+mask=1
+ID=4
+
+[BG 189]
+type=normal
+spriteno=12,188
+start=188,0
+delta=0.699766228,0.699766228
+mask=1
+ID=4
+
+[BG 190]
+type=normal
+spriteno=12,189
+start=189,0
+delta=0.700085008,0.700085008
+mask=1
+ID=4
+
+[BG 191]
+type=normal
+spriteno=12,190
+start=190,0
+delta=0.700403789,0.700403789
+mask=1
+ID=4
+
+[BG 192]
+type=normal
+spriteno=12,191
+start=191,0
+delta=0.70072257,0.70072257
+mask=1
+ID=4
+
+[BG 193]
+type=normal
+spriteno=12,192
+start=192,0
+delta=0.70104135,0.70104135
+mask=1
+ID=4
+
+[BG 194]
+type=normal
+spriteno=12,193
+start=193,0
+delta=0.701360131,0.701360131
+mask=1
+ID=4
+
+[BG 195]
+type=normal
+spriteno=12,194
+start=194,0
+delta=0.701678912,0.701678912
+mask=1
+ID=4
+
+[BG 196]
+type=normal
+spriteno=12,195
+start=195,0
+delta=0.701997693,0.701997693
+mask=1
+ID=4
+
+[BG 197]
+type=normal
+spriteno=12,196
+start=196,0
+delta=0.702316473,0.702316473
+mask=1
+ID=4
+
+[BG 198]
+type=normal
+spriteno=12,197
+start=197,0
+delta=0.702635254,0.702635254
+mask=1
+ID=4
+
+[BG 199]
+type=normal
+spriteno=12,198
+start=198,0
+delta=0.702954035,0.702954035
+mask=1
+ID=4
+
+[BG 200]
+type=normal
+spriteno=12,199
+start=199,0
+delta=0.703272816,0.703272816
+mask=1
+ID=4
+
+[BG 201]
+type=normal
+spriteno=12,200
+start=200,0
+delta=0.703591596,0.703591596
+mask=1
+ID=4
+
+[BG 202]
+type=normal
+spriteno=12,201
+start=201,0
+delta=0.703910377,0.703910377
+mask=1
+ID=4
+
+[BG 203]
+type=normal
+spriteno=12,202
+start=202,0
+delta=0.704229158,0.704229158
+mask=1
+ID=4
+
+[BG 204]
+type=normal
+spriteno=12,203
+start=203,0
+delta=0.704547939,0.704547939
+mask=1
+ID=4
+
+[BG 205]
+type=normal
+spriteno=12,204
+start=204,0
+delta=0.704866719,0.704866719
+mask=1
+ID=4
+
+[BG 206]
+type=normal
+spriteno=12,205
+start=205,0
+delta=0.7051855,0.7051855
+mask=1
+ID=4
+
+[BG 207]
+type=normal
+spriteno=12,206
+start=206,0
+delta=0.705504281,0.705504281
+mask=1
+ID=4
+
+[BG 208]
+type=normal
+spriteno=12,207
+start=207,0
+delta=0.705823062,0.705823062
+mask=1
+ID=4
+
+[BG 209]
+type=normal
+spriteno=12,208
+start=208,0
+delta=0.706141842,0.706141842
+mask=1
+ID=4
+
+[BG 210]
+type=normal
+spriteno=12,209
+start=209,0
+delta=0.706460623,0.706460623
+mask=1
+ID=4
+
+[BG 211]
+type=normal
+spriteno=12,210
+start=210,0
+delta=0.706779404,0.706779404
+mask=1
+ID=4
+
+[BG 212]
+type=normal
+spriteno=12,211
+start=211,0
+delta=0.707098185,0.707098185
+mask=1
+ID=4
+
+[BG 213]
+type=normal
+spriteno=12,212
+start=212,0
+delta=0.707416965,0.707416965
+mask=1
+ID=4
+
+[BG 214]
+type=normal
+spriteno=12,213
+start=213,0
+delta=0.707735746,0.707735746
+mask=1
+ID=4
+
+[BG 215]
+type=normal
+spriteno=12,214
+start=214,0
+delta=0.708054527,0.708054527
+mask=1
+ID=4
+
+[BG 216]
+type=normal
+spriteno=12,215
+start=215,0
+delta=0.708373307,0.708373307
+mask=1
+ID=4
+
+[BG 217]
+type=normal
+spriteno=12,216
+start=216,0
+delta=0.708692088,0.708692088
+mask=1
+ID=4
+
+[BG 218]
+type=normal
+spriteno=12,217
+start=217,0
+delta=0.709010869,0.709010869
+mask=1
+ID=4
+
+[BG 219]
+type=normal
+spriteno=12,218
+start=218,0
+delta=0.70932965,0.70932965
+mask=1
+ID=4
+
+[BG 220]
+type=normal
+spriteno=12,219
+start=219,0
+delta=0.70964843,0.70964843
+mask=1
+ID=4
+
+[BG 221]
+type=normal
+spriteno=12,220
+start=220,0
+delta=0.709967211,0.709967211
+mask=1
+ID=4
+
+[BG 222]
+type=normal
+spriteno=12,221
+start=221,0
+delta=0.710285992,0.710285992
+mask=1
+ID=4
+
+[BG 223]
+type=normal
+spriteno=12,222
+start=222,0
+delta=0.710604773,0.710604773
+mask=1
+ID=4
+
+[BG 224]
+type=normal
+spriteno=12,223
+start=223,0
+delta=0.710923553,0.710923553
+mask=1
+ID=4
+
+[BG 225]
+type=normal
+spriteno=12,224
+start=224,0
+delta=0.711242334,0.711242334
+mask=1
+ID=4
+
+[BG 226]
+type=normal
+spriteno=12,225
+start=225,0
+delta=0.711561115,0.711561115
+mask=1
+ID=4
+
+[BG 227]
+type=normal
+spriteno=12,226
+start=226,0
+delta=0.711879896,0.711879896
+mask=1
+ID=4
+
+[BG 228]
+type=normal
+spriteno=12,227
+start=227,0
+delta=0.712198676,0.712198676
+mask=1
+ID=4
+
+[BG 229]
+type=normal
+spriteno=12,228
+start=228,0
+delta=0.712517457,0.712517457
+mask=1
+ID=4
+
+[BG 230]
+type=normal
+spriteno=12,229
+start=229,0
+delta=0.712836238,0.712836238
+mask=1
+ID=4
+
+[BG 231]
+type=normal
+spriteno=12,230
+start=230,0
+delta=0.713155019,0.713155019
+mask=1
+ID=4
+
+[BG 232]
+type=normal
+spriteno=12,231
+start=231,0
+delta=0.713473799,0.713473799
+mask=1
+ID=4
+
+[BG 233]
+type=normal
+spriteno=12,232
+start=232,0
+delta=0.71379258,0.71379258
+mask=1
+ID=4
+
+[BG 234]
+type=normal
+spriteno=12,233
+start=233,0
+delta=0.714111361,0.714111361
+mask=1
+ID=4
+
+[BG 235]
+type=normal
+spriteno=12,234
+start=234,0
+delta=0.714430142,0.714430142
+mask=1
+ID=4
+
+[BG 236]
+type=normal
+spriteno=12,235
+start=235,0
+delta=0.714748922,0.714748922
+mask=1
+ID=4
+
+[BG 237]
+type=normal
+spriteno=12,236
+start=236,0
+delta=0.715067703,0.715067703
+mask=1
+ID=4
+
+[BG 238]
+type=normal
+spriteno=12,237
+start=237,0
+delta=0.715386484,0.715386484
+mask=1
+ID=4
+
+[BG 239]
+type=normal
+spriteno=12,238
+start=238,0
+delta=0.715705264,0.715705264
+mask=1
+ID=4
+
+[BG 240]
+type=normal
+spriteno=12,239
+start=239,0
+delta=0.716024045,0.716024045
+mask=1
+ID=4
+
+[BG 241]
+type=normal
+spriteno=12,240
+start=240,0
+delta=0.716342826,0.716342826
+mask=1
+ID=4
+
+[BG 242]
+type=normal
+spriteno=12,241
+start=241,0
+delta=0.716661607,0.716661607
+mask=1
+ID=4
+
+[BG 243]
+type=normal
+spriteno=12,242
+start=242,0
+delta=0.716980387,0.716980387
+mask=1
+ID=4
+
+[BG 244]
+type=normal
+spriteno=12,243
+start=243,0
+delta=0.717299168,0.717299168
+mask=1
+ID=4
+
+[BG 245]
+type=normal
+spriteno=12,244
+start=244,0
+delta=0.717617949,0.717617949
+mask=1
+ID=4
+
+[BG 246]
+type=normal
+spriteno=12,245
+start=245,0
+delta=0.71793673,0.71793673
+mask=1
+ID=4
+
+[BG 247]
+type=normal
+spriteno=12,246
+start=246,0
+delta=0.71825551,0.71825551
+mask=1
+ID=4
+
+[BG 248]
+type=normal
+spriteno=12,247
+start=247,0
+delta=0.718574291,0.718574291
+mask=1
+ID=4
+
+[BG 249]
+type=normal
+spriteno=12,248
+start=248,0
+delta=0.718893072,0.718893072
+mask=1
+ID=4
+
+[BG 250]
+type=normal
+spriteno=12,249
+start=249,0
+delta=0.719211853,0.719211853
+mask=1
+ID=4
+
+[BG 251]
+type=normal
+spriteno=12,250
+start=250,0
+delta=0.719530633,0.719530633
+mask=1
+ID=4
+
+[BG 252]
+type=normal
+spriteno=12,251
+start=251,0
+delta=0.719849414,0.719849414
+mask=1
+ID=4
+
+[BG 253]
+type=normal
+spriteno=12,252
+start=252,0
+delta=0.720168195,0.720168195
+mask=1
+ID=4
+
+[BG 254]
+type=normal
+spriteno=12,253
+start=253,0
+delta=0.720486976,0.720486976
+mask=1
+ID=4
+
+[BG 255]
+type=normal
+spriteno=12,254
+start=254,0
+delta=0.720805756,0.720805756
+mask=1
+ID=4
+
+[BG 256]
+type=normal
+spriteno=12,255
+start=255,0
+delta=0.721124537,0.721124537
+mask=1
+ID=4
+
+[BG 257]
+type=normal
+spriteno=12,256
+start=256,0
+delta=0.721443318,0.721443318
+mask=1
+ID=4
+
+[BG 258]
+type=normal
+spriteno=12,257
+start=257,0
+delta=0.721762099,0.721762099
+mask=1
+ID=4
+
+[BG 259]
+type=normal
+spriteno=12,258
+start=258,0
+delta=0.722080879,0.722080879
+mask=1
+ID=4
+
+[BG 260]
+type=normal
+spriteno=12,259
+start=259,0
+delta=0.72239966,0.72239966
+mask=1
+ID=4
+
+[BG 261]
+type=normal
+spriteno=12,260
+start=260,0
+delta=0.722718441,0.722718441
+mask=1
+ID=4
+
+[BG 262]
+type=normal
+spriteno=12,261
+start=261,0
+delta=0.723037221,0.723037221
+mask=1
+ID=4
+
+[BG 263]
+type=normal
+spriteno=12,262
+start=262,0
+delta=0.723356002,0.723356002
+mask=1
+ID=4
+
+[BG 264]
+type=normal
+spriteno=12,263
+start=263,0
+delta=0.723674783,0.723674783
+mask=1
+ID=4
+
+[BG 265]
+type=normal
+spriteno=12,264
+start=264,0
+delta=0.723993564,0.723993564
+mask=1
+ID=4
+
+[BG 266]
+type=normal
+spriteno=12,265
+start=265,0
+delta=0.724312344,0.724312344
+mask=1
+ID=4
+
+[BG 267]
+type=normal
+spriteno=12,266
+start=266,0
+delta=0.724631125,0.724631125
+mask=1
+ID=4
+
+[BG 268]
+type=normal
+spriteno=12,267
+start=267,0
+delta=0.724949906,0.724949906
+mask=1
+ID=4
+
+[BG 269]
+type=normal
+spriteno=12,268
+start=268,0
+delta=0.725268687,0.725268687
+mask=1
+ID=4
+
+[BG 270]
+type=normal
+spriteno=12,269
+start=269,0
+delta=0.725587467,0.725587467
+mask=1
+ID=4
+
+[BG 271]
+type=normal
+spriteno=12,270
+start=270,0
+delta=0.725906248,0.725906248
+mask=1
+ID=4
+
+[BG 272]
+type=normal
+spriteno=12,271
+start=271,0
+delta=0.726225029,0.726225029
+mask=1
+ID=4
+
+[BG 273]
+type=normal
+spriteno=12,272
+start=272,0
+delta=0.72654381,0.72654381
+mask=1
+ID=4
+
+[BG 274]
+type=normal
+spriteno=12,273
+start=273,0
+delta=0.72686259,0.72686259
+mask=1
+ID=4
+
+[BG 275]
+type=normal
+spriteno=12,274
+start=274,0
+delta=0.727181371,0.727181371
+mask=1
+ID=4
+
+[BG 276]
+type=normal
+spriteno=12,275
+start=275,0
+delta=0.727500152,0.727500152
+mask=1
+ID=4
+
+[BG 277]
+type=normal
+spriteno=12,276
+start=276,0
+delta=0.727818933,0.727818933
+mask=1
+ID=4
+
+[BG 278]
+type=normal
+spriteno=12,277
+start=277,0
+delta=0.728137713,0.728137713
+mask=1
+ID=4
+
+[BG 279]
+type=normal
+spriteno=12,278
+start=278,0
+delta=0.728456494,0.728456494
+mask=1
+ID=4
+
+[BG 280]
+type=normal
+spriteno=12,279
+start=279,0
+delta=0.728775275,0.728775275
+mask=1
+ID=4
+
+[BG 281]
+type=normal
+spriteno=12,280
+start=280,0
+delta=0.729094056,0.729094056
+mask=1
+ID=4
+
+[BG 282]
+type=normal
+spriteno=12,281
+start=281,0
+delta=0.729412836,0.729412836
+mask=1
+ID=4
+
+[BG 283]
+type=normal
+spriteno=12,282
+start=282,0
+delta=0.729731617,0.729731617
+mask=1
+ID=4
+
+[BG 284]
+type=normal
+spriteno=12,283
+start=283,0
+delta=0.730050398,0.730050398
+mask=1
+ID=4
+
+[BG 285]
+type=normal
+spriteno=12,284
+start=284,0
+delta=0.730369178,0.730369178
+mask=1
+ID=4
+
+[BG 286]
+type=normal
+spriteno=12,285
+start=285,0
+delta=0.730687959,0.730687959
+mask=1
+ID=4
+
+[BG 287]
+type=normal
+spriteno=12,286
+start=286,0
+delta=0.73100674,0.73100674
+mask=1
+ID=4
+
+[BG 288]
+type=normal
+spriteno=12,287
+start=287,0
+delta=0.731325521,0.731325521
+mask=1
+ID=4
+
+[BG 289]
+type=normal
+spriteno=12,288
+start=288,0
+delta=0.731644301,0.731644301
+mask=1
+ID=4
+
+[BG 290]
+type=normal
+spriteno=12,289
+start=289,0
+delta=0.731963082,0.731963082
+mask=1
+ID=4
+
+[BG 291]
+type=normal
+spriteno=12,290
+start=290,0
+delta=0.732281863,0.732281863
+mask=1
+ID=4
+
+[BG 292]
+type=normal
+spriteno=12,291
+start=291,0
+delta=0.732600644,0.732600644
+mask=1
+ID=4
+
+[BG 293]
+type=normal
+spriteno=12,292
+start=292,0
+delta=0.732919424,0.732919424
+mask=1
+ID=4
+
+[BG 294]
+type=normal
+spriteno=12,293
+start=293,0
+delta=0.733238205,0.733238205
+mask=1
+ID=4
+
+[BG 295]
+type=normal
+spriteno=12,294
+start=294,0
+delta=0.733556986,0.733556986
+mask=1
+ID=4
+
+[BG 296]
+type=normal
+spriteno=12,295
+start=295,0
+delta=0.733875767,0.733875767
+mask=1
+ID=4
+
+[BG 297]
+type=normal
+spriteno=12,296
+start=296,0
+delta=0.734194547,0.734194547
+mask=1
+ID=4
+
+[BG 298]
+type=normal
+spriteno=12,297
+start=297,0
+delta=0.734513328,0.734513328
+mask=1
+ID=4
+
+[BG 299]
+type=normal
+spriteno=12,298
+start=298,0
+delta=0.734832109,0.734832109
+mask=1
+ID=4
+
+[BG 300]
+type=normal
+spriteno=12,299
+start=299,0
+delta=0.73515089,0.73515089
+mask=1
+ID=4
+
+[BG 301]
+type=normal
+spriteno=12,300
+start=300,0
+delta=0.73546967,0.73546967
+mask=1
+ID=4
+
+[BG 302]
+type=normal
+spriteno=12,301
+start=301,0
+delta=0.735788451,0.735788451
+mask=1
+ID=4
+
+[BG 303]
+type=normal
+spriteno=12,302
+start=302,0
+delta=0.736107232,0.736107232
+mask=1
+ID=4
+
+[BG 304]
+type=normal
+spriteno=12,303
+start=303,0
+delta=0.736426012,0.736426012
+mask=1
+ID=4
+
+[BG 305]
+type=normal
+spriteno=12,304
+start=304,0
+delta=0.736744793,0.736744793
+mask=1
+ID=4
+
+[BG 306]
+type=normal
+spriteno=12,305
+start=305,0
+delta=0.737063574,0.737063574
+mask=1
+ID=4
+
+[BG 307]
+type=normal
+spriteno=12,306
+start=306,0
+delta=0.737382355,0.737382355
+mask=1
+ID=4
+
+[BG 308]
+type=normal
+spriteno=12,307
+start=307,0
+delta=0.737701135,0.737701135
+mask=1
+ID=4
+
+[BG 309]
+type=normal
+spriteno=12,308
+start=308,0
+delta=0.738019916,0.738019916
+mask=1
+ID=4
+
+[BG 310]
+type=normal
+spriteno=12,309
+start=309,0
+delta=0.738338697,0.738338697
+mask=1
+ID=4
+
+[BG 311]
+type=normal
+spriteno=12,310
+start=310,0
+delta=0.738657478,0.738657478
+mask=1
+ID=4
+
+[BG 312]
+type=normal
+spriteno=12,311
+start=311,0
+delta=0.738976258,0.738976258
+mask=1
+ID=4
+
+[BG 313]
+type=normal
+spriteno=12,312
+start=312,0
+delta=0.739295039,0.739295039
+mask=1
+ID=4
+
+[BG 314]
+type=normal
+spriteno=12,313
+start=313,0
+delta=0.73961382,0.73961382
+mask=1
+ID=4
+
+[BG 315]
+type=normal
+spriteno=12,314
+start=314,0
+delta=0.739932601,0.739932601
+mask=1
+ID=4
+
+[BG 316]
+type=normal
+spriteno=12,315
+start=315,0
+delta=0.740251381,0.740251381
+mask=1
+ID=4
+
+[BG 317]
+type=normal
+spriteno=12,316
+start=316,0
+delta=0.740570162,0.740570162
+mask=1
+ID=4
+
+[BG 318]
+type=normal
+spriteno=12,317
+start=317,0
+delta=0.740888943,0.740888943
+mask=1
+ID=4
+
+[BG 319]
+type=normal
+spriteno=12,318
+start=318,0
+delta=0.741207724,0.741207724
+mask=1
+ID=4
+
+[BG 320]
+type=normal
+spriteno=12,319
+start=319,0
+delta=0.741526504,0.741526504
+mask=1
+ID=4
+
+[BG 321]
+type=normal
+spriteno=12,320
+start=320,0
+delta=0.741845285,0.741845285
+mask=1
+ID=4
+
+[BG 322]
+type=normal
+spriteno=12,321
+start=321,0
+delta=0.742164066,0.742164066
+mask=1
+ID=4
+
+[BG 323]
+type=normal
+spriteno=12,322
+start=322,0
+delta=0.742482847,0.742482847
+mask=1
+ID=4
+
+[BG 324]
+type=normal
+spriteno=12,323
+start=323,0
+delta=0.742801627,0.742801627
+mask=1
+ID=4
+
+[BG 325]
+type=normal
+spriteno=12,324
+start=324,0
+delta=0.743120408,0.743120408
+mask=1
+ID=4
+
+[BG 326]
+type=normal
+spriteno=12,325
+start=325,0
+delta=0.743439189,0.743439189
+mask=1
+ID=4
+
+[BG 327]
+type=normal
+spriteno=12,326
+start=326,0
+delta=0.743757969,0.743757969
+mask=1
+ID=4
+
+[BG 328]
+type=normal
+spriteno=12,327
+start=327,0
+delta=0.74407675,0.74407675
+mask=1
+ID=4
+
+[BG 329]
+type=normal
+spriteno=12,328
+start=328,0
+delta=0.744395531,0.744395531
+mask=1
+ID=4
+
+[BG 330]
+type=normal
+spriteno=12,329
+start=329,0
+delta=0.744714312,0.744714312
+mask=1
+ID=4
+
+[BG 331]
+type=normal
+spriteno=12,330
+start=330,0
+delta=0.745033092,0.745033092
+mask=1
+ID=4
+
+[BG 332]
+type=normal
+spriteno=12,331
+start=331,0
+delta=0.745351873,0.745351873
+mask=1
+ID=4
+
+[BG 333]
+type=normal
+spriteno=12,332
+start=332,0
+delta=0.745670654,0.745670654
+mask=1
+ID=4
+
+[BG 334]
+type=normal
+spriteno=12,333
+start=333,0
+delta=0.745989435,0.745989435
+mask=1
+ID=4
+
+[BG 335]
+type=normal
+spriteno=12,334
+start=334,0
+delta=0.746308215,0.746308215
+mask=1
+ID=4
+
+[BG 336]
+type=normal
+spriteno=12,335
+start=335,0
+delta=0.746626996,0.746626996
+mask=1
+ID=4
+
+[BG 337]
+type=normal
+spriteno=12,336
+start=336,0
+delta=0.746945777,0.746945777
+mask=1
+ID=4
+
+[BG 338]
+type=normal
+spriteno=12,337
+start=337,0
+delta=0.747264558,0.747264558
+mask=1
+ID=4
+
+[BG 339]
+type=normal
+spriteno=12,338
+start=338,0
+delta=0.747583338,0.747583338
+mask=1
+ID=4
+
+[BG 340]
+type=normal
+spriteno=12,339
+start=339,0
+delta=0.747902119,0.747902119
+mask=1
+ID=4
+
+[BG 341]
+type=normal
+spriteno=12,340
+start=340,0
+delta=0.7482209,0.7482209
+mask=1
+ID=4
+
+[BG 342]
+type=normal
+spriteno=12,341
+start=341,0
+delta=0.748539681,0.748539681
+mask=1
+ID=4
+
+[BG 343]
+type=normal
+spriteno=12,342
+start=342,0
+delta=0.748858461,0.748858461
+mask=1
+ID=4
+
+[BG 344]
+type=normal
+spriteno=12,343
+start=343,0
+delta=0.749177242,0.749177242
+mask=1
+ID=4
+
+[BG 345]
+type=normal
+spriteno=12,344
+start=344,0
+delta=0.749496023,0.749496023
+mask=1
+ID=4
+
+[BG 346]
+type=normal
+spriteno=12,345
+start=345,0
+delta=0.749814804,0.749814804
+mask=1
+ID=4
+
+[BG 347]
+type=normal
+spriteno=12,346
+start=346,0
+delta=0.750133584,0.750133584
+mask=1
+ID=4
+
+[BG 348]
+type=normal
+spriteno=12,347
+start=347,0
+delta=0.750452365,0.750452365
+mask=1
+ID=4
+
+[BG 349]
+type=normal
+spriteno=12,348
+start=348,0
+delta=0.750771146,0.750771146
+mask=1
+ID=4
+
+[BG 350]
+type=normal
+spriteno=12,349
+start=349,0
+delta=0.751089926,0.751089926
+mask=1
+ID=4
+
+[BG 351]
+type=normal
+spriteno=12,350
+start=350,0
+delta=0.751408707,0.751408707
+mask=1
+ID=4
+
+[BG 352]
+type=normal
+spriteno=12,351
+start=351,0
+delta=0.751727488,0.751727488
+mask=1
+ID=4
+
+[BG 353]
+type=normal
+spriteno=12,352
+start=352,0
+delta=0.752046269,0.752046269
+mask=1
+ID=4
+
+[BG 354]
+type=normal
+spriteno=12,353
+start=353,0
+delta=0.752365049,0.752365049
+mask=1
+ID=4
+
+[BG 355]
+type=normal
+spriteno=12,354
+start=354,0
+delta=0.75268383,0.75268383
+mask=1
+ID=4
+
+[BG 356]
+type=normal
+spriteno=12,355
+start=355,0
+delta=0.753002611,0.753002611
+mask=1
+ID=4
+
+[BG 357]
+type=normal
+spriteno=12,356
+start=356,0
+delta=0.753321392,0.753321392
+mask=1
+ID=4
+
+[BG 358]
+type=normal
+spriteno=12,357
+start=357,0
+delta=0.753640172,0.753640172
+mask=1
+ID=4
+
+[BG 359]
+type=normal
+spriteno=12,358
+start=358,0
+delta=0.753958953,0.753958953
+mask=1
+ID=4
+
+[BG 360]
+type=normal
+spriteno=12,359
+start=359,0
+delta=0.754277734,0.754277734
+mask=1
+ID=4
+
+[BG 361]
+type=normal
+spriteno=12,360
+start=360,0
+delta=0.754596515,0.754596515
+mask=1
+ID=4
+
+[BG 362]
+type=normal
+spriteno=12,361
+start=361,0
+delta=0.754915295,0.754915295
+mask=1
+ID=4
+
+[BG 363]
+type=normal
+spriteno=12,362
+start=362,0
+delta=0.755234076,0.755234076
+mask=1
+ID=4
+
+[BG 364]
+type=normal
+spriteno=12,363
+start=363,0
+delta=0.755552857,0.755552857
+mask=1
+ID=4
+
+[BG 365]
+type=normal
+spriteno=12,364
+start=364,0
+delta=0.755871638,0.755871638
+mask=1
+ID=4
+
+[BG 366]
+type=normal
+spriteno=12,365
+start=365,0
+delta=0.756190418,0.756190418
+mask=1
+ID=4
+
+[BG 367]
+type=normal
+spriteno=12,366
+start=366,0
+delta=0.756509199,0.756509199
+mask=1
+ID=4
+
+[BG 368]
+type=normal
+spriteno=12,367
+start=367,0
+delta=0.75682798,0.75682798
+mask=1
+ID=4
+
+[BG 369]
+type=normal
+spriteno=12,368
+start=368,0
+delta=0.757146761,0.757146761
+mask=1
+ID=4
+
+[BG 370]
+type=normal
+spriteno=12,369
+start=369,0
+delta=0.757465541,0.757465541
+mask=1
+ID=4
+
+[BG 371]
+type=normal
+spriteno=12,370
+start=370,0
+delta=0.757784322,0.757784322
+mask=1
+ID=4
+
+[BG 372]
+type=normal
+spriteno=12,371
+start=371,0
+delta=0.758103103,0.758103103
+mask=1
+ID=4
+
+[BG 373]
+type=normal
+spriteno=12,372
+start=372,0
+delta=0.758421883,0.758421883
+mask=1
+ID=4
+
+[BG 374]
+type=normal
+spriteno=12,373
+start=373,0
+delta=0.758740664,0.758740664
+mask=1
+ID=4
+
+[BG 375]
+type=normal
+spriteno=12,374
+start=374,0
+delta=0.759059445,0.759059445
+mask=1
+ID=4
+
+[BG 376]
+type=normal
+spriteno=12,375
+start=375,0
+delta=0.759378226,0.759378226
+mask=1
+ID=4
+
+[BG 377]
+type=normal
+spriteno=12,376
+start=376,0
+delta=0.759697006,0.759697006
+mask=1
+ID=4
+
+[BG 378]
+type=normal
+spriteno=12,377
+start=377,0
+delta=0.760015787,0.760015787
+mask=1
+ID=4
+
+[BG 379]
+type=normal
+spriteno=12,378
+start=378,0
+delta=0.760334568,0.760334568
+mask=1
+ID=4
+
+[BG 380]
+type=normal
+spriteno=12,379
+start=379,0
+delta=0.760653349,0.760653349
+mask=1
+ID=4
+
+[BG 381]
+type=normal
+spriteno=12,380
+start=380,0
+delta=0.760972129,0.760972129
+mask=1
+ID=4
+
+[BG 382]
+type=normal
+spriteno=12,381
+start=381,0
+delta=0.76129091,0.76129091
+mask=1
+ID=4
+
+[BG 383]
+type=normal
+spriteno=12,382
+start=382,0
+delta=0.761609691,0.761609691
+mask=1
+ID=4
+
+[BG 384]
+type=normal
+spriteno=12,383
+start=383,0
+delta=0.761928472,0.761928472
+mask=1
+ID=4
+
+[BG 385]
+type=normal
+spriteno=12,384
+start=384,0
+delta=0.762247252,0.762247252
+mask=1
+ID=4
+
+[BG 386]
+type=normal
+spriteno=12,385
+start=385,0
+delta=0.762566033,0.762566033
+mask=1
+ID=4
+
+[BG 387]
+type=normal
+spriteno=12,386
+start=386,0
+delta=0.762884814,0.762884814
+mask=1
+ID=4
+
+[BG 388]
+type=normal
+spriteno=12,387
+start=387,0
+delta=0.763203595,0.763203595
+mask=1
+ID=4
+
+[BG 389]
+type=normal
+spriteno=12,388
+start=388,0
+delta=0.763522375,0.763522375
+mask=1
+ID=4
+
+[BG 390]
+type=normal
+spriteno=12,389
+start=389,0
+delta=0.763841156,0.763841156
+mask=1
+ID=4
+
+[BG 391]
+type=normal
+spriteno=12,390
+start=390,0
+delta=0.764159937,0.764159937
+mask=1
+ID=4
+
+[BG 392]
+type=normal
+spriteno=12,391
+start=391,0
+delta=0.764478718,0.764478718
+mask=1
+ID=4
+
+[BG 393]
+type=normal
+spriteno=12,392
+start=392,0
+delta=0.764797498,0.764797498
+mask=1
+ID=4
+
+[BG 394]
+type=normal
+spriteno=12,393
+start=393,0
+delta=0.765116279,0.765116279
+mask=1
+ID=4
+
+[BG 395]
+type=normal
+spriteno=12,394
+start=394,0
+delta=0.76543506,0.76543506
+mask=1
+ID=4
+
+[BG 396]
+type=normal
+spriteno=12,395
+start=395,0
+delta=0.76575384,0.76575384
+mask=1
+ID=4
+
+[BG 397]
+type=normal
+spriteno=12,396
+start=396,0
+delta=0.766072621,0.766072621
+mask=1
+ID=4
+
+[BG 398]
+type=normal
+spriteno=12,397
+start=397,0
+delta=0.766391402,0.766391402
+mask=1
+ID=4
+
+[BG 399]
+type=normal
+spriteno=12,398
+start=398,0
+delta=0.766710183,0.766710183
+mask=1
+ID=4
+
+[BG 400]
+type=normal
+spriteno=12,399
+start=399,0
+delta=0.767028963,0.767028963
+mask=1
+ID=4
+
+[BG 401]
+type=normal
+spriteno=12,400
+start=400,0
+delta=0.767347744,0.767347744
+mask=1
+ID=4
+
+[BG 402]
+type=normal
+spriteno=12,401
+start=401,0
+delta=0.767666525,0.767666525
+mask=1
+ID=4
+
+[BG 403]
+type=normal
+spriteno=12,402
+start=402,0
+delta=0.767985306,0.767985306
+mask=1
+ID=4
+
+[BG 404]
+type=normal
+spriteno=12,403
+start=403,0
+delta=0.768304086,0.768304086
+mask=1
+ID=4
+
+[BG 405]
+type=normal
+spriteno=12,404
+start=404,0
+delta=0.768622867,0.768622867
+mask=1
+ID=4
+
+[BG 406]
+type=normal
+spriteno=12,405
+start=405,0
+delta=0.768941648,0.768941648
+mask=1
+ID=4
+
+[BG 407]
+type=normal
+spriteno=12,406
+start=406,0
+delta=0.769260429,0.769260429
+mask=1
+ID=4
+
+[BG 408]
+type=normal
+spriteno=12,407
+start=407,0
+delta=0.769579209,0.769579209
+mask=1
+ID=4
+
+[BG 409]
+type=normal
+spriteno=12,408
+start=408,0
+delta=0.76989799,0.76989799
+mask=1
+ID=4
+
+[BG 410]
+type=normal
+spriteno=12,409
+start=409,0
+delta=0.770216771,0.770216771
+mask=1
+ID=4
+
+[BG 411]
+type=normal
+spriteno=12,410
+start=410,0
+delta=0.770535552,0.770535552
+mask=1
+ID=4
+
+[BG 412]
+type=normal
+spriteno=12,411
+start=411,0
+delta=0.770854332,0.770854332
+mask=1
+ID=4
+
+[BG 413]
+type=normal
+spriteno=12,412
+start=412,0
+delta=0.771173113,0.771173113
+mask=1
+ID=4
+
+[BG 414]
+type=normal
+spriteno=12,413
+start=413,0
+delta=0.771491894,0.771491894
+mask=1
+ID=4
+
+[BG 415]
+type=normal
+spriteno=12,414
+start=414,0
+delta=0.771810675,0.771810675
+mask=1
+ID=4
+
+[BG 416]
+type=normal
+spriteno=12,415
+start=415,0
+delta=0.772129455,0.772129455
+mask=1
+ID=4
+
+[BG 417]
+type=normal
+spriteno=12,416
+start=416,0
+delta=0.772448236,0.772448236
+mask=1
+ID=4
+
+[BG 418]
+type=normal
+spriteno=12,417
+start=417,0
+delta=0.772767017,0.772767017
+mask=1
+ID=4
+
+[BG 419]
+type=normal
+spriteno=12,418
+start=418,0
+delta=0.773085797,0.773085797
+mask=1
+ID=4
+
+[BG 420]
+type=normal
+spriteno=12,419
+start=419,0
+delta=0.773404578,0.773404578
+mask=1
+ID=4
+
+[BG 421]
+type=normal
+spriteno=12,420
+start=420,0
+delta=0.773723359,0.773723359
+mask=1
+ID=4
+
+[BG 422]
+type=normal
+spriteno=12,421
+start=421,0
+delta=0.77404214,0.77404214
+mask=1
+ID=4
+
+[BG 423]
+type=normal
+spriteno=12,422
+start=422,0
+delta=0.77436092,0.77436092
+mask=1
+ID=4
+
+[BG 424]
+type=normal
+spriteno=12,423
+start=423,0
+delta=0.774679701,0.774679701
+mask=1
+ID=4
+
+[BG 425]
+type=normal
+spriteno=12,424
+start=424,0
+delta=0.774998482,0.774998482
+mask=1
+ID=4
+
+[BG 426]
+type=normal
+spriteno=12,425
+start=425,0
+delta=0.775317263,0.775317263
+mask=1
+ID=4
+
+[BG 427]
+type=normal
+spriteno=12,426
+start=426,0
+delta=0.775636043,0.775636043
+mask=1
+ID=4
+
+[BG 428]
+type=normal
+spriteno=12,427
+start=427,0
+delta=0.775954824,0.775954824
+mask=1
+ID=4
+
+[BG 429]
+type=normal
+spriteno=12,428
+start=428,0
+delta=0.776273605,0.776273605
+mask=1
+ID=4
+
+[BG 430]
+type=normal
+spriteno=12,429
+start=429,0
+delta=0.776592386,0.776592386
+mask=1
+ID=4
+
+[BG 431]
+type=normal
+spriteno=12,430
+start=430,0
+delta=0.776911166,0.776911166
+mask=1
+ID=4
+
+[BG 432]
+type=normal
+spriteno=12,431
+start=431,0
+delta=0.777229947,0.777229947
+mask=1
+ID=4
+
+[BG 433]
+type=normal
+spriteno=12,432
+start=432,0
+delta=0.777548728,0.777548728
+mask=1
+ID=4
+
+[BG 434]
+type=normal
+spriteno=12,433
+start=433,0
+delta=0.777867509,0.777867509
+mask=1
+ID=4
+
+[BG 435]
+type=normal
+spriteno=12,434
+start=434,0
+delta=0.778186289,0.778186289
+mask=1
+ID=4
+
+[BG 436]
+type=normal
+spriteno=12,435
+start=435,0
+delta=0.77850507,0.77850507
+mask=1
+ID=4
+
+[BG 437]
+type=normal
+spriteno=12,436
+start=436,0
+delta=0.778823851,0.778823851
+mask=1
+ID=4
+
+[BG 438]
+type=normal
+spriteno=12,437
+start=437,0
+delta=0.779142632,0.779142632
+mask=1
+ID=4
+
+[BG 439]
+type=normal
+spriteno=12,438
+start=438,0
+delta=0.779461412,0.779461412
+mask=1
+ID=4
+
+[BG 440]
+type=normal
+spriteno=12,439
+start=439,0
+delta=0.779780193,0.779780193
+mask=1
+ID=4
+
+[BG 441]
+type=normal
+spriteno=12,440
+start=440,0
+delta=0.780098974,0.780098974
+mask=1
+ID=4
+
+[BG 442]
+type=normal
+spriteno=12,441
+start=441,0
+delta=0.780417754,0.780417754
+mask=1
+ID=4
+
+[BG 443]
+type=normal
+spriteno=12,442
+start=442,0
+delta=0.780736535,0.780736535
+mask=1
+ID=4
+
+[BG 444]
+type=normal
+spriteno=12,443
+start=443,0
+delta=0.781055316,0.781055316
+mask=1
+ID=4
+
+[BG 445]
+type=normal
+spriteno=12,444
+start=444,0
+delta=0.781374097,0.781374097
+mask=1
+ID=4
+
+[BG 446]
+type=normal
+spriteno=12,445
+start=445,0
+delta=0.781692877,0.781692877
+mask=1
+ID=4
+
+[BG 447]
+type=normal
+spriteno=12,446
+start=446,0
+delta=0.782011658,0.782011658
+mask=1
+ID=4
+
+[BG 448]
+type=normal
+spriteno=12,447
+start=447,0
+delta=0.782330439,0.782330439
+mask=1
+ID=4
+
+[BG 449]
+type=normal
+spriteno=12,448
+start=448,0
+delta=0.78264922,0.78264922
+mask=1
+ID=4
+
+[BG 450]
+type=normal
+spriteno=12,449
+start=449,0
+delta=0.782968,0.782968
+mask=1
+ID=4
+
+[BG 451]
+type=normal
+spriteno=12,450
+start=450,0
+delta=0.783286781,0.783286781
+mask=1
+ID=4
+
+
+
+;----------------shadow
+[BG shadow]
+type = anim
+actionno = 3
+layerno = 0
+start = 67,607
+delta = .82, .82
+scalestart = .75,.4
+ID=2
+
+[Begin action 3]
+3, 0, 0,0, 5
+3, 1, 0,0, 5
+3, 2, 0,0, 5
+3, 3, 0,0, 5
+3, 4, 0,0, 5
+3, 5, 0,0, 5
+3, 6, 0,0, 5
+3, 7, 0,0, 5
+3, 8, 0,0, 5
+3, 9, 0,0, 5
+3, 10, 0,0, 5
+3, 11, 0,0, 5
+3, 12, 0,0, 5
+3, 13, 0,0, 5
+3, 14, 0,0, 5
+3, 15, 0,0, 5
+3, 16, 0,0, 5
+3, 17, 0,0, 5
+3, 18, 0,0, 5
+3, 19, 0,0, 5
+3, 20, 0,0, 5
+3, 21, 0,0, 5
+3, 22, 0,0, 5
+3, 23, 0,0, 5
+3, 24, 0,0, 5
+3, 25, 0,0, 5
+3, 26, 0,0, 5
+loopstart
+3, 27, 0,0, 7
+3, 28, 0,0, 7
+3, 29, 0,0, 7
+3, 30, 0,0, 7
+3, 31, 0,0, 7
+3, 32, 0,0, 7
+3, 33, 0,0, 7
+3, 34, 0,0, 7
+
+;----------------Victoria
+[BG Victoria]
+type = anim
+actionno = 2
+layerno = 0
+start = 67,612
+delta = .82, .82
+scalestart = .75,.75
+ID=2
+
+[Begin action 2]
+4, 0, 0,0, 5
+4, 1, 0,0, 5
+4, 2, 0,0, 5
+4, 3, 0,0, 5
+4, 4, 0,0, 5
+4, 5, 0,0, 5
+4, 6, 0,0, 5
+4, 7, 0,0, 5
+4, 8, 0,0, 5
+4, 9, 0,0, 5
+4, 10, 0,0, 5
+4, 11, 0,0, 5
+4, 12, 0,0, 5
+4, 13, 0,0, 5
+4, 14, 0,0, 5
+4, 15, 0,0, 5
+4, 16, 0,0, 5
+4, 17, 0,0, 5
+4, 18, 0,0, 5
+4, 19, 0,0, 5
+4, 20, 0,0, 5
+4, 21, 0,0, 5
+4, 22, 0,0, 5
+4, 23, 0,0, 5
+4, 24, 0,0, 5
+4, 25, 0,0, 5
+4, 26, 0,0, 5
+loopstart
+4, 27, 0,0, 7
+4, 28, 0,0, 7
+4, 29, 0,0, 7
+4, 30, 0,0, 7
+4, 31, 0,0, 7
+4, 32, 0,0, 7
+4, 33, 0,0, 7
+4, 34, 0,0, 7
+
+;-------------------floor
+[BGctrldef posset]
+looptime = -1
+ctrlid = 3
+
+[BGCtrl xy]
+type = posset
+time = 0
+y = 717
+
+;-------------------blackboard
+[BGctrldef posset]
+looptime = -1
+ctrlid = 4
+
+[BGCtrl xy]
+type = posset
+time = 0
+x = 79
+y = 234
+
+;-------------------table front
+[BGctrldef posset]
+looptime = -1
+ctrlid = 5
+
+[BGCtrl xy]
+type = posset
+time = 0
+x = -353
+y = 457
+
+;-------------------table top
+[BGctrldef posset]
+looptime = -1
+ctrlid = 6
+
+[BGCtrl xy]
+type = posset
+time = 0
+x = -464
+y = 449
+
+;-------------------table shadow
+[BGctrldef posset]
+looptime = -1
+ctrlid = 7
+
+[BGCtrl xy]
+type = posset
+time = 0
+x = -531
+y = 590
+
+;-------------------chair back
+[BGctrldef posset]
+looptime = -1
+ctrlid = 8
+
+[BGCtrl xy]
+type = posset
+time = 0
+x = -560
+y = 430
+
+;-------------------chair front
+[BGctrldef posset]
+looptime = -1
+ctrlid = 9
+
+[BGCtrl xy]
+type = posset
+time = 0
+x = -504
+y = 520
+
+;-------------------chair middle
+[BGctrldef posset]
+looptime = -1
+ctrlid = 10
+
+[BGCtrl xy]
+type = posset
+time = 0
+x = -538
+y = 517

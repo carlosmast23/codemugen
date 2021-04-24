@@ -1,0 +1,655 @@
+;--------------------------------------------------------
+[Info]
+name = "Sky_Spire"
+Author = "Margatroid"
+
+;--------------------------------------------------------
+[Camera]
+startx = 0
+starty = 0
+boundleft = -280;
+boundright = 280;
+boundhigh = -200
+boundlow = 0
+verticalfollow = 1.2
+
+floortension = 100
+tension = 200
+overdrawhigh = 100
+overdrawlow = 100
+cuthigh = 0
+cutlow = 0
+zoomin = 1
+zoomout = .65
+tensionhigh = 250;450
+tensionlow = 200;150
+
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+ ;Player 1 starting coordinates.
+ ;p1startx is typically -70 and p2startx is 70.
+ ;p1starty and p1startz should be 0.
+p1startx = -130          ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1startz = 0            ;Starting z coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+
+;--- Player 2 ---
+p2startx = 130
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+ ;Don't change these values.
+leftbound  = -1000 ;Left bound (x-movement)
+rightbound =  1000 ;Right bound
+topbound  =  0     ;Top bound (z-movement)
+botbound  =  0     ;Bottom bound
+
+;--------------------------------------------------------
+[Scaling]
+topz     = 0       ;Top z-coordinate for scaling
+botz     = 50      ;Bottom z-coordinate for scaling
+topscale = 1       ;Scale to use at top
+botscale = 1.2     ;Scale to use at bottom
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 15    ;Dist from left of screen that player can move to
+screenright = 15   ;Right edge
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 420
+autoturn = 1
+resetBG = 1
+localcoord = 640,480
+xscale = .75
+yscale = .75
+;--------------------------------------------------------
+[Shadow]
+intensity = 90
+yscale = 0.15
+fade.range = -400,-100
+
+;--------------------------------------------------------
+[Reflection]
+intensity = 0
+
+;--------------------------------------------------------
+[Music]
+bgmusic = 
+bgvolume = 0
+
+
+[BGdef]
+spr = stages/Sky_Spire.sff
+debugbg = 1
+
+[BG sky]
+type  = normal     
+spriteno = 1, 0                      
+start = 0,-300       
+delta = .1, .1   
+mask = 0
+zoomdelta = .1
+tile = 1,0
+tilespacing = 0,0
+ID = 2
+
+[BG lines]
+type  = normal     
+spriteno = 3, 0                      
+start = 0,0      
+delta = .1, .1   
+mask = 1
+zoomdelta = .1
+velocity = -8,8
+tile = 1,1
+tilespacing = 300,300
+;sin.y = 25,1120
+ID = 2
+
+[BG small lines]
+type  = normal     
+spriteno = 3, 0                      
+start = 100,0      
+delta = .1, .1   
+mask = 1
+zoomdelta = .1
+velocity = -16,16
+tile = 1,1
+tilespacing = 300,300
+scalestart = .5,.5
+ID = 2
+
+[BG cloud]
+type  = normal     
+spriteno = 4, 0                      
+start = 0,-100       
+delta = .1, .1   
+mask = 1
+zoomdelta = .1
+ID = 2
+
+[BG cover]
+type  = normal     
+spriteno = 1, 2                      
+start = 0,400      
+delta = .1, .1   
+mask = 1
+zoomdelta = .1
+ID = 2
+
+;-----------sky clouds
+
+[BG cloud]
+type  = normal     
+spriteno = 5, 4                     
+start = 0,-100
+delta = .1, .1
+velocity = -.1,0
+mask = 1
+zoomdelta = .1
+tile = 1,0
+tilespacing = 2000,0
+scalestart = .5,.5
+ID = 2
+
+[BG cloud]
+type  = normal     
+spriteno = 5, 3                      
+start = 200,-50
+delta = .1, .1
+velocity = -.1,0
+mask = 1
+zoomdelta = .1
+tile = 1,0
+tilespacing = 3000,0
+scalestart = .25,.25
+ID = 2
+
+[BG cloud]
+type  = normal     
+spriteno = 5, 0                     
+start = 300,-100
+delta = .1, .1
+velocity = -.15,0
+mask = 1
+zoomdelta = .1
+tile = 1,0
+tilespacing = 2000,0
+scalestart = .5,.5
+ID = 2
+
+[BG cloud]
+type  = normal     
+spriteno = 5, 1                      
+start = 300,-250
+delta = .2, .2
+velocity = -.1,0
+mask = 1
+zoomdelta = .2
+tile = 1,0
+tilespacing = 1000,0
+ID = 2
+
+[BG cloud]
+type  = normal     
+spriteno = 5, 5                      
+start = -500,-200
+delta = .15, .15
+velocity = -.1,0
+mask = 1
+zoomdelta = .15
+tile = 1,0
+tilespacing = 1000,0
+ID = 2
+
+[BG cloud]
+type  = normal     
+spriteno = 4, 9                      
+start = 0,-100
+delta = .25, .25
+velocity = -.2,0
+mask = 1
+zoomdelta = .25
+tile = 1,0
+tilespacing = 1000,0
+ID = 2
+
+[BG cloud]
+type  = normal     
+spriteno = 5, 2                      
+start = -700,-190
+delta = .3, .3
+velocity = -.2,0
+mask = 1
+zoomdelta = .3
+tile = 1,0
+tilespacing = 2000,0
+scalestart = .5,.5
+ID = 2
+
+;-----------------
+
+[BG 0]
+type  = normal     
+spriteno = 2, 0                      
+start = 0,-250;-300       
+delta = .2, .2   
+mask = 1
+zoomdelta = .2
+ID = 2
+
+[BG cloud]
+type  = normal     
+spriteno = 4, 1                      
+start = 300,100;50     
+delta = .15, .15  
+mask = 1
+zoomdelta = .15
+ID = 2
+
+[BG cloud]
+type  = normal     
+spriteno = 4, 2                      
+start = -300,215;165    
+delta = .2, .2  
+mask = 1
+zoomdelta = .2
+ID = 2
+
+;------
+[BG 0]
+type  = normal     
+spriteno = 2, 1                     
+start = -170,-250;-300       
+delta = .3, .3  
+mask = 1
+zoomdelta = .3
+ID = 2
+
+[BG 0]
+type  = normal     
+spriteno = 5, 1                     
+start = -800,200      
+delta = .35, .35  
+mask = 1
+zoomdelta = .35
+ID = 2
+
+[BG cloud]
+type  = normal     
+spriteno = 4, 4                      
+start = -715,240;190  
+delta = .35, .35 
+mask = 1
+zoomdelta = .35
+ID = 2
+
+[BG 0]
+type  = normal     
+spriteno = 2, 2                      
+start = -100,-250;-300       
+delta = .4, .4  
+mask = 1
+zoomdelta = .4
+ID = 2
+
+[BG 0]
+type  = normal     
+spriteno = 2, 3                      
+start = 0,-300       
+delta = .2, .2  
+mask = 1
+zoomdelta = .2
+ID = 2
+
+[BG 0]
+type  = normal     
+spriteno = 5, 3                      
+start = 600,200      
+delta = .25, .25 
+mask = 1
+zoomdelta = .25
+scalestart = .65,.65
+ID = 2
+
+[BG 0]
+type  = normal     
+spriteno = 5, 5                      
+start = 0,300      
+delta = .3, .3  
+mask = 1
+zoomdelta = .3
+ID = 2
+
+[BG 0]
+type  = normal     
+spriteno = 5, 5                      
+start = 300,230      
+delta = .25, .25 
+mask = 1
+zoomdelta = .25
+scalestart = .65,.65
+ID = 2
+
+[BG 0]
+type  = normal     
+spriteno = 2, 4                      
+start = -100,-250;-300       
+delta = .4, .4  
+mask = 1
+zoomdelta = .4
+ID = 2
+
+[BG cloud];contrast
+type  = normal     
+spriteno = 4, 3                      
+start = -710,240;190  
+delta = .4, .4  
+mask = 1
+zoomdelta = .4
+ID = 2
+
+[BG cloud]
+type  = normal     
+spriteno = 4, 5                      
+start = -930,290;230  
+delta = .5, .5 
+mask = 1
+zoomdelta = .5
+ID = 2
+
+
+;------------------SPIRE ISLANDS
+
+[BG 0]
+type  = normal     
+spriteno = 2, 6                     
+start = 0,-300       
+delta = .2, .2  
+mask = 1
+zoomdelta = .2
+sin.y = 7,1120
+ID = 2
+
+[BG 0]
+type  = normal     
+spriteno = 2, 7                     
+start = 0,-300       
+delta = .2, .2  
+mask = 1
+zoomdelta = .2
+sin.y = -5,1120
+ID = 2
+
+[BG 0];SPIRE
+type  = normal     
+spriteno = 2, 8                     
+start = 0,-300       
+delta = .3, .3  
+mask = 1
+zoomdelta = .3
+sin.y = -5,1000
+ID = 2
+
+[BG 0]
+type  = normal     
+spriteno = 2, 9                     
+start = 0,-300       
+delta = .33, .33 
+mask = 1
+zoomdelta = .33
+sin.y = 7,900
+ID = 2
+
+[BG 0]
+type  = normal     
+spriteno = 2, 10                     
+start = 0,-300       
+delta = .33, .33 
+mask = 1
+zoomdelta = .33
+sin.y = -7,900
+ID = 2
+
+[BG cloud]
+type  = normal     
+spriteno = 4, 6                      
+start = 330,290  
+delta = .4, .4
+mask = 1
+zoomdelta = .4
+ID = 2
+
+[BG 0]
+type  = normal     
+spriteno = 2, 5                     
+start = 0,-300       
+delta = .5, .5  
+mask = 1
+zoomdelta = .5
+sin.y = 5,1000
+ID = 2
+
+[BG cloud]
+type  = normal     
+spriteno = 4, 8                      
+start = 300,300 
+delta = .6, .6
+mask = 1
+zoomdelta = .6
+ID = 2
+
+[BG cloud]
+type  = normal     
+spriteno = 4, 7                      
+start = 550,350  
+delta = .7, .7
+mask = 1
+zoomdelta = .7
+ID = 2
+
+[BG cloud]
+type  = normal     
+spriteno = 4, 8                      
+start = -550,280 
+delta = .6, .6
+mask = 1
+zoomdelta = .6
+ID = 2
+
+[BG cloud]
+type  = normal     
+spriteno = 4, 7                      
+start = -1200,350  
+delta = .7, .7
+mask = 1
+zoomdelta = .7
+ID = 2
+
+[BG 0]
+type  = normal     
+spriteno = 2, 11                     
+start = 0,-300       
+delta = .33, .33 
+mask = 1
+zoomdelta = .33
+sin.y = -5,700
+ID = 2
+
+[BG 0]
+type  = normal     
+spriteno = 2, 12                     
+start = 0,-300       
+delta = .33, .33 
+mask = 1
+zoomdelta = .33
+ID = 2
+
+[BG 0]
+type  = normal     
+spriteno = 2, 14                    
+start = 0,-300       
+delta = .36, .36 
+mask = 1
+zoomdelta = .36
+sin.y = 9,900
+ID = 2
+
+[BG 0]
+type  = normal     
+spriteno = 2, 13                    
+start = 0,-300       
+delta = .36, .36
+mask = 1
+zoomdelta = .36
+sin.y = -7,900
+ID = 2
+
+[BG 0]
+type  = normal     
+spriteno = 2, 16                    
+start = 50,-300       
+delta = .4, .4
+mask = 1
+zoomdelta = .4
+sin.y = -11,1000
+ID = 2
+
+[BG 0]
+type  = normal     
+spriteno = 2, 15                    
+start = 0,-300       
+delta = .42, .42 
+mask = 1
+zoomdelta = .42
+sin.y = 9,800
+ID = 2
+
+[BG 0]
+type  = normal     
+spriteno = 2, 17                   
+start = 0,-300       
+delta = .5, .5
+mask = 1
+zoomdelta = .5
+sin.y = -13,800
+ID = 2
+
+[BG 0]
+type  = normal     
+spriteno = 2, 18                    
+start = 0,-300       
+delta = .6, .6 
+mask = 1
+zoomdelta = .6
+sin.y = 15,900
+ID = 2
+
+[BG 0]
+type  = normal     
+spriteno = 2, 19                    
+start = 0,-300       
+delta = .67, .67 
+mask = 1
+zoomdelta = .67
+sin.y = -17,900
+ID = 2
+
+[BG 0]
+type  = normal     
+spriteno = 2, 20                    
+start = 0,-280       
+delta = .83, .83
+mask = 1
+zoomdelta = .83
+sin.y = 19,900
+ID = 2
+
+;---------------
+[BGCtrlDef pos]
+ctrlID = 2
+looptime = -1
+
+[BGCtrl 1]
+type = posset
+time = 0
+y =125
+;------------------
+[BG 0]
+type  = normal     
+spriteno = 6, 1                   
+start = 1000,425    
+delta = .84, 1
+mask = 1
+layerno = 0
+scalestart = 1.33,1
+ID = 2
+
+[BG 0]
+type  = normal     
+spriteno = 6, 2                   
+start = -700,450    
+delta = .84, 1
+mask = 1
+layerno = 0
+ID = 2
+
+[BG 0]
+type  = normal     
+spriteno = 6, 1                   
+start = 300,425     
+delta = .84, 1
+mask = 1
+layerno = 0
+ID = 2
+
+;--------
+
+[bg 0] ; floor	
+type=parallax
+spriteno=1,1
+start=0,525
+delta=.84,1
+mask=1
+width=2500,4300
+scalestart = 1,.8
+
+;-----------bushes
+
+
+;-----------
+[BG 0]
+type  = normal     
+spriteno = 6, 0                   
+start = 0,560       
+delta = 1.4, 1
+mask = 1
+layerno = 1
+ID = 2
+
+[BG 0]
+type  = normal     
+spriteno = 6, 3                   
+start = -1300,560       
+delta = 1.4, 1
+mask = 1
+layerno = 1
+scalestart = 1.33,1.33
+ID = 2
+
+[BG 0]
+type  = normal     
+spriteno = 6, 3                   
+start = 1300,560       
+delta = 1.4, 1
+mask = 1
+layerno = 1
+scalestart = 1.33,1.33
+ID = 2
+

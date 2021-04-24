@@ -1,0 +1,520 @@
+;--------------------------------------------------------
+[Info]
+name = "Heaven"
+Author = "Margatroid"
+
+;--------------------------------------------------------
+[Camera]
+startx = 0
+starty = 0
+boundleft = -260
+boundright = 260
+boundhigh = -50
+boundlow = 0
+verticalfollow = 1.2
+
+floortension = 100
+tension = 200
+overdrawhigh = 100
+overdrawlow = 100
+cuthigh = 0
+cutlow = 0
+zoomin = 1
+zoomout = .7;.65
+tensionhigh = 250;450
+tensionlow = 200;150
+
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+ ;Player 1 starting coordinates.
+ ;p1startx is typically -70 and p2startx is 70.
+ ;p1starty and p1startz should be 0.
+p1startx = -130          ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1startz = 0            ;Starting z coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+
+;--- Player 2 ---
+p2startx = 130
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+ ;Don't change these values.
+leftbound  = -1000 ;Left bound (x-movement)
+rightbound =  1000 ;Right bound
+topbound  =  0     ;Top bound (z-movement)
+botbound  =  0     ;Bottom bound
+
+;--------------------------------------------------------
+[Scaling]
+topz     = 0       ;Top z-coordinate for scaling
+botz     = 50      ;Bottom z-coordinate for scaling
+topscale = 1       ;Scale to use at top
+botscale = 1.2     ;Scale to use at bottom
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 15;190   ;Dist from left of screen that player can move to
+screenright = 15;190   ;Right edge
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 455
+autoturn = 1
+resetBG = 1
+localcoord = 640,480
+;--------------------------------------------------------
+[Shadow]
+intensity = 128
+yscale = 0.1
+fade.range = -400,-100
+
+;--------------------------------------------------------
+[Reflection]
+intensity = 0
+
+;--------------------------------------------------------
+[Music]
+bgmusic = 
+bgvolume = 0
+
+
+[BGdef]
+spr = stages/Heaven.sff
+debugbg = 0
+
+
+[BG sky]
+type  = normal     
+spriteno = 4, 0                      
+start = 0,470        
+delta = 0.1, 1    
+mask = 0
+zoomdelta = .7;.8
+scalestart = 1.1,1.1
+
+;-----------------------left back
+
+[BG crystal left]
+type  = normal
+spriteno = 8, 0
+start = -180, 150
+delta = .36, 1
+mask = 1
+trans = none
+scaledelta = -0.002
+sin.y = 3,500
+
+[BG crystal right]
+type  = normal
+spriteno = 8, 1
+start = -181, 150
+delta = .36, 1
+mask = 1
+trans = none
+scaledelta = 0.002
+sin.y = 3,500
+
+;-----------------------right back
+
+[BG crystal left]
+type  = normal
+spriteno = 9, 0
+start = 181, 150
+delta = .36, 1
+mask = 1
+trans = none
+scaledelta = -0.002
+sin.y = -3,500
+
+[BG crystal right]
+type  = normal
+spriteno = 9, 1
+start = 180, 150
+delta = .36, 1
+mask = 1
+trans = none
+scaledelta = 0.002
+sin.y = -3,500
+
+;------------------------left front
+
+[BG crystal left]
+type  = normal
+spriteno = 10, 0
+start = -400, 130
+delta = .6, 1
+mask = 1
+trans = none
+scaledelta = -0.001
+scalestart = .85,.85
+sin.y = -6,600
+
+[BG crystal right]
+type  = normal
+spriteno = 10, 1
+start = -401, 130
+delta = .6, 1
+mask = 1
+trans = none
+scaledelta = 0.001
+scalestart = .85,.85
+sin.y = -6,600
+
+;------------------------right front
+
+[BG crystal left]
+type  = normal
+spriteno = 7, 0
+start = 401, 130
+delta = .6, 1
+mask = 1
+trans = none
+scaledelta = -0.001
+scalestart = .85,.85
+sin.y = 6,600
+
+[BG crystal right]
+type  = normal
+spriteno = 7, 1
+start = 400, 130
+delta = .6, 1
+mask = 1
+trans = none
+scaledelta = 0.001
+scalestart = .85,.85
+sin.y = 6,600
+
+;---------------------------arches
+
+;----------------------------left small
+
+;---
+[BG pillar]
+type=normal
+spriteno=23,2
+start=-80,265
+delta=0.23,1
+mask=1
+;---
+[BG pillar]
+type=normal
+spriteno=23,1
+start=-80,265
+delta=0.235,1
+mask=1
+;---
+[BG side]
+type=normal
+spriteno=23,0
+start=-80,265
+delta=0.25,1
+mask=1
+scaledelta = 0.0035,0
+
+[BG side front]
+type=normal
+spriteno=11,4
+start=-80,265
+delta=0.24,1
+mask=1
+
+;----------------------------right small
+
+;---
+[BG pillar]
+type=normal
+spriteno=24,2
+start=80,265
+delta=0.23,1
+mask=1
+;---
+[BG pillar]
+type=normal
+spriteno=24,1
+start=80,265
+delta=0.235,1
+mask=1
+;---
+
+[BG side]
+type = anim
+actionno = 2
+start = 80, 265
+delta = .25,1
+scaledelta = -0.0035,0
+
+[Begin Action 2]
+24,0,0,0, 900
+
+[BG front]
+type = anim
+actionno = 200
+start = 79, 265
+delta = .24,1
+
+[Begin Action 200]
+11,4,0,0, 900,H
+
+;------------------------------medium left
+;---
+[BG arch3]
+type=normal
+spriteno=21,3
+start=-200,300
+delta=0.28,1
+mask=1
+
+[BG arch2]
+type=normal
+spriteno=21,2
+start=-200,300
+delta=0.295,1
+mask=1
+
+[BG arch1]
+type=normal
+spriteno=21,1
+start=-200,300
+delta=0.32,1
+mask=1
+
+;---
+
+[BG side]
+type=normal
+spriteno=21,0
+start=-200,300
+delta=0.36,1
+mask=1
+scaledelta = 0.0022,0
+
+;---
+
+[BG column3]
+type=normal
+spriteno=21,6
+start=-200,300
+delta=0.28,1
+mask=1
+
+[BG column2]
+type=normal
+spriteno=21,5
+start=-200,300
+delta=0.295,1
+mask=1
+
+[BG column1]
+type=normal
+spriteno=21,4
+start=-200,300
+delta=0.32,1
+mask=1
+
+;---
+[BG front]
+type=normal
+spriteno=11,2
+start=-200,300
+delta=0.346,1
+mask=1
+
+;------------------------------medium right
+
+;---
+[BG arch3]
+type=normal
+spriteno=22,3
+start=200,300
+delta=0.28,1
+mask=1
+
+[BG arch2]
+type=normal
+spriteno=22,2
+start=200,300
+delta=0.295,1
+mask=1
+
+[BG arch1]
+type=normal
+spriteno=22,1
+start=200,300
+delta=0.32,1
+mask=1
+
+;---
+
+[BG side ]
+type = anim
+actionno = 3
+start = 200, 300
+delta = .36,1
+scaledelta = -0.0022,0
+
+[Begin Action 3]
+22,0,0,0, 900
+
+;---
+
+[BG column3]
+type=normal
+spriteno=22,6
+start=200,300
+delta=0.28,1
+mask=1
+
+[BG column2]
+type=normal
+spriteno=22,5
+start=200,300
+delta=0.295,1
+mask=1
+
+[BG column1]
+type=normal
+spriteno=22,4
+start=200,300
+delta=0.32,1
+mask=1
+
+;-----
+
+[BG front]
+type = anim
+actionno = 201
+start = 199, 300
+delta = .346,1
+
+[Begin Action 201]
+11,2,0,0, 900,H
+
+;------------------------------big left
+
+[BG column3]
+type=normal
+spriteno=25,3   
+start=-629,444
+delta=0.42,1
+mask=1
+
+[BG column2]
+type=normal
+spriteno=25,2   
+start=-629,444
+delta=0.502,1
+mask=1
+
+[BG column1]
+type=normal
+spriteno=25,1   
+start=-629,444
+delta=0.615,1
+mask=1
+
+;---
+
+[BG side]
+type=normal
+spriteno=25,0   ;5,0
+start=-630,444
+delta=0.82,1
+mask=1
+scaledelta = 0.00128,0
+
+[BG side left big front]
+type=normal
+spriteno=11,1   ;11,0
+start=-628,444
+delta=0.71,1
+mask=1
+
+;------------------------------big right
+
+[BG column3]
+type=normal
+spriteno=26,3   
+start=629,444
+delta=0.42,1
+mask=1
+
+[BG column2]
+type=normal
+spriteno=26,2   
+start=629,444
+delta=0.502,1
+mask=1
+
+[BG column1]
+type=normal
+spriteno=26,1   
+start=629,444
+delta=0.615,1
+mask=1
+
+;---
+
+[BG side right big]
+type = anim
+actionno = 4
+start = 630, 444
+delta = .82,1
+scaledelta = -0.00128,0
+
+[Begin Action 4]
+26,0,0,0, 900
+
+[BG side right big front]
+type = anim
+actionno = 202
+start = 628, 444
+delta = .71,1
+
+[Begin Action 202]
+11,1,0,0, 900,H
+
+
+;------------------------------
+[BG gate]
+type  = normal     
+spriteno = 3, 0                      
+start = 0,240        
+delta = 0.22, 1    
+mask = 1
+
+[BG stairs3];
+type = parallax
+spriteno = 2,2
+start = 0,260
+delta = .22,1    ;.2,1
+xscale = 1,1.06  ;1.08
+mask = 1
+
+[BG stairs2];
+type = parallax
+spriteno = 2,1
+start = 0,300
+delta = .27,1
+xscale = 1,1.1
+mask = 1
+
+[BG stairs1];
+type = parallax
+spriteno = 2,0
+start = 0,390
+delta = .39, 1           ;.37,1    
+xscale = 1, 1.282;1.3157       ;1,1.3513     
+mask = 1
+
+[BG Floor];
+type = parallax
+spriteno = 1,1
+start = 0,390
+delta = .5,1
+xscale = 1,2.789534884 
+mask = 1       
+
